@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { MapPin, CheckCircle } from 'lucide-react';
 import LeadCaptureForm from './LeadCaptureForm';
 import type { Project } from '../context/ProjectContext';
