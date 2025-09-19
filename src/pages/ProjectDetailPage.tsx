@@ -1,8 +1,6 @@
 
 import { useParams, Navigate } from 'react-router-dom';
-import Header from '../components/Header'
 import ProjectDetails from '../components/ProjectDetails';
-import ContactFooter from '../components/ContactFooter';
 import { useProjects } from '../context/ProjectContext';
 
 const ProjectDetailPage = () => {
@@ -21,9 +19,7 @@ const ProjectDetailPage = () => {
 
   return (
     <div>
-      <Header />
       <ProjectDetails project={project} />
-      <ContactFooter />
     </div>
   );
 };
