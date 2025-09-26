@@ -74,7 +74,7 @@ const iconMap: Record<string, any> = {
 
 const ProjectDetails = ({ project }: ProjectDetailsProps) => {
   // Map amenities to top reasons format
-  const topReasons = project.amenities?.slice(0, 8).map((amenity, index) => ({
+  const topReasons = project.amenities?.slice(0, 8).map((amenity, _) => ({
     icon: iconMap[amenity] || CheckCircle,
     title: amenity,
   })) || [];

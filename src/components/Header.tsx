@@ -451,22 +451,22 @@ function NavLink({ to, children }: { to: string; children: React.ReactNode }) {
   );
 }
 
-function MobileLink({
-  to,
-  onClick,
-  children,
-}: {
-  to: string;
-  onClick: () => void;
-  children: React.ReactNode;
-}) {
-  return (
-    <Link
-      to={to}
-      onClick={onClick}
-      className="block text-secondary hover:text-white transition-colors"
-    >
-      {children}
-    </Link>
-  );
-}
+// function MobileLink({
+//   to,
+//   onClick,
+//   children,
+// }: {
+//   to: string;
+//   onClick: () => void;
+//   children: React.ReactNode;
+// }) {
+//   return (
+//     <Link
+//       to={to}
+//       onClick={onClick}
+//       className="block text-secondary hover:text-white transition-colors"
+//     >
+//       {children}
+//     </Link>
+//   );
+// }
