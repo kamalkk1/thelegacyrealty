@@ -40,7 +40,7 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section className="relative py-16 lg:py-24 bg-white">
+    <section className="relative py-6 lg:py-4 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
         {/* Left Side */}
         <motion.div

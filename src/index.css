@@ -4,7 +4,18 @@
 @plugin "tailwindcss-animate";
 
 @custom-variant dark (&:is(.dark *));
+html, body {
 
+  scroll-behavior: smooth;
+scroll-snap-type: y;
+}
+
+
+@media (max-width: 800px) {
+  html, body {
+  overflow-x: hidden;
+  }
+}
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
@@ -52,9 +63,9 @@
   --card-foreground: oklch(0.141 0.005 285.823);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.141 0.005 285.823);
-  --primary: #2d545e;
+  --primary: #233d4d;
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: #c89666;
+  --secondary: #e0aa3e;
   --secondary-foreground: oklch(0.21 0.006 285.885);
   --muted: oklch(0.967 0.001 286.375);
   --muted-foreground: oklch(0.552 0.016 285.938);

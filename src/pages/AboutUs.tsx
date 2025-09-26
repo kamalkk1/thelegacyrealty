@@ -6,8 +6,11 @@ import WhyChooseUs from "../components/WhyChooseUs";
 import OurStory from "../components/OurStory";
 const AboutUs = () => {
   return (
-    <section className="relative bg-secondary text-white py-16 lg:py-24">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+    <section className="relative bg-gradient-to-br from-secondary to-foreground hover:from-foreground hover:to-secondary text-white py-6 lg:py-4">
+      <div className="">
+        <WhyChooseUs />
+      </div>
+      <div className="container py-12 mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center ">
         {/* Left Side - Image */}
         <motion.div
           initial={{ x: -100, opacity: 0 }}
@@ -49,7 +52,7 @@ const AboutUs = () => {
             <span className="font-semibold">
               Chandigarh, Mohali & New Chandigarh {""}
             </span>
-            community for over 10 years, we’ve built relationships that last a
+            community for over 12 years, we’ve built relationships that last a
             lifetime.
           </p>
 
@@ -62,7 +65,7 @@ const AboutUs = () => {
           {/* Stats Section */}
           <div className="grid grid-cols-3 gap-6 mt-12">
             <Card className="bg-foreground border-0 text-center p-4">
-              <div className="text-primary text-3xl font-bold">10y</div>
+              <div className="text-primary text-3xl font-bold">12y+</div>
               <p className="text-sm text-gray-200 mt-1">Experience</p>
             </Card>
             <Card className="bg-foreground border-0 text-center p-4">
@@ -76,9 +79,7 @@ const AboutUs = () => {
           </div>
         </motion.div>
       </div>
-      <div className="mt-20">
-        <WhyChooseUs />
-      </div>
+      
       <div className="mt-20">
         <OurStory />
       </div>
