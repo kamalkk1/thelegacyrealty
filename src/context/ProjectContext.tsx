@@ -1,4 +1,12 @@
 import { createContext, useContext, type ReactNode } from 'react';
+import mdbmain from '../assets/mdblutyens/mdbmain.webp';
+import medallion from '../assets/medallion/medallion.webp';
+import greenwood from '../assets/greenwoods/greenwoodmain.webp';
+import gardenia from '../assets/gardenia/gardeniamain.webp';
+import onegroup from '../assets/onegroupclermont/onegroupclermont.webp';
+import mayfields from '../assets/mayfields/mayfiledsmain.webp';
+import wellnesscity from '../assets/wellnesscity/wellnesscity.webp';
+import noblewillassa from '../assets/noblewillassa/noblewillassa.webp';
 
 export interface Project {
   id: string;
@@ -38,7 +46,7 @@ const projects: Project[] = [
     city: 'Mohali',
     type: 'Mixed Development',
     status: 'Upcoming',
-    image: "https://creatifyindia.com/thelegacyrealty/wp-content/uploads/2024/11/gallery_1670580254574.jpg",
+    image: mdbmain,
     description: 'A premium township blending classical design influences with modern infrastructure in the heart of Mohali.',
     amenities: [
       'Gated & Secured Society',
@@ -67,6 +75,7 @@ const projects: Project[] = [
     location: 'Mohali',
     city: 'Mohali',
     type: 'Residential',
+    image: greenwood,
     status: 'Under Construction',
     description: '3 BHK floors in a gated township featuring contemporary design and extensive green spaces.',
     amenities: [
@@ -98,6 +107,7 @@ const projects: Project[] = [
     city: 'Mohali',
     type: 'Residential',
     status: 'Under Construction',
+    image: onegroup,
     description: 'Luxurious 3 BHK apartments with designer finishes, biometric security door, and ambient false ceilings.',
     amenities: [
       'Designer Main Entrance Door with Biometric Security',
@@ -148,6 +158,7 @@ const projects: Project[] = [
     location: 'Mohali',
     city: 'Mohali',
     type: 'Residential',
+    image: noblewillassa,
     status: 'Ready to Move',
     description: 'Contemporary apartments with premium interiors, landscaped gardens, and 24×7 security in sector 99.',
     amenities: [
@@ -166,6 +177,7 @@ const projects: Project[] = [
     location: 'Mohali',
     city: 'Mohali',
     type: 'Residential',
+    image: medallion,
     status: 'Ready to Move',
     description: 'Corner flats in every tower with double-height podium parking, designed for abundant light and ventilation.',
     amenities: [
@@ -186,6 +198,7 @@ const projects: Project[] = [
     location: 'Chandigarh',
     city: 'Chandigarh',
     type: 'Mixed Development',
+    image: wellnesscity,
     status: 'Ready to Move',
     description: 'Expansive township with luxury apartments and town-homes, part of a multi-phase Bollywood-branded development.',
     amenities: [
@@ -221,6 +234,7 @@ const projects: Project[] = [
     location: 'New Chandigarh',
     city: 'New Chandigarh',
     type: 'Residential',
+    image: gardenia,
     status: 'Upcoming',
     description: 'Luxury low-rise residences set among lush landscaping and boutique-style living in New Chandigarh’s eco-zone.',
     amenities: [
@@ -256,6 +270,7 @@ const projects: Project[] = [
     location: 'New Chandigarh',
     city: 'New Chandigarh',
     type: 'Mixed Development',
+    image: "https://creatifyindia.com/thelegacyrealty/wp-content/uploads/2024/11/gallery_1670580254574.jpg",
     status: 'Ready to Move',
     description: 'Integrated eco-township featuring residential, retail, and recreational zones with extensive club and spa facilities.',
     amenities: [
@@ -302,6 +317,7 @@ const projects: Project[] = [
     location: 'Mohali',
     city: 'Mohali',
     type: 'Residential',
+    image: mayfields,
     status: 'Upcoming',
     description: 'Elegant township expansion featuring boutique-style residences, green spaces, and neighborhood retail in Phase IV.',
     amenities: ['Boutique Retail', 'Green Belts', 'Township Roads', 'Community Center'],
