@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 
 @plugin "tailwindcss-animate";
 
@@ -58,14 +59,14 @@ scroll-snap-type: y;
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
-  --foreground: #e1b382;
+  --foreground: #081218;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.141 0.005 285.823);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.141 0.005 285.823);
-  --primary: #233d4d;
+  --primary: #ffffff;
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: #e0aa3e;
+  --secondary: #233d4d;
   --secondary-foreground: oklch(0.21 0.006 285.885);
   --muted: oklch(0.967 0.001 286.375);
   --muted-foreground: oklch(0.552 0.016 285.938);

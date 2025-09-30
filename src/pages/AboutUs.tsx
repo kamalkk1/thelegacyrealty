@@ -37,7 +37,7 @@ const AboutUs = () => {
             Your Trusted Realty Partner
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6 font-poppins">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6 font-poiret">
             Building <span className="text-primary">Legacies</span>,<br /> One
             Property at a Time
           </h2>

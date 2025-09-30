@@ -15,7 +15,7 @@ const InstagramSection = () => {
     <section className="py-16 lg:py-24 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-bold font-poppins text-gray-900">
+          <h2 className="text-3xl lg:text-4xl font-bold font-poiret text-gray-900">
             Follow Us on Instagram
           </h2>
           <p className="mt-3 text-lg text-gray-600 font-inter">
@@ -27,7 +27,7 @@ const InstagramSection = () => {
           {shorts.map((url, index) => (
             <Card
               key={index}
-              className="shadow-md hover:shadow-lg transition-all rounded-xl overflow-hidden"
+              className="relative before:absolute before:inset-0 before:bg-white before:-z-[1] bg-white/100 backdrop-blur-xl shadow-md hover:shadow-lg transition-all rounded-xl overflow-hidden"
             >
               <CardContent className="p-0">
                 <div className="aspect-[9/16] w-full overflow-hidden">

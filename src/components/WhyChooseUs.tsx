@@ -12,28 +12,28 @@ const WhyChooseUs = () => {
     {
       id: "item-1",
       title: "Transparent Pricing",
-      icon: <DollarSign className="w-5 h-5 text-primary" />,
+      icon: <DollarSign className="w-5 h-5 text-secondary" />,
       content:
         "We provide clear and upfront pricing so you know exactly what to expect — no hidden costs.",
     },
     {
       id: "item-2",
       title: "Experienced and Skilled Team",
-      icon: <Briefcase className="w-5 h-5 text-primary" />,
+      icon: <Briefcase className="w-5 h-5 text-secondary" />,
       content:
         "Our dedicated team of real estate professionals brings years of expertise to help you make the right decisions.",
     },
     {
       id: "item-3",
       title: "Reliable and Trustworthy",
-      icon: <BadgeCheck className="w-5 h-5 text-primary" />,
+      icon: <BadgeCheck className="w-5 h-5 text-secondary" />,
       content:
         "We value integrity and trust, ensuring all transactions and advice are in your best interest.",
     },
     {
       id: "item-4",
       title: "Customer-Focused Approach",
-      icon: <Users className="w-5 h-5 text-primary" />,
+      icon: <Users className="w-5 h-5 text-secondary" />,
       content:
         "We put your needs first, offering personalized solutions tailored to your real estate goals.",
     },
@@ -49,12 +49,12 @@ const WhyChooseUs = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <div className="mb-4 inline-block bg-primary/10 px-4 py-1 rounded-full text-sm font-medium text-primary">
+          <div className="mb-4 inline-block bg-primary/10 px-4 py-1 rounded-full text-sm font-medium text-secondary">
             Benefits
           </div>
 
-          <h2 className="text-3xl text-secondary sm:text-4xl lg:text-5xl font-bold mb-4 font-poppins">
-            Why <span className="text-primary italic">Choose</span> Us?
+          <h2 className="text-3xl text-secondary sm:text-4xl lg:text-5xl font-bold mb-4 font-poiret">
+            Why <span className="text-foreground italic">Choose</span> Us?
           </h2>
 
           <p className="text-gray-600 font-inter mb-8 max-w-xl">
@@ -71,7 +71,7 @@ const WhyChooseUs = () => {
                 value={benefit.id}
                 className="border rounded-lg px-4"
               >
-                <AccordionTrigger className="flex items-center gap-3 text-left text-lg font-medium text-primary">
+                <AccordionTrigger className="flex items-center gap-3 text-left text-lg font-medium text-secondary">
                   <span className="p-2 rounded-full bg-gray-100 shrink-0">
                     {benefit.icon}
                   </span>
@@ -111,7 +111,7 @@ const WhyChooseUs = () => {
 
           {/* Floating Stat */}
           <div className="absolute -bottom-8 -right-8 bg-white shadow-lg rounded-full px-6 py-4 text-center">
-            <div className="text-primary text-3xl font-bold">10y+</div>
+            <div className="text-secondary text-3xl font-bold">10y+</div>
             <p className="text-gray-600 text-sm">Experience</p>
           </div>
         </motion.div>

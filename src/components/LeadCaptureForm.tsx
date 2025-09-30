@@ -69,7 +69,7 @@ const LeadCaptureForm = ({ project }: LeadCaptureFormProps) => {
           <div className="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
             <CheckCircle className="h-8 w-8 text-green-600" />
           </div>
-          <h3 className="font-poppins font-semibold text-xl text-gray-900 mb-2">
+          <h3 className="font-poiret font-semibold text-xl text-gray-900 mb-2">
             Thank You!
           </h3>
           <p className="font-inter text-gray-600 mb-6">
@@ -90,9 +90,9 @@ const LeadCaptureForm = ({ project }: LeadCaptureFormProps) => {
   }
 
   return (
-    <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+    <div className="relative before:absolute before:inset-0 before:bg-white before:-z-[1] bg-white/100 backdrop-blur-xl rounded-2xl shadow-xl p-8 border border-gray-100">
       <div className="mb-6">
-        <h2 className="font-poppins font-bold text-2xl text-gray-900 mb-2">
+        <h2 className="font-poiret font-bold text-2xl text-gray-900 mb-2">
           Book a Free Consultation
         </h2>
         <p className="font-inter text-gray-600">
@@ -187,7 +187,7 @@ const LeadCaptureForm = ({ project }: LeadCaptureFormProps) => {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full bg-primary hover:bg-foreground disabled:bg-blue-300 text-white font-semibold py-4 px-6 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 disabled:transform-none"
+          className="w-full bg-secondary hover:bg-foreground disabled:bg-blue-300 text-white font-semibold py-4 px-6 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 disabled:transform-none"
         >
           {isSubmitting ? (
             <>

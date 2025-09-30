@@ -38,17 +38,17 @@ const CitySection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl lg:text-4xl font-bold font-poppins text-gray-900">
+          <h2 className="text-3xl lg:text-4xl font-bold font-poiret text-gray-900">
             EXPLORE THE CITIES
           </h2>
-          <p className="mt-3 text-lg text-gray-600 font-inter">
+          <p className="mt-3 text-lg text-gray-600 font-inter  font-poiret">
             Find Your Properties
           </p>
         </motion.div>
-
         {/* Animated Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {cards.map((card, index) => {
+            
             // Decide animation direction:
             let direction: "left" | "right" | "center";
             if (index % 3 === 0) direction = "left";
@@ -64,32 +64,30 @@ const CitySection = () => {
                   viewport={{ once: true, amount: 0.3 }}
                   transition={{ duration: 0.7, delay: index * 0.2, ease: "easeOut" }}
                 >
-                  <Card className="border-0 bg-gradient-to-br from-white to-secondary hover:from-foreground hover:to-secondary relative group shadow-md hover:shadow-xl transition-all rounded-[90px] overflow-hidden cursor-pointer">
-                    <CardContent className="px-0">
-                      {/* Image */}
-                      <div className="aspect-[6/8] w-full overflow-hidden">
-                        <img
-                          src={card.src}
-                          alt={card.title}
-                          className="w-full h-full object-fill transform transition-transform duration-700 group-hover:scale-110"
-                        />
-                      </div>
+                  <div className="space-y-4">
+                    <h3 className="text-3xl md:text-4xl font-bold text-center font-poiret bg-gradient-to-r from-secondary to-secondary bg-clip-text text-transparent">
+                      {card.title}
+                    </h3>
+                    <Card className="border-0 bg-gradient-to-br from-white to-secondary hover:from-foreground hover:to-secondary relative group shadow-md hover:shadow-xl transition-all rounded-[90px] overflow-hidden cursor-pointer">
+                      <CardContent className="px-0">
+                        {/* Image */}
+                        <div className="aspect-[6/8] w-full overflow-hidden">
+                          <img
+                            src={card.src}
+                            alt={card.title}
+                            className="w-full h-full object-fill transform transition-transform duration-700 group-hover:scale-110"
+                          />
+                        </div>
 
-                      {/* Overlay Title */}
-                      <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-primary to-transparent p-4 translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-in-out">
-                        <h3 className="text-white text-2xl font-semibold font-poppins text-center">
-                          {card.title}
-                        </h3>
-                      </div>
-
-                      {/* Explore Button */}
-                      <div className="absolute text-nowrap top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <span className="bg-white text-primary px-6 py-2 rounded-full font-semibold shadow-lg group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                          Explore {card.title}
-                        </span>
-                      </div>
-                    </CardContent>
-                  </Card>
+                        {/* Explore Button */}
+                        <div className="absolute text-nowrap top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          <span className="bg-white text-secondary px-6 py-2 rounded-full font-semibold shadow-lg group-hover:bg-secondary group-hover:text-white transition-colors duration-300">
+                            Explore {card.title}
+                          </span>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </div>
                 </motion.div>
               </Link>
             );

@@ -19,7 +19,7 @@ const TestimonialsSection = () => {
     <section className="py-16 lg:py-24 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="font-poppins font-bold text-3xl lg:text-4xl text-gray-900 mb-4">
+          <h2 className="font-poiret font-bold text-3xl lg:text-4xl text-gray-900 mb-4">
             What Our Clients Say
           </h2>
           <p className="font-inter text-xl text-gray-600 max-w-2xl mx-auto">
@@ -50,7 +50,7 @@ const TestimonialsSection = () => {
               </p>
 
               <div>
-                <p className="font-poppins font-semibold text-gray-900">
+                <p className="font-poiret font-semibold text-gray-900">
                   {testimonial.name}
                 </p>
                 <p className="font-inter text-gray-600">

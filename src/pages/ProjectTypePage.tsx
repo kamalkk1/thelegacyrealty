@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { Card, CardContent } from "../components/ui/card";
-import { MapPin, Clock } from "lucide-react";
+import { MapPin, MapIcon } from "lucide-react";
 import { motion } from "framer-motion";
 import { useProjects } from '../context/ProjectContext';
 import { Link } from 'react-router-dom';
@@ -17,13 +17,13 @@ const ProjectTypePage = () => {
   const properties = getProjectsByType(formattedType || '');
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-foreground">
       {/* Hero Section */}
       <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="relative py-20 bg-primary text-white"
+        className="relative py-20 bg-foreground text-white"
       >
         <div className="container mx-auto px-4">
           <motion.div
@@ -32,7 +32,7 @@ const ProjectTypePage = () => {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="text-center"
           >
-            <h1 className="text-4xl lg:text-5xl font-bold font-poppins mb-6">
+            <h1 className="text-4xl lg:text-5xl font-bold font-poiret mb-6">
               {formattedType} Projects
             </h1>
             <p className="text-xl font-inter text-gray-200 max-w-2xl mx-auto">
@@ -55,7 +55,7 @@ const ProjectTypePage = () => {
                 transition={{ duration: 0.8 }}
               >
                 <Link to={`/project/${property.slug}`}>
-                  <Card className="overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
+                  <Card className="overflow-hidden relative before:absolute before:inset-0 before:bg-white before:-z-[1] bg-white/100 backdrop-blur-xl border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
                     <div className="relative h-64 overflow-hidden">
                       <img
                         src={property.image}
@@ -63,25 +63,22 @@ const ProjectTypePage = () => {
                         className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                       />
                       <div className="absolute top-4 right-4">
-                        <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-                          property.status === 'Ready to Move' ? 'bg-green-100 text-green-800' : 
-                          property.status === 'Under Construction' ? 'bg-blue-100 text-blue-800' :
-                          property.status === 'Possession < 1 Year' ? 'bg-purple-100 text-purple-800' :
-                          'bg-orange-100 text-orange-800'
-                        }`}>
-                          <Clock className="w-4 h-4 inline mr-1" />
-                          {property.status}
-                        </span>
+                       <span className='px-3 py-1 rounded-full text-sm font-medium 
+                                                 bg-orange-100 text-orange-800'
+                                               >
+                                                 <MapIcon className="w-4 h-4 inline mr-1" />
+                                                 {property.location}
+                                               </span>
                       </div>
                     </div>
                     <CardContent className="p-6">
-                      <h3 className="text-xl font-semibold font-poppins mb-2">{property.name}</h3>
+                      <h3 className="text-xl font-semibold font-poiret mb-2">{property.name}</h3>
                       <p className="text-gray-600 font-inter mb-2">{property.type}</p>
                       <div className="flex items-center text-sm text-gray-500">
                         <MapPin className="w-4 h-4 mr-1" />
                         <span>{property.location}</span>
                       </div>
-                      <div className="w-full mt-4 bg-primary text-white py-2 px-4 rounded-lg hover:bg-primary/90 transition-colors font-medium text-center">
+                      <div className="w-full mt-4 bg-primary flex text-foreground py-2 px-4 rounded-lg hover:bg-primary/90 transition-colors font-medium text-center">
                         View Details
                       </div>
                     </CardContent>

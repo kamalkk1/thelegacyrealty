@@ -22,8 +22,8 @@ const OurStory = () => {
           </div>
 
           {/* Title */}
-          <h2 className="text-3xl sm:text-4xl text-foreground lg:text-5xl font-bold leading-tight mb-6 font-poppins">
-            Our <span className="text-primary">Story</span>
+          <h2 className="text-3xl sm:text-4xl text-foreground lg:text-5xl font-bold leading-tight mb-6 font-poiret">
+            Our <span className="text-secondary">Story</span>
           </h2>
 
           {/* Description */}
@@ -41,10 +41,10 @@ const OurStory = () => {
             <Card className="bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition">
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="p-2 rounded-full bg-primary/10 text-primary">
+                  <span className="p-2 rounded-full bg-primary/10 text-secondary">
                     <Building2 className="h-5 w-5" />
                   </span>
-                  <h3 className="font-semibold text-lg font-poppins">Our Mission</h3>
+                  <h3 className="font-semibold text-lg font-poiret">Our Mission</h3>
                 </div>
                 <p className="text-sm text-gray-600 font-inter">
                   To provide premium residential, commercial, and plot options
@@ -57,10 +57,10 @@ const OurStory = () => {
             <Card className="bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition">
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="p-2 rounded-full bg-primary/10 text-primary">
+                  <span className="p-2 rounded-full bg-primary/10 text-secondary">
                     <Gem className="h-5 w-5" />
                   </span>
-                  <h3 className="font-semibold text-lg font-poppins">Our Values</h3>
+                  <h3 className="font-semibold text-lg font-poiret">Our Values</h3>
                 </div>
                 <p className="text-sm text-gray-600 font-inter">
                   Integrity, transparency, and customer-first service guide every

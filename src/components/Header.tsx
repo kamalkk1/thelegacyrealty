@@ -12,7 +12,7 @@ import {
   Instagram,
   ChevronDown,
 } from "lucide-react";
-import logo from "../assets/LOGO-1.png";
+import logo from "../assets/tlrlogo.webp";
 
 import {
   DropdownMenu,
@@ -34,7 +34,7 @@ export default function Header() {
 
   const projectTypes = [
     { name: "Residential", path: "/projects/residential" },
-    { name: "Mixed Development", path: "/projects/mixed-development" },
+    { name: "Commercial", path: "/projects/commercial" },
   ];
   const subItemVariants = {
     hidden: { opacity: 0, y: -8 },
@@ -57,90 +57,42 @@ export default function Header() {
 
   return (
     <>
-      <div className="w-full bg-black sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-4 lg:px-4">
-          <div className="grid grid-cols-2 grid-rows-2 gap-1 py-3 md:flex md:items-center md:justify-between">
-            {/* Cell 1: Email */}
-            <div className="flex text-nowrap items-center gap-1 text-white text-sm md:text-base font-medium">
-              <Mail className="w-5 h-5 text-orange-400 " />
-              <a
-                href="mailto:info@legacyrealty.in"
-                className="break-all hover:text-orange-300 transition-colors text-[10px] sm:text-sm"
-              >
-                info@legacyrealty.in
-              </a>
-            </div>
-
-            {/* Cell 2: Address */}
-            <div className="flex items-center text-nowrap gap-2 text-white text-[12px] md:text-base font-medium">
-              <MapPin className="w-5 h-5 text-orange-400" />
-              <span className="leading-tight text-[10px] sm:text-sm">
-                SCO 275, Sector 118, Mohali
-              </span>
-            </div>
-
-            {/* Cell 3: Social Icons */}
-            <div className="flex items-center gap-2 text-white/90">
-              <a
-                href="#"
-                className="hover:text-orange-300"
-                aria-label="Facebook"
-              >
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className="hover:text-orange-300"
-                aria-label="Twitter"
-              >
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className="hover:text-orange-300"
-                aria-label="Instagram"
-              >
-                <Instagram className="w-5 h-5" />
-              </a>
-            </div>
-
-            {/* Cell 4: Contact Button */}
-            <span className="w-full flex flex-row justify-end">
-              <a
-                href="tel:+919888247787"
-                className="text-[10px] flex  items-end bg-gradient-to-br from-secondary to-foreground hover:from-foreground hover:to-secondary text-primary font-semibold px-3 py-2 rounded-xl hover:opacity-90 transition"
-              >
-                <Phone className="w-4 h-4 mr-2" />
-                +91 98882 47787
-              </a>
-            </span>
+      <header className="bg-foreground sticky top-0 z-50 shadow-sm py-4">
+        <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 -z-10">
+          <div className="w-full">
+            <div className="h-[2px] bg-white origin-left animate-grow"></div>
+          </div>
+          <div className="w-full">
+            <div className="h-[2px] bg-white origin-left animate-grow"></div>
           </div>
         </div>
-      </div>
-      <header className="bg-primary sticky top-0 z-50 shadow-sm py-4">
-        <div className="container sticky mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center">
+        <div className="container sticky mx-auto px-4 sm:px-6 lg:px-8 ">
+          <div
+            className="flex justify-between  font-poiret items-center px-6 py-3 bg-white/90 backdrop-blur-lg border border-white/20 shadow-lg rounded-xl
+           transition"
+          >
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2">
               <img src={logo} alt="The Legacy Realty" className="h-14 w-auto" />
             </Link>
 
             {/* Desktop Nav */}
-            <nav className="hidden md:flex items-center space-x-8 text-lg">
+            <nav className="hidden md:flex items-center space-x-8 text-lg  font-weight-700">
               <NavLink to="/">Home</NavLink>
               <NavLink to="/aboutus">About Us</NavLink>
 
               {/* ✅ Cities Dropdown */}
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <button className="flex items-center text-secondary hover:text-white transition-colors">
-                    Cities <ChevronDown className="ml-1 w-4 h-4" />
+                  <button className="flex items-center text-secondary  transition-colors">
+                    <span className="font-extrabold">Cities</span>{" "}
+                    <ChevronDown className="ml-1 w-4 h-4" />
                   </button>
                 </DropdownMenuTrigger>
 
                 <DropdownMenuContent
                   sideOffset={8}
-                  className="w-48 bg-white rounded-lg shadow-xl p-1 overflow-hidden"
+                  className="w-48 bg-white text-poiret rounded-lg shadow-xl p-1 overflow-hidden"
                   asChild
                 >
                   <motion.div
@@ -153,7 +105,7 @@ export default function Header() {
                       <DropdownMenuItem asChild key={city.path}>
                         <Link
                           to={city.path}
-                          className="block px-4 py-2 text-gray-800 bg-gradient-to-br from-white to-secondary hover:from-foreground hover:to-secondary rounded-md"
+                          className="block px-4 py-2 text-gray-800  rounded-md"
                         >
                           {city.name}
                         </Link>
@@ -166,8 +118,9 @@ export default function Header() {
               {/* ✅ Projects Dropdown */}
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <button className="flex items-center text-secondary hover:text-white transition-colors">
-                    Projects <ChevronDown className="ml-1 w-4 h-4" />
+                  <button className="flex items-center text-secondary  transition-colors">
+                    <span className="font-extrabold">Projects</span>{" "}
+                    <ChevronDown className="ml-1 w-4 h-4" />
                   </button>
                 </DropdownMenuTrigger>
 
@@ -186,7 +139,7 @@ export default function Header() {
                       <DropdownMenuItem asChild key={type.path}>
                         <Link
                           to={type.path}
-                          className="block px-4 py-2 text-gray-800 bg-gradient-to-br from-white to-foreground hover:from-foreground hover:to-secondary rounded-md"
+                          className="block px-4 py-2 text-gray-800 rounded-md"
                         >
                           {type.name}
                         </Link>
@@ -198,20 +151,20 @@ export default function Header() {
 
               <a
                 href="#contact"
-                className="text-secondary hover:text-white transition-colors"
+                className="text-secondary font-extrabold hover:text-secondary transition-colors"
               >
                 Contact
               </a>
             </nav>
 
             {/* 📞 Call Button (Desktop) */}
-            <a
+            {/* <a
               href="tel:+919888247787"
               className="hidden md:flex items-center bg-gradient-to-br from-secondary to-foreground hover:from-foreground hover:to-secondary text-primary font-semibold px-4 py-2 rounded-xl hover:opacity-90 transition"
             >
               <Phone className="w-5 h-5 mr-2" />
               +91 98882 47787
-            </a>
+            </a> */}
 
             {/* Mobile Menu Button */}
             <button
@@ -249,7 +202,7 @@ export default function Header() {
                   transition={{ type: "spring", stiffness: 320, damping: 30 }}
                   className="fixed top-0 right-0 w-80 max-w-[85%] h-full
                        bg-gradient-to-br from-gray-900/90 to-gray-800/90
-                       backdrop-blur-xl shadow-2xl z-50 flex flex-col justify-between p-6 text-white"
+                       backdrop-blur-xl shadow-2xl z-50 flex flex-col font-poiret justify-between p-6 text-white"
                 >
                   {/* Close Button */}
                   <button
@@ -367,15 +320,18 @@ export default function Header() {
                     <div className="flex items-center gap-3 text-sm">
                       <Mail className="w-5 h-5 text-secondary" />
                       <a
-                        href="mailto:info@thelegacyrealty.in"
+                        href="mailto:info.thelegacyrealty@gmail.com"
                         className="hover:text-secondary transition"
                       >
-                        info@thelegacyrealty.in
+                        info.thelegacyrealty@gmail.com
                       </a>
                     </div>
                     <div className="flex items-center gap-3 text-sm">
                       <MapPin className="w-5 h-5 text-secondary" />
-                      <span>2nd floor, sco 275, Sector 118, Sahibzada Ajit Singh Nagar, Punjab</span>
+                      <span>
+                        2nd floor, sco 275, Sector 118, Sahibzada Ajit Singh
+                        Nagar, Punjab
+                      </span>
                     </div>
 
                     <div className="flex gap-4 pt-2">
@@ -396,7 +352,7 @@ export default function Header() {
                     href="tel:+919888247787"
                     className="mt-8 inline-flex items-center justify-center w-full
                          bg-secondary text-primary font-semibold py-3 rounded-lg
-                         hover:bg-primary hover:text-white transition"
+                         hover:bg-secondary hover:text-white transition"
                   >
                     <Phone className="w-5 h-5 mr-2" />
                     Contact
@@ -415,7 +371,8 @@ export default function Header() {
             initial={{ y: 100 }}
             animate={{ y: 0 }}
             exit={{ y: 100 }}
-            className="fixed bottom-0 left-0 right-0 h-16 bg-gradient-to-br from-primary to-foreground shadow-lg md:hidden z-50"
+            className="fixed bottom-0 left-0 right-0 h-16 bg-white/20 backdrop-blur-lg border border-white/20 shadow-lg rounded-xl
+           hover:bg-white/30 transition md:hidden z-50"
           >
             <div className="flex items-center justify-between px-4 h-full">
               <Link to="/" className="flex items-center space-x-2">
@@ -429,7 +386,7 @@ export default function Header() {
                 onClick={() => setIsMenuOpen(true)}
                 className="p-2 hover:bg-secondary/20 rounded-full transition-colors"
               >
-                <Menu className="w-6 h-6 text-white" />
+                <Menu className="w-6 h-6 text-foreground" />
               </button>
             </div>
           </motion.div>
@@ -444,9 +401,9 @@ function NavLink({ to, children }: { to: string; children: React.ReactNode }) {
   return (
     <Link
       to={to}
-      className="text-secondary hover:text-white transition-colors duration-200"
+      className="text-secondary font-[800] hover:text-secondary transition-colors duration-200"
     >
-      {children}
+      <span className="font-extrabold">{children}</span>
     </Link>
   );
 }

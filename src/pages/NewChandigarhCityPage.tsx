@@ -1,5 +1,5 @@
 import { Card, CardContent } from "../components/ui/card";
-import { MapPin, Zap, Leaf, GraduationCap, Clock } from "lucide-react";
+import { MapPin, Zap, Leaf, GraduationCap, MapIcon } from "lucide-react";
 import { motion } from "framer-motion";
 import { useProjects } from "../context/ProjectContext";
 import { Link } from "react-router-dom";
@@ -27,18 +27,18 @@ const NewChandigarhCityPage = () => {
             // allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            className="opacity-30"
+            // className="opacity-30"
           />
         </div>
         
         {/* Hero Content */}
-        <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+        <div className="relative z-10 text-center text-secondary px-4 max-w-4xl mx-auto">
           <motion.div
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            <h1 className="text-6xl lg:text-8xl font-bold font-poppins mb-6">
+            <h1 className="text-6xl lg:text-8xl font-bold font-poiret mb-6">
               NEW CHANDIGARH
             </h1>
             <p className="text-xl lg:text-2xl font-inter mb-8">
@@ -46,7 +46,7 @@ const NewChandigarhCityPage = () => {
             </p>
             <div className="flex items-center justify-center gap-2 text-lg">
               <MapPin className="w-6 h-6" />
-              <span>30°48'N 76°43'E</span>
+              {/* <span>30°48'N 76°43'E</span> */}
             </div>
           </motion.div>
         </div>
@@ -62,7 +62,7 @@ const NewChandigarhCityPage = () => {
           className="grid lg:grid-cols-2 gap-12 items-center mb-20"
         >
           <div>
-            <h2 className="text-4xl lg:text-5xl font-bold font-poppins text-gray-900 mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold font-poiret text-gray-900 mb-6">
               The Extension of Excellence
             </h2>
             <p className="text-lg text-gray-700 font-inter leading-relaxed mb-6">
@@ -89,30 +89,30 @@ const NewChandigarhCityPage = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="grid md:grid-cols-3 gap-8 mb-20"
         >
-          <Card className="p-8 border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+          <Card className="p-8 border-0 relative before:absolute before:inset-0 before:bg-white before:-z-[1] bg-white/100 backdrop-blur-xl shadow-lg hover:shadow-xl transition-all duration-300">
             <CardContent className="text-center">
               <Zap className="w-12 h-12 text-primary mx-auto mb-4" />
-              <h3 className="text-xl font-semibold font-poppins mb-3">Smart Infrastructure</h3>
+              <h3 className="text-xl font-semibold font-poiret mb-3">Smart Infrastructure</h3>
               <p className="text-gray-600 font-inter">
                 Digital land surveying completed in 2018, featuring smart utilities, IoT integration, and advanced urban planning for sustainable living.
               </p>
             </CardContent>
           </Card>
           
-          <Card className="p-8 border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+          <Card className="p-8 border-0 relative before:absolute before:inset-0 before:bg-white before:-z-[1] bg-white/100 backdrop-blur-xl shadow-lg hover:shadow-xl transition-all duration-300">
             <CardContent className="text-center">
               <GraduationCap className="w-12 h-12 text-primary mx-auto mb-4" />
-              <h3 className="text-xl font-semibold font-poppins mb-3">Education Hub</h3>
+              <h3 className="text-xl font-semibold font-poiret mb-3">Education Hub</h3>
               <p className="text-gray-600 font-inter">
                 Education City spanning 1,700 acres houses universities and institutes, including Institute of Technology and Future Trends College.
               </p>
             </CardContent>
           </Card>
 
-          <Card className="p-8 border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+          <Card className="p-8 border-0 relative before:absolute before:inset-0 before:bg-white before:-z-[1] bg-white/100 backdrop-blur-xl shadow-lg hover:shadow-xl transition-all duration-300">
             <CardContent className="text-center">
               <Leaf className="w-12 h-12 text-primary mx-auto mb-4" />
-              <h3 className="text-xl font-semibold font-poppins mb-3">Eco Living</h3>
+              <h3 className="text-xl font-semibold font-poiret mb-3">Eco Living</h3>
               <p className="text-gray-600 font-inter">
                 Eco City phases embrace green building standards with organic farms, leopard safari at Siswan forest, and sustainable development practices.
               </p>
@@ -131,7 +131,7 @@ const NewChandigarhCityPage = () => {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl lg:text-5xl font-bold font-poppins text-gray-900 mb-4">
+            <h2 className="text-4xl lg:text-5xl font-bold font-poiret text-gray-900 mb-4">
               Future-Ready Properties in New Chandigarh
             </h2>
             <p className="text-lg text-gray-600 font-inter max-w-2xl mx-auto">
@@ -149,7 +149,7 @@ const NewChandigarhCityPage = () => {
                 transition={{ duration: 0.8 }}
               >
                 <Link to={`/project/${property.slug}`}>
-                  <Card className="overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
+                  <Card className="overflow-hidden relative before:absolute before:inset-0 before:bg-white before:-z-[1] bg-white/100 backdrop-blur-xl border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
                     <div className="relative h-64 overflow-hidden">
                       <img
                         src={property.image}
@@ -157,19 +157,16 @@ const NewChandigarhCityPage = () => {
                         className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                       />
                       <div className="absolute top-4 right-4">
-                        <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-                          property.status === 'Ready to Move' ? 'bg-green-100 text-green-800' : 
-                          property.status === 'Under Construction' ? 'bg-blue-100 text-blue-800' :
-                          property.status === 'Possession < 1 Year' ? 'bg-purple-100 text-purple-800' :
-                          'bg-orange-100 text-orange-800'
-                        }`}>
-                          <Clock className="w-4 h-4 inline mr-1" />
-                          {property.status}
+                         <span className='px-3 py-1 rounded-full text-sm font-medium 
+                          bg-orange-100 text-orange-800'
+                        >
+                          <MapIcon className="w-4 h-4 inline mr-1" />
+                          {property.location}
                         </span>
                       </div>
                     </div>
                     <CardContent className="p-6">
-                      <h3 className="text-xl font-semibold font-poppins mb-2">{property.name}</h3>
+                      <h3 className="text-xl font-semibold font-poiret mb-2">{property.name}</h3>
                       <p className="text-gray-600 font-inter mb-2">{property.type}</p>
                       <div className="flex items-center text-sm text-gray-500">
                         <MapPin className="w-4 h-4 mr-1" />
