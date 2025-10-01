@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import chandigarh1 from "../assets/cities/chandigarhplan1.webp";
 import { useProjects } from "../context/ProjectContext";
 import { Link } from "react-router-dom";
-
+import chandigarhcity from "../assets/chandigarhcitypage.jpg";
 const ChandigarhCityPage = () => {
   const { getProjectsByCity } = useProjects();
   const properties = getProjectsByCity('Chandigarh');
@@ -75,7 +75,7 @@ const ChandigarhCityPage = () => {
           </div>
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80"
+              src={chandigarhcity}
               alt="Chandigarh Architecture"
               className="rounded-2xl shadow-2xl"
             />

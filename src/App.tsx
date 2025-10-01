@@ -3,6 +3,8 @@ import HomePage from "./pages/HomePage";
 import ProjectDetailPage from "./pages/ProjectDetailPage";
 import { ProjectProvider } from "./context/ProjectContext";
 import AboutUs from "./pages/AboutUs";
+import ContactUs from "./pages/ContactUs";
+
 import Layout from "./layout/Layout";
 import MohaliCityPage from "./pages/MohaliCityPage";
 import NewChandigarhCityPage from "./pages/NewChandigarhCityPage";
@@ -18,6 +20,7 @@ function App() {
               <Route path="/" element={<HomePage />} />
               <Route path="/projects" element={<HomePage />} />
               <Route path="/aboutus" element={<AboutUs />} />
+              <Route path="/contact-us" element={<ContactUs />} />
               <Route
                 path="/project/:projectName"
                 element={<ProjectDetailPage />}

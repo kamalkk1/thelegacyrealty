@@ -119,7 +119,7 @@ const BrochureModal: React.FC<BrochureModalProps> = ({ project, isOpen, onClose 
                         id="name"
                         {...register("name", { required: true })}
                         placeholder="Enter your full name"
-                        className="mt-1"
+                        className="mt-1 text-secondary"
                       />
                     </div>
 
@@ -132,7 +132,7 @@ const BrochureModal: React.FC<BrochureModalProps> = ({ project, isOpen, onClose 
                         type="tel"
                         {...register("phone", { required: true })}
                         placeholder="+91 98882 47787"
-                        className="mt-1"
+                        className="mt-1 text-secondary"
                       />
                     </div>
 
@@ -145,7 +145,7 @@ const BrochureModal: React.FC<BrochureModalProps> = ({ project, isOpen, onClose 
                         type="email"
                         {...register("email")}
                         placeholder="your@email.com"
-                        className="mt-1"
+                        className="mt-1 text-secondary"
                       />
                     </div>
 

@@ -119,7 +119,7 @@ const CTAPopup = () => {
                         {...register("name", { required: true })}
                         placeholder="Enter your name"
                         required
-                        className="mt-1"
+                        className="mt-1 text-secondary"
                       />
                     </div>
 
@@ -131,7 +131,7 @@ const CTAPopup = () => {
                         {...register("phone", { required: true })}
                         placeholder="+91 98882 47787"
                         required
-                        className="mt-1"
+                        className="mt-1 text-secondary"
                       />
                     </div>
 
@@ -142,7 +142,7 @@ const CTAPopup = () => {
                         type="email"
                         {...register("email")}
                         placeholder="your@email.com"
-                        className="mt-1"
+                        className="mt-1 text-secondary"
                       />
                     </div>
 

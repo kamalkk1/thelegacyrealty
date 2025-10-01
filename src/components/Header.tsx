@@ -105,7 +105,7 @@ export default function Header() {
                       <DropdownMenuItem asChild key={city.path}>
                         <Link
                           to={city.path}
-                          className="block px-4 py-2 text-gray-800  rounded-md"
+                          className="block px-4 py-2 text-gray-800 text-poiret rounded-md"
                         >
                           {city.name}
                         </Link>
@@ -149,12 +149,12 @@ export default function Header() {
                 </DropdownMenuContent>
               </DropdownMenu>
 
-              <a
-                href="#contact"
-                className="text-secondary font-extrabold hover:text-secondary transition-colors"
-              >
-                Contact
-              </a>
+                <Link
+    to="/contact-us"
+    className="text-secondary font-extrabold hover:text-secondary transition-colors"
+  >
+    Contact
+  </Link>
             </nav>
 
             {/* 📞 Call Button (Desktop) */}

@@ -3,6 +3,7 @@ import { MapPin, Building2, Home, MapIcon, TrendingUp } from "lucide-react";
 import { motion } from "framer-motion";
 import { useProjects } from "../context/ProjectContext";
 import { Link } from "react-router-dom";
+import mohalicity from "../assets/mohalicitypage.jpg";
 const MohaliCityPage = () => {
   const { getProjectsByCity } = useProjects();
   const properties = getProjectsByCity("Mohali");
@@ -77,7 +78,7 @@ const MohaliCityPage = () => {
           </div>
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=800&q=80"
+              src={mohalicity}
               alt="Mohali Cityscape"
               className="rounded-2xl shadow-2xl"
             />

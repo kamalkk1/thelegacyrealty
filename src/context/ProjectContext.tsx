@@ -25,6 +25,44 @@ import amariMainImage from "../assets/amarivintage/banner-imagee-low-two.webp";
 import mdbfloorplan from "../assets/mdblutyens/MDB-THE-LUTYENS-MOHALI-17.webp";
 import mdbamenity from "../assets/mdblutyens/MDB-THE-LUTYENS-MOHALI-9.webp";
 import mdblandscape from "../assets/mdblutyens/MDB-THE-LUTYENS-MOHALI-1.webp";
+import greenwoods1 from "../assets/greenwoods/greenwoodf1.webp";
+import greenwood2 from "../assets/greenwoods/greenwoodf2.webp";
+import greenwoods3 from "../assets/greenwoods/greenwoodf3.webp";
+import greenwoods4 from "../assets/greenwoods/greenwoodf2.webp";
+import onegroup1 from "../assets/onegroupclermont/onegroup1.jpg";
+import onegroup2 from "../assets/onegroupclermont/onegroup2.jpg";
+import onegroup3 from "../assets/onegroupclermont/onegroup3.png";
+import onegroupfloor from "../assets/onegroupclermont/onegroupfloorplan.jpeg";
+import gardenia1 from "../assets/gardenia/gardeniainterior.png";
+import gardenia2 from "../assets/gardenia/gardeniaterrace.png";
+import gardenia3 from "../assets/gardenia/gardeniafloorplan.png";
+import wavegradens1 from "../assets/waveestate/waveestateLiving_Dining_Family_Lounge.jpg";
+import wavegradens2 from "../assets/waveestate/waveestateMaster-bedroom.jpg";
+import wavegradens3 from "../assets/waveestate/waveestatefloorplan.jpg";
+import connught1 from "../assets/connaught/connaughthomeinterior.png";
+import connught2 from "../assets/connaught/connaughthomesexterior.png";
+import connught3 from "../assets/connaught/connauhgthomesfront.png";
+import mayfields1 from "../assets/mayfields/mayfields1.webp";
+import mayfields2 from "../assets/mayfields/mayfileds2.webp";
+import mayfields3 from "../assets/mayfields/mayfileds3.webp";
+import bollygreen1 from "../assets/bollywoodgreen/bollygreen1.webp";
+import bollygreen2 from "../assets/bollywoodgreen/bollygreen3.webp";
+import bollygreen3 from "../assets/bollywoodgreen/DJI_0514.webp";
+import wellness1 from "../assets/wellnesscity/plbp1.webp";
+import wellness2 from "../assets/wellnesscity/plbp2.webp";
+import wellness3 from "../assets/wellnesscity/plbp3.webp";
+
+import medallion1 from "../assets/medallion/aboutmedallion.jpg";
+import medallion2 from "../assets/medallion/floorplanmedaallion.jpg";
+import medallion3 from "../assets/medallion/meddalionexterior.jpg";
+import noble1 from "../assets/noblewillassa/noblewilllasaamenity.png";
+import noble2 from "../assets/noblewillassa/Noblefloor.png";
+import noble3 from "../assets/noblewillassa/noblewillasaexterior.jpg";
+import amari1 from "../assets/amarivintage/amariclubhouse.webp";
+import amari2 from "../assets/amarivintage/gym.webp";
+import amari3 from "../assets/amarivintage/interior1.webp";
+
+
 export interface Project {
   id: string;
   name: string;
@@ -239,8 +277,7 @@ const projects: Project[] = [
         id: 1,
         type: "landscape",
         title: "Gated Community Overview",
-        image:
-          "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800",
+        image: greenwoods1,
         description:
           "27-acre integrated plotted development with modern facilities",
       },
@@ -248,8 +285,7 @@ const projects: Project[] = [
         id: 2,
         type: "amenity",
         title: "Theme Gardens",
-        image:
-          "https://images.pexels.com/photos/261156/pexels-photo-261156.jpeg?auto=compress&cs=tinysrgb&w=800",
+        image: greenwood2,
         description:
           "5 theme-based gardens with maximum greenery and landscaping",
       },
@@ -257,16 +293,14 @@ const projects: Project[] = [
         id: 3,
         type: "exterior",
         title: "Grand Entrance",
-        image:
-          "https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg?auto=compress&cs=tinysrgb&w=800",
+        image: greenwoods3,
         description: "Dedicated grand entrance from 24 meters road",
       },
       {
         id: 4,
         type: "amenity",
         title: "Walkway & Roads",
-        image:
-          "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        image: greenwoods4,
         description: "2.5 km shaded walkway with 30/40/60 ft roads",
       },
     ],
@@ -359,28 +393,28 @@ const projects: Project[] = [
         id: 1,
         type: "exterior",
         title: "Grand Entrance",
-        image: "https://onegroup.co.in/assets/clermont-exterior.jpg",
+        image: onegroup1,
         description: "Striking facade and porte-cochère entrance",
       },
       {
         id: 2,
         type: "amenity",
         title: "Landscaped Parks",
-        image: "https://onegroup.co.in/assets/clermont-park.jpg",
+        image: onegroup2,
         description: "Serene garden areas with walking paths",
       },
       {
         id: 3,
         type: "interior",
         title: "Living Room Sample",
-        image: "https://onegroup.co.in/assets/clermont-interior.jpg",
+        image: onegroup3,
         description: "Spacious living area with designer finishes",
       },
       {
         id: 4,
         type: "floorplan",
         title: "3 BHK Layout",
-        image: "https://onegroup.co.in/assets/clermont-floorplan.jpg",
+        image: onegroupfloor,
         description: "Elegant 3 BHK floor plan with balconies",
       },
     ],
@@ -471,7 +505,7 @@ const projects: Project[] = [
         id: 1,
         type: "interior",
         title: "Living Area Sample",
-        image: "https://amarivintagearch.com/assets/interior1.jpg",
+        image: amari1,
         description:
           "Spacious living room with high ceilings and ambient lighting",
       },
@@ -479,14 +513,14 @@ const projects: Project[] = [
         id: 2,
         type: "floorplan",
         title: "3 BHK Independent Floor Plan",
-        image: "https://amarivintagearch.com/assets/floorplan.jpg",
+        image: amari2,
         description: "2240 sq. ft. carpet area layout",
       },
       {
         id: 3,
         type: "amenity",
         title: "Clubhouse Interior",
-        image: "https://amarivintagearch.com/assets/clubhouse.jpg",
+        image: amari3,
         description: "54,000 sqft state-of-the-art clubhouse",
       },
     ],
@@ -574,24 +608,21 @@ const projects: Project[] = [
         id: 1,
         type: "exterior",
         title: "Building Elevation",
-        image:
-          "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800",
+        image: noble1,
         description: "Modern facade with Mivan structural details",
       },
       {
         id: 2,
         type: "amenity",
         title: "Italian Marble Interiors",
-        image:
-          "https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg?auto=compress&cs=tinysrgb&w=800",
+        image: noble2,
         description: "Luxurious marble flooring and wooden accents",
       },
       {
         id: 3,
         type: "amenity",
         title: "Clubhouse & Garden",
-        image:
-          "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800",
+        image: noble3,
         description: "Landscaped gardens and community hall",
       },
     ],
@@ -635,7 +666,7 @@ const projects: Project[] = [
   {
     id: "medallion-aurum",
     name: "Medallion Aurum",
-    location: "Mohali",
+    location: "Sector 67, Mohali",
     city: "Mohali",
     type: "Residential",
     status: "Ready to Move",
@@ -674,21 +705,21 @@ const projects: Project[] = [
         id: 1,
         type: "exterior",
         title: "Tower View",
-        image: "https://themedallionmohali.com/assets/aurum-exterior.jpg",
+        image: medallion1,
         description: "Modern architectural facade with podium-level design",
       },
       {
         id: 2,
         type: "amenity",
         title: "Swimming Pool",
-        image: "https://themedallionmohali.com/assets/aurum-pool.jpg",
+        image: medallion2,
         description: "Resort-style pool with leisure deck",
       },
       {
         id: 3,
         type: "interior",
         title: "Living Room",
-        image: "https://themedallionmohali.com/assets/aurum-interior.jpg",
+        image: medallion3,
         description: "Elegant interiors with abundant natural lighting",
       },
     ],
@@ -771,14 +802,14 @@ const projects: Project[] = [
         id: 1,
         type: "exterior",
         title: "Township View",
-        image: "https://example.com/wellness-exterior.jpg",
+        image: wellness1,
         description: "Expansive view of the 90+ acre holistic township",
       },
       {
         id: 2,
         type: "amenity",
         title: "Clubhouse",
-        image: "https://example.com/wellness-clubhouse.jpg",
+        image: wellness2,
         description:
           "Revolutionary clubhouse with unmatched wellness amenities",
       },
@@ -786,7 +817,7 @@ const projects: Project[] = [
         id: 3,
         type: "landscape",
         title: "Step Gardens",
-        image: "https://example.com/wellness-gardens.jpg",
+        image: wellness3,
         description: "Natural landscapes integrated into community gardens",
       },
     ],
@@ -890,21 +921,21 @@ const projects: Project[] = [
         id: 1,
         type: "exterior",
         title: "Gardenia Boutique Towers",
-        image: "https://omaxe.com/assets/gardenia-exterior.jpg",
+        image: gardenia1,
         description: "Modern residential facade set amidst lush greenery",
       },
       {
         id: 2,
         type: "interior",
         title: "Spacious Living Room",
-        image: "https://omaxe.com/assets/gardenia-interior.jpg",
+        image: gardenia2,
         description: "Large, airy interiors with natural light and ventilation",
       },
       {
         id: 3,
         type: "amenity",
         title: "Penthouse View",
-        image: "https://omaxe.com/assets/gardenia-penthouse.jpg",
+        image: gardenia3,
         description: "Exclusive penthouse with panoramic views of greens",
       },
     ],
@@ -988,14 +1019,14 @@ const projects: Project[] = [
         id: 1,
         type: "exterior",
         title: "Tower View",
-        image: "https://example.com/wavegardens-towers.jpg",
+        image: wavegradens1,
         description: "Modern towers with a backdrop of landscaped greenery",
       },
       {
         id: 2,
         type: "amenity",
         title: "Clubhouse & Pool",
-        image: "https://example.com/wavegardens-pool.jpg",
+        image: wavegradens2,
         description:
           "Premium clubhouse with swimming pool and wellness facilities",
       },
@@ -1003,7 +1034,7 @@ const projects: Project[] = [
         id: 3,
         type: "floorplan",
         title: "Unit Plans",
-        image: "https://example.com/wavegardens-floorplan.jpg",
+        image: wavegradens3,
         description: "Options include 3BHK, 4BHK, duplexes, and penthouses",
       },
     ],
@@ -1207,21 +1238,21 @@ const projects: Project[] = [
         id: 1,
         type: "exterior",
         title: "Gateway Entrance",
-        image: "https://example.com/connaught-exterior.jpg",
+        image: connught1,
         description: "Grand gated entrance with landscaped drive",
       },
       {
         id: 2,
         type: "amenity",
         title: "Clubhouse",
-        image: "https://example.com/connaught-clubhouse.jpg",
+        image: connught2,
         description: "State-of-the-art clubhouse with fitness and lounge areas",
       },
       {
         id: 3,
         type: "interior",
         title: "Living Room",
-        image: "https://example.com/connaught-interior.jpg",
+        image: connught3,
         description: "Spacious living area with designer finishes",
       },
     ],
@@ -1303,21 +1334,21 @@ const projects: Project[] = [
       id: 1,
       type: "exterior",
       title: "Tower Elevation",
-      image: "https://example.com/mayfields-exterior.jpg",
+      image: mayfields1,
       description: "Modern facade with rooftop horizon pool"
     },
     {
       id: 2,
       type: "floorplan",
       title: "3 BHK Layout",
-      image: "https://example.com/mayfields-floorplan3bhk.jpg",
+      image: mayfields2,
       description: "Spacious 3 BHK apartment layout"
     },
     {
       id: 3,
       type: "floorplan",
       title: "4 BHK Layout",
-      image: "https://example.com/mayfields-floorplan4bhk.jpg",
+      image: mayfields3,
       description: "Expansive 4 BHK apartment layout"
     }
   ],
@@ -1394,21 +1425,21 @@ const projects: Project[] = [
       id: 1,
       type: "exterior",
       title: "Phase IV Towers",
-      image: "https://example.com/bgcp4-exterior.jpg",
+      image: bollygreen1,
       description: "Updated architectural schematic and refreshed façade"
     },
     {
       id: 2,
       type: "landscape",
       title: "Green Corridors",
-      image: "https://example.com/bgcp4-greencorridor.jpg",
+      image: bollygreen2,
       description: "Expansive landscaped pathways across the township"
     },
     {
       id: 3,
       type: "interior",
       title: "Apartment Interior",
-      image: "https://example.com/bgcp4-interior.jpg",
+      image: bollygreen3,
       description: "Modern premium finishes and high ceilings"
     }
   ],

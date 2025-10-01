@@ -3,7 +3,7 @@ import { MapPin, Zap, Leaf, GraduationCap, MapIcon } from "lucide-react";
 import { motion } from "framer-motion";
 import { useProjects } from "../context/ProjectContext";
 import { Link } from "react-router-dom";
-
+import newchandigarh from "../assets/newchandigarhcitypage.jpeg";
 const NewChandigarhCityPage = () => {
   const { getProjectsByCity } = useProjects();
   const properties = getProjectsByCity('New Chandigarh');
@@ -74,7 +74,7 @@ const NewChandigarhCityPage = () => {
           </div>
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1f?auto=format&fit=crop&w=800&q=80"
+              src={newchandigarh}
               alt="New Chandigarh Smart City"
               className="rounded-2xl shadow-2xl"
             />

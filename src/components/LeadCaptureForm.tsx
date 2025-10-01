@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+// components/LeadCaptureForm.tsx
+import { useState } from 'react';
 import { Phone, Mail, User, MessageSquare, Send, CheckCircle } from 'lucide-react';
 import emailjs from 'emailjs-com';
+import { useForm } from 'react-hook-form';
 import type { Project } from '../context/ProjectContext';
 
 interface LeadCaptureFormProps {
@@ -15,48 +17,38 @@ interface FormData {
 }
 
 const LeadCaptureForm = ({ project }: LeadCaptureFormProps) => {
-  const [formData, setFormData] = useState<FormData>({
-    fullName: '',
-    phone: '',
-    email: '',
-    message: '',
-  });
-  
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset
+  } = useForm<FormData>();
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+  const onSubmit = async (data: FormData) => {
     setIsSubmitting(true);
 
     try {
-      // EmailJS configuration - Replace with your actual service details
       await emailjs.send(
-        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+        import.meta.env.VITE_EMAILJS_SERVICE_ID || "YOUR_SERVICE_ID",
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "YOUR_TEMPLATE_ID",
         {
-          from_name: formData.fullName,
-          phone_number: formData.phone,
-          reply_to: formData.email,
+          from_name: data.fullName,
+          phone_number: data.phone,
+          reply_to: data.email,
           project_name: project.name,
-          message: formData.message || 'No additional message provided.',
+          message: data.message || 'No additional message provided.',
         },
-        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "YOUR_PUBLIC_KEY"
       );
-      
+
       setIsSubmitted(true);
+      reset(); // clear form after submit
     } catch (error) {
-      console.error('Error sending email:', error);
-      // You might want to show an error message to the user here
-      alert('There was an error sending your message. Please try again or call us directly.');
+      console.error('EmailJS error:', error);
+      alert('There was an error sending your message. Please try again.');
     } finally {
       setIsSubmitting(false);
     }
@@ -79,8 +71,8 @@ const LeadCaptureForm = ({ project }: LeadCaptureFormProps) => {
           <div className="bg-secondary/10 rounded-lg p-4">
             <p className="font-inter text-sm text-gray-700">
               For immediate assistance, call us at{' '}
-              <a href="tel:+919876543210" className="text-primary font-semibold">
-                +91-9876543210
+              <a href="tel:+9198882 47787" className="text-primary font-semibold">
+                +91-98882 47787
               </a>
             </p>
           </div>
@@ -90,7 +82,7 @@ const LeadCaptureForm = ({ project }: LeadCaptureFormProps) => {
   }
 
   return (
-    <div className="relative before:absolute before:inset-0 before:bg-white before:-z-[1] bg-white/100 backdrop-blur-xl rounded-2xl shadow-xl p-8 border border-gray-100">
+    <div className="relative bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
       <div className="mb-6">
         <h2 className="font-poiret font-bold text-2xl text-gray-900 mb-2">
           Book a Free Consultation
@@ -100,61 +92,59 @@ const LeadCaptureForm = ({ project }: LeadCaptureFormProps) => {
         </p>
       </div>
 
-      <form onSubmit={handleSubmit} className="space-y-6">
+      <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+        {/* Full Name */}
         <div>
           <label className="block font-inter font-medium text-gray-700 mb-2">
             Full Name *
           </label>
           <div className="relative">
-            <User className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
+            <User className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
             <input
               type="text"
-              name="fullName"
-              required
-              value={formData.fullName}
-              onChange={handleChange}
-              className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-200"
+              {...register("fullName", { required: "Full name is required" })}
+              className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
               placeholder="Enter your full name"
             />
           </div>
+          {errors.fullName && <p className="text-red-500 text-sm">{errors.fullName.message}</p>}
         </div>
 
+        {/* Phone */}
         <div>
           <label className="block font-inter font-medium text-gray-700 mb-2">
             Phone Number *
           </label>
           <div className="relative">
-            <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
+            <Phone className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
             <input
               type="tel"
-              name="phone"
-              required
-              value={formData.phone}
-              onChange={handleChange}
-              className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-200"
+              {...register("phone", { required: "Phone number is required" })}
+              className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
               placeholder="+91-9876543210"
             />
           </div>
+          {errors.phone && <p className="text-red-500 text-sm">{errors.phone.message}</p>}
         </div>
 
+        {/* Email */}
         <div>
           <label className="block font-inter font-medium text-gray-700 mb-2">
             Email Address *
           </label>
           <div className="relative">
-            <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
+            <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
             <input
               type="email"
-              name="email"
-              required
-              value={formData.email}
-              onChange={handleChange}
-              className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-200"
+              {...register("email", { required: "Email is required" })}
+              className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
               placeholder="your@email.com"
             />
           </div>
+          {errors.email && <p className="text-red-500 text-sm">{errors.email.message}</p>}
         </div>
 
+        {/* Project */}
         <div>
           <label className="block font-inter font-medium text-gray-700 mb-2">
             Interested Project
@@ -167,6 +157,7 @@ const LeadCaptureForm = ({ project }: LeadCaptureFormProps) => {
           />
         </div>
 
+        {/* Message */}
         <div>
           <label className="block font-inter font-medium text-gray-700 mb-2">
             Message (Optional)
@@ -174,20 +165,19 @@ const LeadCaptureForm = ({ project }: LeadCaptureFormProps) => {
           <div className="relative">
             <MessageSquare className="absolute left-3 top-3 h-5 w-5 text-gray-400" />
             <textarea
-              name="message"
+              {...register("message")}
               rows={4}
-              value={formData.message}
-              onChange={handleChange}
-              className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-200 resize-none"
+              className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary resize-none"
               placeholder="Any specific requirements or questions..."
             />
           </div>
         </div>
 
+        {/* Submit Button */}
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full bg-secondary hover:bg-foreground disabled:bg-blue-300 text-white font-semibold py-4 px-6 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 disabled:transform-none"
+          className="w-full bg-secondary hover:bg-foreground disabled:bg-blue-300 text-white font-semibold py-4 px-6 rounded-lg transition-all flex items-center justify-center space-x-2 shadow-lg"
         >
           {isSubmitting ? (
             <>
