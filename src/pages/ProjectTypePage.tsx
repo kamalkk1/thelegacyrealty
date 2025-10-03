@@ -1,20 +1,22 @@
-import { useParams } from 'react-router-dom';
+import { useParams } from "react-router-dom";
 import { Card, CardContent } from "../components/ui/card";
 import { MapPin, MapIcon } from "lucide-react";
 import { motion } from "framer-motion";
-import { useProjects } from '../context/ProjectContext';
-import { Link } from 'react-router-dom';
+import { useProjects } from "../context/ProjectContext";
+import { Link } from "react-router-dom";
 
 const ProjectTypePage = () => {
   const { type } = useParams<{ type: string }>();
   const { getProjectsByType } = useProjects();
-  
+
   // Convert URL parameter to proper type format
-  const formattedType = type?.replace(/-/g, ' ').split(' ')
-    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(' ');
-    
-  const properties = getProjectsByType(formattedType || '');
+  const formattedType = type
+    ?.replace(/-/g, " ")
+    .split(" ")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+
+  const properties = getProjectsByType(formattedType || "");
 
   return (
     <div className="min-h-screen bg-foreground">
@@ -36,7 +38,8 @@ const ProjectTypePage = () => {
               {formattedType} Projects
             </h1>
             <p className="text-xl font-inter text-gray-200 max-w-2xl mx-auto">
-              Discover our exclusive collection of {formattedType?.toLowerCase()} properties
+              Discover our exclusive collection of{" "}
+              {formattedType?.toLowerCase()} properties
             </p>
           </motion.div>
         </div>
@@ -63,17 +66,21 @@ const ProjectTypePage = () => {
                         className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                       />
                       <div className="absolute top-4 right-4">
-                       <span className='px-3 py-1 rounded-full text-sm font-medium 
-                                                 bg-orange-100 text-orange-800'
-                                               >
-                                                 <MapIcon className="w-4 h-4 inline mr-1" />
-                                                 {property.location}
-                                               </span>
+                        <span
+                          className="px-3 py-1 rounded-full text-sm font-medium bg-orange-100 text-orange-800"
+                        >
+                          <MapIcon className="w-4 h-4 inline mr-1" />
+                          {property.location}
+                        </span>
                       </div>
                     </div>
                     <CardContent className="p-6">
-                      <h3 className="text-xl font-semibold font-poiret mb-2">{property.name}</h3>
-                      <p className="text-gray-600 font-inter mb-2">{property.type}</p>
+                      <h3 className="text-xl font-semibold font-poiret mb-2">
+                        {property.name}
+                      </h3>
+                      <p className="text-gray-600 font-inter mb-2">
+                        {property.type}
+                      </p>
                       <div className="flex items-center text-sm text-gray-500">
                         <MapPin className="w-4 h-4 mr-1" />
                         <span>{property.location}</span>
@@ -81,6 +88,18 @@ const ProjectTypePage = () => {
                       <div className="w-full mt-4 bg-primary flex text-foreground py-2 px-4 rounded-lg hover:bg-primary/90 transition-colors font-medium text-center">
                         View Details
                       </div>
+                             {/* Logo image in bottom-right */}
+{property.logoimage && (
+  <div className="absolute bottom-4 right-2 w-40 h-20 rounded-lg p- 
+                  bg-gradient-to-tr from-foreground/60 via-secondary/40 to-transparent 
+                  flex items-center justify-center">
+    <img
+      src={property.logoimage}
+      alt={`${property.name} logo`}
+      className="w-46 h-34 object-contain"
+    />
+  </div>
+)}
                     </CardContent>
                   </Card>
                 </Link>

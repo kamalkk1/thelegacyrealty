@@ -4,6 +4,10 @@ import { Award, Target, Eye, MessageSquare } from "lucide-react";
 import { motion, type Variants } from "framer-motion"; // Import Variants type
 import { useState } from "react";
 import CTAPopup from "../components/CTAPopup";
+import rahul from "../assets/Rahul-Ahuja.png";
+import tlrlogo from "../../public/LOGO-1.png";
+import { Link } from "react-router-dom";
+
 const AboutUs = () => {
   const [isPopupOpen] = useState(false);
 
@@ -50,7 +54,6 @@ const AboutUs = () => {
     <div className="bg-gray-50 min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white py-20">
-        <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial="hidden"
@@ -59,10 +62,17 @@ const AboutUs = () => {
           >
             <motion.h1
               variants={fadeInUp}
-              className="text-5xl lg:text-7xl font-bold mb-6 font-poppins"
+              className="text-5xl lg:text-7xl font-bold mb-6 font-poppins flex justify-center items-center gap-8 flex-wrap"
             >
-              About <span className="text-primary">Legacy Realty</span>
+              About
+              <img
+                src={tlrlogo}
+                alt="About Legacy Realty"
+                className="w-24 h-auto sm:w-28 lg:w-36 object-contain inline-block"
+              />
+              Realty
             </motion.h1>
+
             <motion.div
               variants={fadeInUp}
               custom={0.2}
@@ -91,7 +101,6 @@ const AboutUs = () => {
                   alt="About Legacy Realty"
                   className="w-full h-[500px] object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
               </div>
 
               {/* Floating Stats */}
@@ -179,13 +188,8 @@ const AboutUs = () => {
                 viewport={{ once: true }}
                 className="flex flex-wrap gap-4"
               >
-              
-
                 {/* Popup */}
-                {isPopupOpen && (
-                  <CTAPopup  />
-                )}
-             
+                {isPopupOpen && <CTAPopup />}
               </motion.div>
             </motion.div>
           </div>
@@ -238,12 +242,14 @@ const AboutUs = () => {
                     clients' lives by fostering favorable solutions to all their
                     real estate ascertainment.
                   </p>
-                  <Button
-                    variant="outline"
-                    className="mt-6 border-primary text-secondary hover:bg-primary hover:text-white"
-                  >
-                    Contact Us
-                  </Button>
+                  <Link to="/contact-us">
+                    <Button
+                      variant="outline"
+                      className="relative before:absolute before:inset-0 before:bg-white before:-z-[1] bg-white/100 mt-6 border-primary text-secondary hover:bg-primary hover:text-white"
+                    >
+                      Contact Us
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             </motion.div>
@@ -365,6 +371,66 @@ const AboutUs = () => {
                 </div>
               </motion.div>
             </div>
+            <div className="grid lg:grid-cols-3 gap-12 items-center">
+              {/* Message Content */}
+              <motion.div
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true, amount: 0.2 }}
+                className="lg:col-span-2 space-y-6"
+              >
+                <div className="bg-gray-50 p-8 rounded-3xl shadow-lg">
+                  <p className="text-lg text-gray-700 leading-relaxed mb-6 italic">
+                    "At Legacy Realty, we believe every new project marks a
+                    fresh beginning. Our vision is to make property buying and
+                    selling a smooth, transparent, and rewarding experience. We
+                    are committed to guiding our clients to the finest prime
+                    locations, ensuring every transaction is secure, and
+                    supporting them with clear legal documentation at every
+                    step."
+                  </p>
+
+                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                    "For us, client satisfaction is the true measure of success.
+                    We value every idea and suggestion shared by our clients,
+                    and our dedicated team works tirelessly to understand and
+                    fulfill unique requirements—whether residential or
+                    commercial. With integrity, care, and expertise, we strive
+                    to build lasting relationships and help our clients make
+                    confident and informed property decisions."
+                  </p>
+
+                  <div className="border-l-4 border-primary pl-6">
+                    <p className="font-semibold text-gray-900 text-lg">
+                      Rahul Ahuja
+                    </p>
+                    <p className="text-secondary font-medium">
+                      Founder & CEO, Legacy Realty
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+              {/* Founder Image */}
+              <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true, amount: 0.2 }}
+                className="lg:col-span-1"
+              >
+                <div className="relative">
+                  <img
+                    src={rahul}
+                    alt="Founder"
+                    className="w-full max-w-sm mx-auto rounded-3xl shadow-2xl"
+                  />
+                  <div className="absolute -bottom-4 -right-4 bg-foreground text-white p-4 rounded-2xl shadow-lg">
+                    <MessageSquare className="w-8 h-8" />
+                  </div>
+                </div>
+              </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -381,12 +447,15 @@ const AboutUs = () => {
             <h3 className="text-3xl lg:text-4xl font-bold text-white mb-8 font-poppins">
               Feel free to contact us in case of any queries.
             </h3>
-            <Button
-              size="lg"
-              className="bg-white text-secondary hover:bg-gray-100 px-8 py-4 rounded-full font-semibold text-lg"
-            >
-              Get In Touch
-            </Button>
+
+            <Link to="/contact-us">
+              <Button
+                size="lg"
+                className="bg-white relative before:absolute before:inset-0 before:bg-white before:-z-[1] text-secondary hover:bg-gray-100 px-8 py-4 rounded-full font-semibold text-lg"
+              >
+                Get In Touch
+              </Button>
+            </Link>
           </motion.div>
         </div>
       </section>

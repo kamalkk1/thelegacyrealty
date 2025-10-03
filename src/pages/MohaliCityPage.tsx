@@ -35,16 +35,21 @@ const MohaliCityPage = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            <h1 className="text-6xl lg:text-8xl font-bold font-poiret mb-6">
+             <div
+                className=" top-4 right-4 w-auto min-w-[260px] px-3 py-2 rounded-lg 
+             bg-gradient-to-tr from-primary/60 via-secondary/40 to-transparent 
+             flex flex-col items-center gap-3 shadow-lg"
+              >
+            <h1 className="text-6xl text-primary lg:text-8xl font-bold font-poiret mb-6">
               MOHALI
             </h1>
-            <p className="text-xl lg:text-2xl font-inter mb-8">
+            <p className="text-xl text-primary lg:text-2xl font-inter mb-8">
               The IT Hub of Punjab - Where Innovation Meets Opportunity
             </p>
             <div className="flex items-center justify-center gap-2 text-lg">
               <MapPin className="w-6 h-6" />
               <span></span>
-            </div>
+            </div></div>
           </motion.div>
         </div>
       </motion.section>

@@ -77,8 +77,8 @@ export default function Header() {
             </Link>
 
             {/* Desktop Nav */}
-            <nav className="hidden md:flex items-center space-x-8 text-lg  font-weight-700">
-              <NavLink to="/">Home</NavLink>
+            <nav className="hidden md:flex items-center space-x-8 text-lg  font-weight-900">
+              <NavLink to="/" >Home</NavLink>
               <NavLink to="/aboutus">About Us</NavLink>
 
               {/* ✅ Cities Dropdown */}
@@ -149,12 +149,12 @@ export default function Header() {
                 </DropdownMenuContent>
               </DropdownMenu>
 
-                <Link
-    to="/contact-us"
-    className="text-secondary font-extrabold hover:text-secondary transition-colors"
-  >
-    Contact
-  </Link>
+              <Link
+                to="/contact-us"
+                className="text-secondary font-extrabold hover:text-secondary transition-colors"
+              >
+                Contact
+              </Link>
             </nav>
 
             {/* 📞 Call Button (Desktop) */}
@@ -229,7 +229,13 @@ export default function Header() {
                     >
                       About Us
                     </Link>
-
+                    <Link
+                      to="/contact-us"
+                      onClick={onClose}
+                      className="block hover:text-secondary transition"
+                    >
+                      Contact Us
+                    </Link>
                     {/* ✅ Projects Accordion */}
                     <div>
                       <button

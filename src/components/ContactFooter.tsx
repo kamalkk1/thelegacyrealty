@@ -64,7 +64,7 @@ const ContactFooter = () => {
             {/* Social Links */}
             <div className="flex space-x-4 mt-8 ">
               <a
-                href="https://facebook.com/thelegacyrealty"
+                href="https://www.facebook.com/profile.php?id=61564416080799"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gradient-to-br from-secondary to-foreground hover:from-foreground hover:to-secondary p-3 rounded-full transition-colors duration-200"
@@ -72,7 +72,7 @@ const ContactFooter = () => {
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="https://instagram.com/thelegacyrealty"
+                href="https://www.instagram.com/the_legacyrealty/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gradient-to-br from-secondary to-foreground hover:from-foreground hover:to-secondary p-3 rounded-full transition-colors duration-200"
@@ -80,7 +80,7 @@ const ContactFooter = () => {
                 <Instagram className="h-5 w-5" />
               </a>
               <a
-                href="https://linkedin.com/company/thelegacyrealty"
+                href="https://www.linkedin.com/company/the-legacy-realty/posts/?feedView=all"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gradient-to-br from-secondary to-foreground hover:from-foreground hover:to-secondary p-3 rounded-full transition-colors duration-200"

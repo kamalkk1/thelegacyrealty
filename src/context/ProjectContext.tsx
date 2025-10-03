@@ -62,6 +62,19 @@ import amari1 from "../assets/amarivintage/amariclubhouse.webp";
 import amari2 from "../assets/amarivintage/gym.webp";
 import amari3 from "../assets/amarivintage/interior1.webp";
 
+import mdblogo from "../assets/projectlogos/MDB.png";
+import amarilogo from "../assets/projectlogos/AmariVintageLogo.png";
+import clermontlogo from "../assets/projectlogos/ClearmontONeGroup.png";
+import mayfieldslogo from "../assets/projectlogos/MayfieldLogo.png";
+import greenwoodslogo from "../assets/projectlogos/GreenwoodLogo.png";
+import bollygreenlogo from "../assets/projectlogos/Bollywoodlogo.png"
+
+
+import thelakelogo from "../assets/projectlogos/OmaxeLakeLogo.png";
+import noblelogo from "../assets/projectlogos/NobleWillasaLogo.png";
+import medallionlogo from "../assets/projectlogos/MedallionAurumlogo.png";
+import gardenialogo from "../assets/projectlogos/GardeniaHomesLogo.png";
+
 
 export interface Project {
   id: string;
@@ -79,6 +92,7 @@ export interface Project {
   description: string;
   amenities: string[];
   image?: string;
+  logoimage?: string;
   specifications?: Record<string, any>;
   highlights?: string[];
   connectivity?: string[];
@@ -128,6 +142,7 @@ const projects: Project[] = [
   {
     id: "mdb-lutyens",
     name: "MDB The Lutyens",
+    logoimage: mdblogo,
     location: "Landran-Banur Road, Mohali",
     city: "Mohali",
     type: "Residential",
@@ -239,6 +254,7 @@ const projects: Project[] = [
     location: "Sector 115, Mohali",
     city: "Mohali",
     type: "Plots",
+    logoimage: greenwoodslogo,
     image: greenwood,
     brochure: greenwoodsbrochure,
     status: "Ready to Move",
@@ -357,6 +373,7 @@ const projects: Project[] = [
     name: "The Clermont",
     location: "One City Hamlet, Sector 98, Mohali",
     city: "Mohali",
+    logoimage: clermontlogo,
     type: "Residential",
     status: "Under Construction",
     image: onegroup,
@@ -467,6 +484,7 @@ const projects: Project[] = [
     id: "amari-vintage-arc",
     name: "Amari Vintage ARC",
     location: "IT City, Mohali",
+    logoimage: amarilogo,
     city: "Mohali",
     type: "Residential",
     status: "Upcoming",
@@ -572,6 +590,7 @@ const projects: Project[] = [
     name: "Noble Willasa",
     location: "Sector 99, Wave Estate, Mohali",
     city: "Mohali",
+    logoimage: noblelogo,
     type: "Residential",
     status: "Ready to Move",
     image: noblewillassa,
@@ -668,6 +687,7 @@ const projects: Project[] = [
     name: "Medallion Aurum",
     location: "Sector 67, Mohali",
     city: "Mohali",
+    logoimage: medallionlogo,
     type: "Residential",
     status: "Ready to Move",
     image: medallion,
@@ -885,6 +905,7 @@ const projects: Project[] = [
     location: "New Chandigarh",
     city: "Chandigarh",
     type: "Residential",
+    logoimage: gardenialogo,
     image: gardenia, // replace with actual logo image import
     brochure: gardeniab, // replace with actual brochure import
     status: "Under Construction",
@@ -1083,6 +1104,7 @@ const projects: Project[] = [
     location: "New Chandigarh",
     city: "New Chandigarh",
     type: "Residential",
+    logoimage: thelakelogo,
     status: "Ready to Move",
     image:
       "https://creatifyindia.com/thelegacyrealty/wp-content/uploads/2024/11/gallery_1670580254574.jpg",
@@ -1303,6 +1325,7 @@ const projects: Project[] = [
   location: "Sector 118, Airport Road, Mohali",
   city: "Mohali",
   type: "Residential",
+  logoimage: mayfieldslogo,
   status: "Upcoming",
   developer: "Highland Group",
   image: mayfields,
@@ -1392,6 +1415,7 @@ const projects: Project[] = [
   id: "bollywood-green-city-phase-iv",
   name: "Bollywood Green City Phase IV",
   location: "Mohali",
+  logoimage: bollygreenlogo,
   city: "Mohali",
   type: "Residential",
   status: "Under Construction",

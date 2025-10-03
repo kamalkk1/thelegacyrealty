@@ -125,7 +125,30 @@ const ProjectDetails = ({ project }: ProjectDetailsProps) => {
               variants={slideIn}
               className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight"
             >
-              {project.name}
+              <div
+                className=" top-4 right-4 w-auto min-w-[260px] px-3 py-2 rounded-lg 
+             bg-gradient-to-tr from-foreground/60 via-secondary/40 to-transparent 
+             flex items-center gap-3 shadow-lg"
+              >
+                {/* Logo with shine effect */}
+                <div className="relative w-32 h-32 flex-shrink-0 overflow-hidden rounded-md">
+                  <img
+                    src={project.logoimage}
+                    alt={`${project.name} logo`}
+                    className="w-full h-full object-contain relative z-10"
+                  />
+                  {/* Shine overlay */}
+                  <div
+                    className="absolute inset-0 bg-gradient-to-r from-transparent via-white/60 to-transparent 
+                    animate-[shine_2s_linear_infinite] transform -skew-x-12"
+                  />
+                </div>
+
+                {/* Project name */}
+                <span className="text-white font-semibold text-2xl">
+                  {project.name}
+                </span>
+              </div>
             </motion.h1>
 
             <motion.div
@@ -390,7 +413,7 @@ const ProjectDetails = ({ project }: ProjectDetailsProps) => {
                 <motion.button
                   onClick={handleDownloadClick}
                   variants={slideIn}
-                  className="inline-flex text-nowrap items-center px-6 py-3 bg-foreground text-white font-semibold rounded-lg hover:bg-secondary font-poiret transition-colors duration-300"
+                  className="inline-flex text-nowrap relative before:absolute before:inset-0 before:bg-white before:-z-[1] items-center px-6 py-3 bg-foreground text-white font-semibold rounded-lg hover:bg-secondary font-poiret transition-colors duration-300"
                 >
                   <motion.svg
                     className="w-5 h-5 mr-2"
