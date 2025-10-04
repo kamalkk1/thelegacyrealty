@@ -96,7 +96,7 @@ const CTAPopup = () => {
                     </div>
                     <div>
                       <h2 className="text-xl font-bold font-poppins">
-                        Welcome to Legacy Realty
+                        Welcome to The Legacy Realty
                       </h2>
                       <p className="text-white/90 text-sm">Your Dream Home Awaits</p>
                     </div>

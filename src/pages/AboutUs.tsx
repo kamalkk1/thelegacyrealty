@@ -7,7 +7,7 @@ import CTAPopup from "../components/CTAPopup";
 import rahul from "../assets/Rahul-Ahuja.png";
 import tlrlogo from "../../public/LOGO-1.png";
 import { Link } from "react-router-dom";
-
+import ceos from "../assets/TheLegacyRealtyCEOs.jpg";
 const AboutUs = () => {
   const [isPopupOpen] = useState(false);
 
@@ -70,7 +70,7 @@ const AboutUs = () => {
                 alt="About Legacy Realty"
                 className="w-24 h-auto sm:w-28 lg:w-36 object-contain inline-block"
               />
-              Realty
+              
             </motion.h1>
 
             <motion.div
@@ -97,9 +97,9 @@ const AboutUs = () => {
             >
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://creatifyindia.com/thelegacyrealty/wp-content/uploads/2024/11/2-1024x1024.png"
+                  src={ceos}
                   alt="About Legacy Realty"
-                  className="w-full h-[500px] object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
 
@@ -109,7 +109,7 @@ const AboutUs = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.5, duration: 0.6 }}
                 viewport={{ once: true }}
-                className="absolute -bottom-6 -right-6 bg-white rounded-2xl p-6 shadow-xl"
+                className="absolute -bottom-16 -right-6 bg-white rounded-2xl p-6 shadow-xl"
               >
                 <div className="text-center">
                   <div className="text-3xl font-bold text-secondary mb-1">
@@ -159,7 +159,7 @@ const AboutUs = () => {
                   viewport={{ once: true }}
                   className="text-lg text-gray-600 leading-relaxed mb-8"
                 >
-                  Founded in 2013, Legacy Realty is one of the most respected
+                  Founded in 2013, The Legacy Realty is one of the most respected
                   and trusted real estate companies in North India. We help
                   people buy and sell homes at the optimal price, whether you
                   want to buy or sell a residential property or rent have an
@@ -344,7 +344,7 @@ const AboutUs = () => {
               >
                 <div className="bg-gray-50 p-8 rounded-3xl shadow-lg">
                   <p className="text-lg text-gray-700 leading-relaxed mb-6 italic">
-                    "Welcome friends... we wish fresh start of every project. At
+                    "Welcome friends... we wish fresh start of every project. At The
                     Legacy Realty, our vision is promise is to provide property.
                     We assure the transactions and attract to every aspect of
                     market and buying property... We always guide you visit the
@@ -365,7 +365,7 @@ const AboutUs = () => {
                       Gaurav Bajwa
                     </p>
                     <p className="text-secondary font-medium">
-                      Founder & CEO, Legacy Realty
+                      Founder & CEO, The Legacy Realty
                     </p>
                   </div>
                 </div>
@@ -382,7 +382,7 @@ const AboutUs = () => {
               >
                 <div className="bg-gray-50 p-8 rounded-3xl shadow-lg">
                   <p className="text-lg text-gray-700 leading-relaxed mb-6 italic">
-                    "At Legacy Realty, we believe every new project marks a
+                    "At The Legacy Realty, we believe every new project marks a
                     fresh beginning. Our vision is to make property buying and
                     selling a smooth, transparent, and rewarding experience. We
                     are committed to guiding our clients to the finest prime
@@ -406,7 +406,7 @@ const AboutUs = () => {
                       Rahul Ahuja
                     </p>
                     <p className="text-secondary font-medium">
-                      Founder & CEO, Legacy Realty
+                      Founder & CEO, The Legacy Realty
                     </p>
                   </div>
                 </div>

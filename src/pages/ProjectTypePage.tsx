@@ -91,7 +91,7 @@ const ProjectTypePage = () => {
                              {/* Logo image in bottom-right */}
 {property.logoimage && (
   <div className="absolute bottom-4 right-2 w-40 h-20 rounded-lg p- 
-                  bg-gradient-to-tr from-foreground/60 via-secondary/40 to-transparent 
+                  bg-gradient-to-tr from-primary/100 via-chart-2/10 to-transparent 
                   flex items-center justify-center">
     <img
       src={property.logoimage}

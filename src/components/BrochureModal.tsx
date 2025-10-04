@@ -176,7 +176,7 @@ const BrochureModal: React.FC<BrochureModalProps> = ({ project, isOpen, onClose 
                         variant="outline"
                         onClick={onClose}
                         disabled={isDownloading}
-                        className="bg-secondary"
+                        className="bg-primary"
                       >
                         Cancel
                       </Button>

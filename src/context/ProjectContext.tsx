@@ -51,7 +51,7 @@ import bollygreen3 from "../assets/bollywoodgreen/DJI_0514.webp";
 import wellness1 from "../assets/wellnesscity/plbp1.webp";
 import wellness2 from "../assets/wellnesscity/plbp2.webp";
 import wellness3 from "../assets/wellnesscity/plbp3.webp";
-
+import theomakelake from "../assets/thelakeomaxe/theomakelakemain.jpg";
 import medallion1 from "../assets/medallion/aboutmedallion.jpg";
 import medallion2 from "../assets/medallion/floorplanmedaallion.jpg";
 import medallion3 from "../assets/medallion/meddalionexterior.jpg";
@@ -1106,8 +1106,7 @@ const projects: Project[] = [
     type: "Residential",
     logoimage: thelakelogo,
     status: "Ready to Move",
-    image:
-      "https://creatifyindia.com/thelegacyrealty/wp-content/uploads/2024/11/gallery_1670580254574.jpg",
+    image: theomakelake,
     brochure: thelakebrochure,
 
     description:

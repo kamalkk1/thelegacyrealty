@@ -82,7 +82,7 @@ const LeadCaptureForm = ({ project }: LeadCaptureFormProps) => {
   }
 
   return (
-    <div className="relative bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+    <div className="relative before:absolute before:inset-0 before:bg-white before:-z-[1] rounded-2xl shadow-xl p-8 border border-gray-100">
       <div className="mb-6">
         <h2 className="font-poiret font-bold text-2xl text-gray-900 mb-2">
           Book a Free Consultation

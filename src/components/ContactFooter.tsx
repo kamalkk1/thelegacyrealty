@@ -5,6 +5,7 @@ import {
   Facebook,
   Instagram,
   Linkedin,
+  Youtube,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import logo from "../assets/LOGO-1.png";
@@ -86,6 +87,14 @@ const ContactFooter = () => {
                 className="bg-gradient-to-br from-secondary to-foreground hover:from-foreground hover:to-secondary p-3 rounded-full transition-colors duration-200"
               >
                 <Linkedin className="h-5 w-5" />
+              </a>
+               <a
+                href="https://www.youtube.com/@TheLegacyRealty/videos"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-br from-secondary to-foreground hover:from-foreground hover:to-secondary p-3 rounded-full transition-colors duration-200"
+              >
+                <Youtube className="h-5 w-5" />
               </a>
             </div>
           </div>

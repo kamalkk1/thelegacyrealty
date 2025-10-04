@@ -116,7 +116,6 @@ const ProjectDetails = ({ project }: ProjectDetailsProps) => {
             alt={project.name}
             className="w-full h-full object-cover object-center flex-shrink-0"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-black/30" />
         </div>
 
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
@@ -442,6 +441,11 @@ const ProjectDetails = ({ project }: ProjectDetailsProps) => {
                   </motion.svg>
                   Download Brochure
                 </motion.button>
+                <BrochureModal
+                  project={project}
+                  isOpen={isModalOpen}
+                  onClose={() => setIsModalOpen(false)}
+                />
               </div>
             </motion.div>
           </div>

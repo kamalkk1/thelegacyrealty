@@ -8,8 +8,9 @@ import {
   Mail,
   MapPin,
   Facebook,
-  Twitter,
+  Linkedin,
   Instagram,
+  Youtube,
   ChevronDown,
 } from "lucide-react";
 import logo from "../assets/tlrlogo.webp";
@@ -20,6 +21,30 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
 } from "@/components/ui/dropdown-menu";
+
+// Example: Social mapping (React / TSX)
+const socialLinks = [
+  {
+    name: "facebook",
+    href: "https://www.facebook.com/profile.php?id=61564416080799",
+    Icon: Facebook,
+  },
+  {
+    name: "instagram",
+    href: "https://www.instagram.com/the_legacyrealty/",
+    Icon: Instagram,
+  },
+  {
+    name: "linkedin",
+    href: "https://www.linkedin.com/company/the-legacy-realty/posts/?feedView=all",
+    Icon: Linkedin,
+  },
+  {
+    name: "youtube",
+    href: "https://www.youtube.com/@TheLegacyRealty/videos",
+    Icon: Youtube,
+  },
+];
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -78,7 +103,7 @@ export default function Header() {
 
             {/* Desktop Nav */}
             <nav className="hidden md:flex items-center space-x-8 text-lg  font-weight-900">
-              <NavLink to="/" >Home</NavLink>
+              <NavLink to="/">Home</NavLink>
               <NavLink to="/aboutus">About Us</NavLink>
 
               {/* ✅ Cities Dropdown */}
@@ -324,7 +349,7 @@ export default function Header() {
                   {/* Contact Info */}
                   <div className="space-y-4 mt-12">
                     <div className="flex items-center gap-3 text-sm">
-                      <Mail className="w-5 h-5 text-secondary" />
+                      <Mail className="w-5 h-5 text-primary" />
                       <a
                         href="mailto:info.thelegacyrealty@gmail.com"
                         className="hover:text-secondary transition"
@@ -333,23 +358,28 @@ export default function Header() {
                       </a>
                     </div>
                     <div className="flex items-center gap-3 text-sm">
-                      <MapPin className="w-5 h-5 text-secondary" />
+                      <MapPin className="w-5 h-5 text-primary" />
                       <span>
                         2nd floor, sco 275, Sector 118, Sahibzada Ajit Singh
                         Nagar, Punjab
                       </span>
                     </div>
 
-                    <div className="flex gap-4 pt-2">
-                      {[Facebook, Twitter, Instagram].map((Icon, i) => (
-                        <a
-                          key={i}
-                          href="#"
-                          className="hover:text-secondary transition"
-                        >
-                          <Icon className="w-5 h-5" />
-                        </a>
-                      ))}
+                    <div className="flex space-x-4 mt-8">
+                      {socialLinks
+                        .filter((s) => s.href && s.href !== "#")
+                        .map(({ name, href, Icon }) => (
+                          <a
+                            key={name}
+                            href={href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-gradient-to-br from-secondary to-foreground hover:from-foreground hover:to-secondary p-3 rounded-full transition-colors duration-200"
+                            aria-label={name}
+                          >
+                            <Icon className="h-5 w-5" />
+                          </a>
+                        ))}
                     </div>
                   </div>
 
