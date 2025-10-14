@@ -90,11 +90,17 @@ export default {
             height: "0",
           },
         },
+         "move-bg": {
+        "0%, 100%": { backgroundPosition: "0% center" },
+        "50%": { backgroundPosition: "100% center" },
+      },
       },
       animation: {
+         "move-bg": "move-bg 20s ease-in-out infinite",
         shine: 'shine 5s linear infinite',
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+       
       },
     },
   },

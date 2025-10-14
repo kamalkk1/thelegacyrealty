@@ -5,7 +5,8 @@ import { motion, type Variants } from "framer-motion"; // Import Variants type
 import { useState } from "react";
 import CTAPopup from "../components/CTAPopup";
 import rahul from "../assets/Rahul-Ahuja.png";
-import tlrlogo from "../../public/LOGO-1.png";
+import gaurav from "../assets/projectlogos/Gaurav.jpeg";
+
 import { Link } from "react-router-dom";
 import ceos from "../assets/TheLegacyRealtyCEOs.jpg";
 const AboutUs = () => {
@@ -62,22 +63,14 @@ const AboutUs = () => {
           >
             <motion.h1
               variants={fadeInUp}
-              className="text-5xl lg:text-7xl font-bold mb-6 font-poppins flex justify-center items-center gap-8 flex-wrap"
+              className="text-5xl lg:text-7xl font-bold mb-6 font-poiret flex justify-between gap-8 flex-wrap"
             >
-              About
-              <img
-                src={tlrlogo}
-                alt="About Legacy Realty"
-                className="w-24 h-auto sm:w-28 lg:w-36 object-contain inline-block"
-              />
+              About Us
+              
               
             </motion.h1>
 
-            <motion.div
-              variants={fadeInUp}
-              custom={0.2}
-              className="w-24 h-1 bg-primary mx-auto mb-8"
-            ></motion.div>
+           
           </motion.div>
         </div>
       </section>
@@ -113,7 +106,7 @@ const AboutUs = () => {
               >
                 <div className="text-center">
                   <div className="text-3xl font-bold text-secondary mb-1">
-                    12+
+                    15+
                   </div>
                   <div className="text-sm text-gray-600">Years Experience</div>
                 </div>
@@ -245,7 +238,7 @@ const AboutUs = () => {
                   <Link to="/contact-us">
                     <Button
                       variant="outline"
-                      className="relative before:absolute before:inset-0 before:bg-white before:-z-[1] bg-white/100 mt-6 border-primary text-secondary hover:bg-primary hover:text-white"
+                      className="relative before:absolute before:inset-0  before:bg-white before:-z-[1] bg-white/100 mt-6 border-secondary text-secondary hover:bg-primary hover:text-secondary"
                     >
                       Contact Us
                     </Button>
@@ -324,7 +317,7 @@ const AboutUs = () => {
               >
                 <div className="relative">
                   <img
-                    src="https://creatifyindia.com/thelegacyrealty/wp-content/uploads/2024/11/Gaurav-Bajwa-1-1024x1024.png"
+                    src={gaurav}
                     alt="Founder"
                     className="w-full max-w-sm mx-auto rounded-3xl shadow-2xl"
                   />

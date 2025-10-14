@@ -1,5 +1,5 @@
 
-import { motion } from "framer-motion";
+import { motion,type Variants } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 import emailjs from "emailjs-com";
@@ -50,19 +50,46 @@ export default function ContactPage() {
       setLoading(false);
     }
   };
-
+    const fadeInUp: Variants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: (delay = 0) => ({
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, delay, ease: "easeOut" },
+    }),
+  };
+  const staggerContainer: Variants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: 0.3,
+      },
+    },
+  };
   return (
     <div className="w-full">
       {/* Hero */}
-      <section className="relative h-64 bg-foreground bg-cover bg-center flex items-center justify-center">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-center text-white"
-        >
-          <h1 className="text-4xl font-bold">Contact Us</h1>
-          <p className="mt-2 text-sm">Home / Contact</p>
-        </motion.div>
+      <section className="relative bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white py-20">
+        <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={staggerContainer}
+          >
+            <motion.h1
+              variants={fadeInUp}
+              className="text-5xl lg:text-7xl font-bold mb-6 font-poiret flex justify-between gap-8 flex-wrap"
+            >
+              Contact Us
+              
+              
+            </motion.h1>
+
+           
+          </motion.div>
+        </div>
       </section>
 
       {/* Location + Form */}
@@ -100,7 +127,7 @@ export default function ContactPage() {
           viewport={{ once: true }}
         >
           <div className="bg-black text-white rounded-2xl shadow-xl p-8">
-            <h3 className="text-2xl font-bold mb-2 text-primary">
+            <h3 className="text-2xl font-bold mb-2 text-primary font-poiret">
               Get In Touch With Us
             </h3>
             <p className="text-sm text-gray-300 mb-6">

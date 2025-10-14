@@ -44,14 +44,7 @@ const NewChandigarhCityPage = () => {
               >
             <h1 className="text-6xl text-primary lg:text-8xl font-bold font-poiret mb-6">
               NEW CHANDIGARH
-            </h1>
-            <p className="text-xl text-primary lg:text-2xl font-inter mb-8">
-              The Smart City of Tomorrow - Future Redefined
-            </p>
-            <div className="flex items-center justify-center gap-2 text-lg">
-              <MapPin className="w-6 h-6" />
-              {/* <span>30°48'N 76°43'E</span> */}
-            </div></div>
+            </h1></div>
           </motion.div>
         </div>
       </motion.section>
@@ -176,9 +169,21 @@ const NewChandigarhCityPage = () => {
                         <MapPin className="w-4 h-4 mr-1" />
                         <span>{property.location}</span>
                       </div>
-                      <div className="w-full mt-4 bg-primary text-white py-2 px-4 rounded-lg hover:bg-primary/90 transition-colors font-medium text-center">
+                      <div className="w-full mt-4 bg-primary text-secondary py-2 px-4 rounded-lg hover:bg-primary/90 transition-colors font-medium text-start">
                         View Details
                       </div>
+                       {property.logoimage && (
+                  <div
+                    className="absolute bottom-4 right-2 w-40 h-20 rounded-lg
+                  flex items-center justify-center"
+                  >
+                    <img
+                      src={property.logoimage}
+                      alt={`${property.name} logo`}
+                      className="w-46 h-34 object-contain"
+                    />
+                  </div>
+                )}
                     </CardContent>
                   </Card>
                 </Link>

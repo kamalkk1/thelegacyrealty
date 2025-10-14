@@ -4,12 +4,13 @@ import ProjectDetailPage from "./pages/ProjectDetailPage";
 import { ProjectProvider } from "./context/ProjectContext";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
-
+import MohaliHighStreetLanding from "./pages/MohaliHghStreetLanding";
 import Layout from "./layout/Layout";
 import MohaliCityPage from "./pages/MohaliCityPage";
 import NewChandigarhCityPage from "./pages/NewChandigarhCityPage";
 import ProjectTypePage from "./pages/ProjectTypePage";
 import ChandigarhCityPage from "./pages/ChandigarhCityPage";
+import MapPage from "./pages/MapPage";
 function App() {
   return (
     <ProjectProvider>
@@ -21,6 +22,9 @@ function App() {
               <Route path="/projects" element={<HomePage />} />
               <Route path="/aboutus" element={<AboutUs />} />
               <Route path="/contact-us" element={<ContactUs />} />
+              <Route path="/location-map-mohali-chandigarh-zirakpur-tricity" element={<MapPage />} />
+              <Route path="/commercial/mohali-high-street-sector-114-landran-road" element={<MohaliHighStreetLanding />} />
+
               <Route
                 path="/project/:projectName"
                 element={<ProjectDetailPage />}
