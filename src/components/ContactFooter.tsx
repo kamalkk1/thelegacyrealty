@@ -47,7 +47,7 @@ const ContactFooter = () => {
                   href="tel:+919876543210"
                   className="font-poiret text-blue-100 hover:text-white transition-colors duration-200"
                 >
-                  (+91) 98882 47787 , (+91) 94639 00803
+                  (+91) 98882 47787 , (+91) 94639 00803, (+91) 9695798957
                 </a>
               </div>
 

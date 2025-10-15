@@ -1,12 +1,16 @@
 // components/sections/HeroSection.tsx
-import  { useState } from 'react';
+import { useState, type RefObject } from 'react';
 import { motion } from 'framer-motion';
 import { Phone, Download } from 'lucide-react';
 import { Button } from '../../components/ui/button';
 import bgImage from '../../assets/mohali-highstreet.webp';
 import LeadForm from '../LeadForm';
 
-const HeroSection = () => {
+interface HeroSectionProps {
+  formRef?: RefObject<HTMLDivElement | null>;
+}
+
+const HeroSection = ({ formRef }: HeroSectionProps) => {
   const [showLeadForm, setShowLeadForm] = useState(false);
 
   const fadeIn = {
@@ -17,7 +21,7 @@ const HeroSection = () => {
   return (
     <>
 <section
-  className="relative text-white py-16 pt-28 overflow-hidden bg-no-repeat bg-[length:100%] animate-move-bg"
+  className="relative text-white py-12 pt-28 overflow-hidden bg-no-repeat bg-[length:100%] animate-move-bg"
   style={{
     backgroundImage: `url(${bgImage})`,
   }}
@@ -92,9 +96,9 @@ const HeroSection = () => {
                 className="flex flex-col sm:flex-row gap-4"
               >
                 <Button asChild className="bg-primary hover:bg-primary/90 text-secondary px-8 py-3 text-lg">
-                  <a href="tel:+919888247787">
+                  <a href="tel:+919695798957">
                     <Phone className="w-5 h-5 mr-2" />
-                    Call Now: +91-9888247787
+                    Call Now: +91-9695798957
                   </a>
                 </Button>
                 <Button 
@@ -110,6 +114,7 @@ const HeroSection = () => {
             
             {/* Right Lead Form */}
             <motion.div
+              ref={formRef}
               initial="hidden"
               animate="visible"
               variants={{ hidden: { opacity: 0, x: 30 }, visible: { opacity: 1, x: 0, transition: { duration: 0.6, delay: 0.3 } } }}

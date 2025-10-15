@@ -1,16 +1,14 @@
 // components/sections/FinalCTA.tsx
-import  { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Phone, MessageSquare, Download } from 'lucide-react';
 import { Button } from '../components/ui/button';
-import LeadForm from '../components/LeadForm';
+import { useScrollToForm } from '../pages/MohaliHghStreetLanding';
 
 const FinalCTA = () => {
-  const [showLeadForm, setShowLeadForm] = useState(false);
+  const { scrollToForm } = useScrollToForm();
 
   return (
-    <>
-      <section className="py-16 bg-gradient-to-r from-primary to-secondary relative overflow-hidden">
+    <section className="py-16 bg-gradient-to-r from-primary to-secondary relative overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 left-10 w-20 h-20 border border-white/30 rounded-full"></div>
@@ -42,9 +40,9 @@ const FinalCTA = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center mb-8"
           >
             <Button asChild size="lg" className="bg-white text-secondary hover:bg-gray-100 px-8 py-4 text-lg">
-              <a href="tel:+919888247787">
+              <a href="tel:+919695798957">
                 <Phone className="w-5 h-5 mr-2" />
-                Call Now: +91-9888247787
+                Call Now: +91-9695798957
               </a>
             </Button>
             
@@ -52,14 +50,14 @@ const FinalCTA = () => {
               size="lg" 
               variant="outline" 
               className="border-2 border-white text-secondary hover:bg-white hover:text-secondary px-8 py-4 text-lg"
-              onClick={() => setShowLeadForm(true)}
+              onClick={scrollToForm}
             >
               <Download className="w-5 h-5 mr-2" />
-              Download Brochure
+              Get Brochure & Floor Plans
             </Button>
             
             <Button asChild size="lg" className="bg-green-500 hover:bg-green-600 px-8 py-4 text-lg">
-              <a href="https://wa.me/919888247787" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/919695798957" target="_blank" rel="noopener noreferrer">
                 <MessageSquare className="w-5 h-5 mr-2" />
                 WhatsApp Us
               </a>
@@ -77,21 +75,6 @@ const FinalCTA = () => {
           </motion.p>
         </div>
       </section>
-
-      {/* Lead Form Modal */}
-      {showLeadForm && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-          <div className="bg-white rounded-2xl p-8 max-w-md w-full max-h-[90vh] overflow-y-auto">
-            <h3 className="text-xl font-bold mb-4">Download Project Brochure</h3>
-            <LeadForm 
-              source="Final CTA"
-              ctaText="📥 Download Brochure"
-              onClose={() => setShowLeadForm(false)}
-            />
-          </div>
-        </div>
-      )}
-    </>
   );
 };
 

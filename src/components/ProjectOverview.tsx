@@ -1,11 +1,14 @@
 // components/sections/ProjectOverview.tsx
 
 import { motion } from 'framer-motion';
-import { Building} from 'lucide-react';
+import { Building, Download } from 'lucide-react';
 import { Card, CardContent } from '../components/ui/card';
 import { Button } from '../components/ui/button';
+import { useScrollToForm } from '../pages/MohaliHghStreetLanding';
 
 const ProjectOverview = () => {
+  const { scrollToForm } = useScrollToForm();
+  
   const fadeInUp = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
@@ -73,8 +76,12 @@ const ProjectOverview = () => {
                   </div>
                 </div>
                 
-                <Button className="w-full bg-secondary hover:bg-secondary/90">
-                  View Floor Plans
+                <Button 
+                  onClick={scrollToForm}
+                  className="w-full bg-secondary hover:bg-secondary/90"
+                >
+                  <Download className="w-4 h-4 mr-2" />
+                  Get Brochure & Floor Plans
                 </Button>
               </CardContent>
             </Card>
@@ -126,8 +133,12 @@ const ProjectOverview = () => {
                   </div>
                 </div>
                 
-                <Button className="w-full bg-secondary hover:bg-secondary/90">
-                  View Floor Plans
+                <Button 
+                  onClick={scrollToForm}
+                  className="w-full bg-secondary hover:bg-secondary/90"
+                >
+                  <Download className="w-4 h-4 mr-2" />
+                  Get Brochure & Floor Plans
                 </Button>
               </CardContent>
             </Card>

@@ -34,7 +34,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
       {/* Floating WhatsApp Button */}
       <a
-        href="https://wa.me/919888247787" // replace with your number
+        href="https://wa.me/919695798957" // replace with your number
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-16 sm:bottom-6 right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors"
