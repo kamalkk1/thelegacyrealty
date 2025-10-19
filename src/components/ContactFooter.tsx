@@ -122,13 +122,13 @@ const ContactFooter = () => {
 
             <div className="flex space-x-6">
               <Link
-                to="/"
+                to="/privacy-policy"
                 className="font-poiret text-blue-200 hover:text-white transition-colors duration-200"
               >
                 Privacy Policy
               </Link>
               <Link
-                to="/"
+                to="/terms-of-service"
                 className="font-poiret text-blue-200 hover:text-white transition-colors duration-200"
               >
                 Terms of Service

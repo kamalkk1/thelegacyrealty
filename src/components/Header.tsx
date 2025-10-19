@@ -15,13 +15,6 @@ import {
 } from "lucide-react";
 import logo from "../assets/tlrlogo.webp";
 
-import {
-  DropdownMenu,
-  DropdownMenuTrigger,
-  DropdownMenuContent,
-  DropdownMenuItem,
-} from "@/components/ui/dropdown-menu";
-
 // Example: Social mapping (React / TSX)
 const socialLinks = [
   {
@@ -55,6 +48,7 @@ export default function Header() {
     { name: "Mohali", path: "/cities/mohali" },
     { name: "New Chandigarh", path: "/cities/new-chandigarh" },
     { name: "Chandigarh", path: "/cities/chandigarh" },
+    { name: "Himachal", path: "/cities/himachal" },
   ];
 
   const projectTypes = [
@@ -105,21 +99,13 @@ export default function Header() {
             <nav className="hidden md:flex items-center space-x-8 text-lg  font-weight-900">
               <NavLink to="/">Home</NavLink>
               <NavLink to="/aboutus">About Us</NavLink>
-
               {/* ✅ Cities Dropdown */}
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <button className="flex items-center text-secondary  transition-colors">
-                    <span className="font-extrabold">Cities</span>{" "}
-                    <ChevronDown className="ml-1 w-4 h-4" />
-                  </button>
-                </DropdownMenuTrigger>
-
-                <DropdownMenuContent
-                  sideOffset={8}
-                  className="w-48 bg-white text-poiret rounded-lg shadow-xl p-1 overflow-hidden"
-                  asChild
-                >
+              <div className="relative group hidden md:block">
+                <button className="flex items-center text-secondary transition-colors">
+                  <span className="font-extrabold">Cities</span>{" "}
+                  <ChevronDown className="ml-1 w-4 h-4" />
+                </button>
+                <div className="absolute left-0 mt-2 w-48 bg-white text-poiret rounded-lg shadow-xl p-1 overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                   <motion.div
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -127,33 +113,25 @@ export default function Header() {
                     transition={{ duration: 0.25 }}
                   >
                     {cities.map((city) => (
-                      <DropdownMenuItem asChild key={city.path}>
-                        <Link
-                          to={city.path}
-                          className="block px-4 py-2 text-gray-800 text-poiret rounded-md"
-                        >
-                          {city.name}
-                        </Link>
-                      </DropdownMenuItem>
+                      <Link
+                        key={city.path}
+                        to={city.path}
+                        className="block px-4 py-2 text-gray-800 text-poiret rounded-md hover:bg-gray-100"
+                      >
+                        {city.name}
+                      </Link>
                     ))}
                   </motion.div>
-                </DropdownMenuContent>
-              </DropdownMenu>
+                </div>
+              </div>
 
               {/* ✅ Projects Dropdown */}
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <button className="flex items-center text-secondary  transition-colors">
-                    <span className="font-extrabold">Projects</span>{" "}
-                    <ChevronDown className="ml-1 w-4 h-4" />
-                  </button>
-                </DropdownMenuTrigger>
-
-                <DropdownMenuContent
-                  sideOffset={8}
-                  className="w-56 bg-white rounded-lg shadow-xl p-1 overflow-hidden"
-                  asChild
-                >
+              <div className="relative group hidden md:block">
+                <button className="flex items-center text-secondary transition-colors">
+                  <span className="font-extrabold">Projects</span>{" "}
+                  <ChevronDown className="ml-1 w-4 h-4" />
+                </button>
+                <div className="absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-xl p-1 overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                   <motion.div
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -161,18 +139,23 @@ export default function Header() {
                     transition={{ duration: 0.25 }}
                   >
                     {projectTypes.map((type) => (
-                      <DropdownMenuItem asChild key={type.path}>
-                        <Link
-                          to={type.path}
-                          className="block px-4 py-2 text-gray-800 rounded-md"
-                        >
-                          {type.name}
-                        </Link>
-                      </DropdownMenuItem>
+                      <Link
+                        key={type.path}
+                        to={type.path}
+                        className="block px-4 py-2 text-gray-800 rounded-md hover:bg-gray-100"
+                      >
+                        {type.name}
+                      </Link>
                     ))}
                   </motion.div>
-                </DropdownMenuContent>
-              </DropdownMenu>
+                </div>
+              </div>
+              <NavLink to="/our-team">Our Team</NavLink>
+              <NavLink to="/careers">Careers</NavLink>
+
+              <NavLink to="/location-map-mohali-chandigarh-zirakpur-tricity">
+                Maps
+              </NavLink>
 
               <Link
                 to="/contact-us"
@@ -253,13 +236,6 @@ export default function Header() {
                       className="block hover:text-secondary transition"
                     >
                       About Us
-                    </Link>
-                    <Link
-                      to="/contact-us"
-                      onClick={onClose}
-                      className="block hover:text-secondary transition"
-                    >
-                      Contact Us
                     </Link>
                     {/* ✅ Projects Accordion */}
                     <div>
@@ -344,6 +320,34 @@ export default function Header() {
                         )}
                       </AnimatePresence>
                     </div>
+                    <Link
+                      onClick={onClose}
+                      className="block hover:text-secondary transition"
+                      to="/location-map-mohali-chandigarh-zirakpur-tricity"
+                    >
+                      Maps
+                    </Link>
+                    <Link
+                      to="/our-team"
+                      onClick={onClose}
+                      className="block hover:text-secondary transition"
+                    >
+                      Our Team
+                    </Link>
+                    <Link
+                      to="/careers"
+                      onClick={onClose}
+                      className="block hover:text-secondary transition"
+                    >
+                      Careers
+                    </Link>
+                    <Link
+                      to="/contact-us"
+                      onClick={onClose}
+                      className="block hover:text-secondary transition"
+                    >
+                      Contact Us
+                    </Link>
                   </nav>
 
                   {/* Contact Info */}

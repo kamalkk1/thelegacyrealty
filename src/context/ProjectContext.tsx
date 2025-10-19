@@ -61,14 +61,14 @@ import noble3 from "../assets/noblewillassa/noblewillasaexterior.jpg";
 import amari1 from "../assets/amarivintage/amariclubhouse.webp";
 import amari2 from "../assets/amarivintage/gym.webp";
 import amari3 from "../assets/amarivintage/interior1.webp";
-
+import pinnaclebrochure from "../assets/stjpinnacle/Brochure.pdf";
 import mdblogo from "../assets/projectlogos/MDB.png";
 import amarilogo from "../assets/projectlogos/AmariVintageLogo.png";
 import clermontlogo from "../assets/projectlogos/ClearmontONeGroup.png";
 import mayfieldslogo from "../assets/projectlogos/MayfieldLogo.png";
 import greenwoodslogo from "../assets/projectlogos/GreenwoodLogo.png";
 import bollygreenlogo from "../assets/projectlogos/Bollywoodlogo.png"
-
+import khetanbrochure from "../assets/Khetanswissgarden/SwissGardenBrochure.pdf"
 
 import thelakelogo from "../assets/projectlogos/OmaxeLakeLogo.png";
 import noblelogo from "../assets/projectlogos/NobleWillasaLogo.png";
@@ -80,7 +80,7 @@ export interface Project {
   id: string;
   name: string;
   location: string;
-  city: "Mohali" | "Chandigarh" | "New Chandigarh";
+  city: "Mohali" | "Chandigarh" | "New Chandigarh" | "Himachal";
   type: "Residential" | "Commercial" | "Plots" | "Commercial";
   status:
     | "Ready to Move"
@@ -1503,6 +1503,600 @@ const projects: Project[] = [
 
   slug: "bollywood-green-city-phase-iv"
 },
+  {
+    id: "stj-pinnacle",
+    name: "The Pinnacle",
+    logoimage: "https://thepinnacle-mohali.com/wp-content/uploads/2024/07/pin_logo.png", // Add your logo image
+    location: "Sector 83A IT City, Mohali",
+    city: "Mohali",
+    type: "Residential",
+    status: "Under Construction",
+    image: "https://thepinnacle-mohali.com/wp-content/uploads/2025/01/Screenshot-2025-01-27-185636.png", // Add your main image
+    brochure: pinnaclebrochure, // Add your brochure PDF
+    developer: "STJ Group & GB Realty",
+    description: "The Pinnacle Mohali is a luxurious residential project offering 3, 4, and 5 BHK ultra-luxury apartments designed by renowned architect Hafeez Contractor. Located in IT City Mohali with world-class 5-star amenities spread across 8 acres.",
+
+    brandFoundation: {
+      title: "Experience the Luxury Living",
+      subtitle: "Where Contemporary Design Meets Timeless Elegance",
+      philosophy: "At THE PINNACLE, trust and excellence are pivotal. Designed by master architect Hafeez Contractor, this residential masterpiece features cutting-edge Mivan technology, 1 lakh+ sq ft grand clubhouse, and unparalleled luxury in the heart of Mohali IT City.",
+      keyPrinciples: [
+        {
+          title: "Architectural Excellence",
+          description: "Designed by legendary architect Hafeez Contractor, ensuring timeless architectural brilliance with cutting-edge design and spectacular planning."
+        },
+        {
+          title: "Prime IT City Location",
+          description: "Strategic location adjoining Infosys, HDFC Regional Office, and fronting prestigious Plaksha University with 200 ft Airport Road connectivity."
+        },
+        {
+          title: "Grand Clubhouse & Amenities",
+          description: "Experience 1 lakh+ sq ft grand clubhouse with 2-acre sky garden, 5-acre landscaped area, infinity pool, modern gym, golf activity, and premium lifestyle amenities."
+        }
+      ]
+    },
+
+    gallery: [
+      {
+        id: 1,
+        type: "exterior",
+        title: "Tower Elevation",
+        image: "https://thepinnacle-mohali.com/wp-content/uploads/2025/06/Untitled-1024-x-1920-px-1920-x-1080-px-1920-x-1080-px-1500-x-675-px-1600-x-900-px-1500-x-750-px-e1749113903277.png",
+        description: "Bold outer elevation merging modern architecture with timeless aesthetics"
+      },
+      {
+        id: 2,
+        type: "amenity",
+        title: "Grand Clubhouse",
+        image: "https://thepinnacle-mohali.com/wp-content/uploads/2024/07/7-e1727435381226.png",
+        description: "1 lakh+ sq ft clubhouse with world-class amenities"
+      },
+      {
+        id: 3,
+        type: "floorplan",
+        title: "3 BHK Layout",
+        image: "https://thepinnacle-mohali.com/wp-content/uploads/2024/07/23.png", // Add your floor plan
+        description: "Fully equipped 3 BHK apartment with premium specifications"
+      },
+      {
+        id: 4,
+        type: "landscape",
+        title: "Sky Garden",
+        image: "https://thepinnacle-mohali.com/wp-content/uploads/2024/11/331-FLOOR-PLAN-PINNACLE-19-2048x1446.png",
+        description: "2-acre sky garden offering breathtaking views"
+      }
+    ],
+
+    amenities: [
+      "1 Lakh+ Sq Ft Grand Clubhouse",
+      "2-Acre Sky Garden",
+      "5-Acre Landscaped Open Area",
+      "Infinity Swimming Pool",
+      "Modern Gymnasium & Sports Court",
+      "Golf, Cricket, Basketball, Tennis Courts",
+      "Yoga & Meditation Center",
+      "Hospitality & Dining",
+      "Kids Play Area",
+      "6 Tier Private Security",
+      "Covered Parking for Each Apartment",
+      "24/7 Medical Center",
+      "Fully Equipped Flats",
+      "High-Speed Elevators"
+    ],
+
+    specifications: {
+      developer: "STJ Group & GB Realty",
+      architect: "Hafeez Contractor",
+      landParcel: "8 acres",
+      construction: "Advanced Mivan Technology",
+      skyGarden: "2 acres",
+      landscapedArea: "5 acres",
+      constructionArea: "3 acres",
+      configurations: ["3 BHK", "3+1 BHK", "4+1 BHK", "5 BHK"],
+      possession: "2027",
+      approvals: ["RERA Approved", "GMADA Approved"],
+      connectivity: ["200 ft Airport Road", "150 ft Road"]
+    },
+
+    connectivity: [
+      "International Airport - 5 km",
+      "Adjoining Infosys Campus",
+      "Fronting Plaksha University",
+      "Neighboring HDFC Regional Office",
+      "Chandigarh - 13 km",
+      "Himachal, Haryana & Punjab connectivity"
+    ],
+
+    highlights: [
+      "Designed by Hafeez Contractor",
+      "7 Star Residential Property",
+      "IT City Prime Location",
+      "1 Lakh+ Sq Ft Clubhouse",
+      "Mivan Construction Technology",
+      "Fully Loaded Apartments"
+    ],
+
+    slug: "stj-pinnacle"
+  },
+
+  // 2. KHETAN SWISS GARDEN
+  {
+    id: "khetan-swiss-garden",
+    name: "Khetan Swiss Gardens",
+    logoimage: "https://khetanswissgardens.com/wp-content/uploads/2025/01/SWISS-LOGO-2.png",
+    location: "Sector 126, Airport Road, Mohali",
+    city: "Mohali",
+    type: "Residential",
+    status: "Under Construction",
+    image: "https://khetanswissgardens.com/wp-content/uploads/2025/02/Gallery6.png",
+    brochure: khetanbrochure,
+    developer: "Khetan Realty",
+    description: "Step into an enriching environment with Vastu-friendly homes located on Airport Road, Sector 126 Mohali. RERA-approved project offering 2, 3 & 3+1 BHK luxury apartments with S+14 floors and 3-star clubhouse amenities.",
+
+    brandFoundation: {
+      title: "Endowing Essence to Your Dreams",
+      subtitle: "Vastu Friendly Luxury Living",
+      philosophy: "Khetan Swiss Gardens is a RERA-approved project strategically located at Sector 126, Greater Mohali, well-designed with majestic architecture and stunning amenities. The project offers Vastu-friendly homes with 7 towers, each having Stilt+14 floors with clubhouse and ultra-modern amenities.",
+      keyPrinciples: [
+        {
+          title: "Vastu Compliance",
+          description: "Every home is designed according to Vastu principles, ensuring positive energy flow and harmonious living environment."
+        },
+        {
+          title: "Strategic Location",
+          description: "Prime location on Airport Road with easy access to VR Punjab Mall (1.9 km), International Airport (18 km), and Chandigarh (4 km)."
+        },
+        {
+          title: "3 Star Clubhouse",
+          description: "World-class amenities including swimming pool, gymnasium, indoor games, banquet hall, multi-cuisine restaurant, and co-working space."
+        }
+      ]
+    },
+
+    gallery: [
+      {
+        id: 1,
+        type: "exterior",
+        title: "Project View",
+        image: "https://khetanswissgardens.com/wp-content/uploads/2025/02/04.jpg",
+        description: "7 towers with Stilt+14 floors each"
+      },
+      {
+        id: 2,
+        type: "amenity",
+        title: "Clubhouse",
+        image: "https://khetanswissgardens.com/wp-content/uploads/2025/02/PANA5795.webp",
+        description: "3-star clubhouse with premium amenities"
+      },
+      {
+        id: 3,
+        type: "floorplan",
+        title: "2 BHK Layout",
+        image: "https://khetanswissgardens.com/wp-content/uploads/2025/05/Swiss-Garden-floor-plan-scaled.webp",
+        description: "Spacious 2 BHK apartment layout"
+      },
+      {
+        id: 4,
+        type: "landscape",
+        title: "Central Plaza",
+        image: "https://khetanswissgardens.com/wp-content/uploads/2025/02/recreational-path-green-park-lined-up-with-trees-beanch_42667-1212-1.webp",
+        description: "Central plaza with outdoor landscape"
+      }
+    ],
+
+    amenities: [
+      "RERA Approved",
+      "3 Star Club House",
+      "Swimming Pool",
+      "Gymnasium",
+      "Indoor Games",
+      "Banquet Hall",
+      "Basketball Court",
+      "Badminton Court",
+      "Multi-cuisine Restaurant",
+      "Co-working Space",
+      "Dance Room",
+      "Central Plaza",
+      "Gazebo",
+      "Outdoor Landscape",
+      "Recreational Area"
+    ],
+
+    specifications: {
+      developer: "Khetan Realty",
+      landParcel: "4.1 acres",
+      towers: 7,
+      floors: "Stilt + 14",
+      units: "369 units",
+      configurations: ["2 BHK", "3 BHK", "3+1 BHK"],
+      sizes: "1325 - 2075 sq ft",
+      possession: "Under Construction",
+      approvals: ["PBRERA-SAS81-PR0827"],
+      reraWebsite: "www.rera.punjab.gov.in"
+    },
+
+    connectivity: [
+      "VR Punjab Mall - 1.9 km",
+      "International Airport - 18 km",
+      "Chandigarh - 4 km",
+      "Max Hospital - 6.4 km",
+      "Fortis Hospital - 9 km",
+      "ISB Mohali - 11 km",
+      "DPS Sector 92 - 5.3 km",
+      "Cricket Stadium - 9.5 km"
+    ],
+
+    highlights: [
+      "Vastu Friendly Homes",
+      "Airport Road Location",
+      "7 Towers - Stilt+14 Floors",
+      "3 Star Clubhouse",
+      "Construction Started",
+      "Bank Loan Available"
+    ],
+
+    slug: "khetan-swiss-garden"
+  },
+
+  // 3. THE KASUL (KASAULI HIMACHAL)
+  {
+    id: "the-kasul-kasauli",
+    name: "The Kasul",
+    logoimage: "https://kasul.in/wp-content/uploads/2025/08/kasul-logo-1.png",
+    location: "Kasauli, Himachal Pradesh",
+    city: "Himachal", // Can be changed to "Himachal" if you add that option
+    type: "Residential",
+    status: "Booking Open",
+    image: "https://kasul.in/wp-content/uploads/2025/08/Kasouli-Villa-Aerial-Cam.webp",
+    // brochure: kasulbrochure,
+    developer: "Hill Homes",
+    description: "Himachal's most lavish & unique estate villas. The Kasul offers 4 & 5 BHK drive-in villas with private heated pool, lawn, kitchen garden & independent lift spread across 75 bighas in Kasauli's pine-covered hills.",
+
+    brandFoundation: {
+      title: "Himachal's Most Exclusive Estate Villa Development",
+      subtitle: "Luxury Living by the Hills",
+      philosophy: "The Kasul is more than a home – it's the most precious gift you can give your family. Located in the heart of Kasauli's pine-covered hills, offering only 36 ultra-luxury estate villas in a gated community spread across 75 bighas with 90% open greens.",
+      keyPrinciples: [
+        {
+          title: "Ultra-Luxury Estate Villas",
+          description: "4 & 5 BHK villas with 8000+ sq ft usable area, private heated pool, independent lift, parking for 4 SUVs, and 3 living rooms - one on each floor."
+        },
+        {
+          title: "Exclusive Community",
+          description: "Only 36 villas in 75 bighas of land with just 10% construction and 90% open greens. Features 3-acre central garden - a first in hill projects."
+        },
+        {
+          title: "World-Class Clubhouse",
+          description: "Infinity heated pool, gym, yoga room, signature restaurant, indoor games, co-working lounge, EV charging, and 24x7 security with daily needs convenience."
+        }
+      ]
+    },
+
+    gallery: [
+      {
+        id: 1,
+        type: "exterior",
+        title: "Estate Villa Exterior",
+        image: "https://kasul.in/wp-content/uploads/2025/08/Kasouli-Villa-Villa-Front-Cam.webp",
+        description: "Luxurious estate villa with private pool and lawn"
+      },
+      {
+        id: 2,
+        type: "amenity",
+        title: "Private Heated Pool",
+        image: "https://kasul.in/wp-content/uploads/2025/08/Kasouli-Villa_Balcony-Cam.webp",
+        description: "Private heated swimming pool for each villa"
+      },
+      {
+        id: 3,
+        type: "landscape",
+        title: "Valley Views",
+        image: "https://kasul.in/wp-content/uploads/2025/08/Kasouli-Villa-Landscape-Cam01.webp",
+        description: "Breathtaking valley and pine forest views"
+      },
+      {
+        id: 4,
+        type: "amenity",
+        title: "Clubhouse",
+        image: "https://kasul.in/wp-content/uploads/2025/08/Family-Lounge-2nd-floor.webp",
+        description: "World-class clubhouse with infinity pool"
+      }
+    ],
+
+    amenities: [
+      "Private Heated Swimming Pool",
+      "Independent Lift in Each Villa",
+      "Private Lawn & Kitchen Garden",
+      "Parking for 4 SUVs",
+      "3 Living Rooms (One Per Floor)",
+      "Infinity Heated Clubhouse Pool",
+      "Fully Equipped Gym",
+      "Yoga & Meditation Room",
+      "Signature Restaurant",
+      "Indoor Games (Snooker, Table Tennis)",
+      "Co-working Lounge",
+      "EV Charging Station",
+      "24x7 Security",
+      "3-Acre Central Garden",
+      "90% Open Greens"
+    ],
+
+    specifications: {
+      developer: "Hill Homes",
+      landParcel: "75 bighas",
+      totalVillas: 36,
+      configurations: ["4 BHK + Servant Room", "5 BHK + Servant Room"],
+      usableArea: "8000+ sq ft",
+      construction: "10% Built-up Area",
+      openArea: "90% Greens",
+      centralGarden: "3 acres",
+      possession: "Ready to Move",
+      approvals: ["RERA Approved", "Himachal Government Approved"],
+      bankLoan: "Available"
+    },
+
+    connectivity: [
+      "Chandigarh Airport - 1.5 hours",
+      "Kalka Shimla Highway - 1 km",
+      "Kasauli - In the heart",
+      "Chandigarh - 1.5 hours drive",
+      "Dharampur - Nearby",
+      "Shimla - Well connected"
+    ],
+
+    highlights: [
+      "Only 36 Ultra-Luxury Villas",
+      "Private Heated Pool in Each Villa",
+      "Independent Lift",
+      "8000+ Sq Ft Usable Area",
+      "75 Bighas Gated Community",
+      "90% Open Greens",
+      "3-Acre Central Garden",
+      "100% Risk-Free Investment"
+    ],
+
+    slug: "the-kasul-kasauli"
+  },
+
+  // 4. CARNATION HILLS DHARAMPUR
+  {
+    id: "carnation-hills-dharampur",
+    name: "Carnation Hills",
+    logoimage: "https://carnationhills.com/images/logo.png",
+    location: "Dharampur, Kasauli, Himachal Pradesh",
+    city: "Himachal", // Can be changed
+    type: "Residential",
+    status: "Under Construction",
+    image: "https://carnationhills.com/images/slider2.jpg",
+    // brochure: carnationbrochure,
+    developer: "RKN Infratech",
+    description: "Luxurious 2 & 3 BHK fully furnished apartments and duplexes with servant rooms and terraces at the foothills of Himalayas. Experience endless pine views, valley vistas, and resort-style living in Dharampur, Kasauli.",
+
+    brandFoundation: {
+      title: "An Oasis of Luxury and Nature",
+      subtitle: "Forest Living with Modern Comfort",
+      philosophy: "Carnation Hills offers a unique living experience nestled at the foothills of the Himalayas. Designed with terracotta clay tile sloping roofs, the stepped building design ensures every apartment enjoys unobstructed valley views and never-ending pine tree vistas.",
+      keyPrinciples: [
+        {
+          title: "Breathtaking Views",
+          description: "Unlimited green vistas on all sides with endless views of beautiful pine trees. Every apartment features both-side open design for panoramic valley views."
+        },
+        {
+          title: "Luxurious Residences",
+          description: "Fully furnished 2 & 3 BHK apartments and duplexes (1741 sq ft to 4121 sq ft) with spacious terraces, servant rooms, and jacuzzi provision with pine views."
+        },
+        {
+          title: "Premium Amenities",
+          description: "Infinity swimming pool with valley views, modern gymnasium, yoga & meditation center, luxurious clubhouse, and children's play area spread over 5000 sq meters."
+        }
+      ]
+    },
+
+    gallery: [
+      {
+        id: 1,
+        type: "exterior",
+        title: "Building Elevation",
+        image: "https://carnationhills.com/images/slider.jpg",
+        description: "Terracotta clay tile sloping roof design with G+7 floors"
+      },
+      {
+        id: 2,
+        type: "landscape",
+        title: "Pine Forest Views",
+        image: "https://carnationhills.com/images/map.jpg",
+        description: "Endless pine tree views from every apartment"
+      },
+      {
+        id: 3,
+        type: "amenity",
+        title: "Infinity Pool",
+        image: "https://carnationhills.com/images/g6.jpg",
+        description: "Infinity swimming pool with stunning valley views"
+      },
+      // {
+      //   id: 4,
+      //   type: "interior",
+      //   title: "Furnished Apartment",
+      //   image: "https://carnationhills.com/images/interior.jpg",
+      //   description: "Fully furnished spacious living area"
+      // }
+    ],
+
+    amenities: [
+      "Infinity Swimming Pool",
+      "Modern Gymnasium",
+      "Yoga & Meditation Center",
+      "Luxurious Clubhouse",
+      "Children's Play Area",
+      "Jacuzzi Provision on Terrace",
+      "Both Side Open Apartments",
+      "Fully Furnished",
+      "G + 7 Floors",
+      "Lift Facility",
+      "Covered & Open Car Parking",
+      "Commercial Space",
+      "Gated Community",
+      "24/7 Security"
+    ],
+
+    specifications: {
+      developer: "RKN Infratech Private Limited",
+      landParcel: "5000 sq meters (1.27 acres)",
+      towers: 3,
+      floors: "G + 7",
+      configurations: ["2 BHK + SR + Terrace", "3 BHK Duplex + SR + Terrace"],
+      sizes: "1741 sq ft to 4121 sq ft",
+      pricing: "₹1.55 Cr to ₹3.10 Cr (Fully Furnished)",
+      possession: "Oct 2026",
+      approvals: ["RERAHPSOP09210119"],
+      furnishing: "Fully Furnished"
+    },
+
+    connectivity: [
+      "Kalka Shimla Highway - 1 km",
+      "Kasauli - Walking distance",
+      "Chandigarh - Well connected",
+      "Dharampur - In the heart",
+      "Shimla - Connected via highway",
+      "Solan - Nearby"
+    ],
+
+    highlights: [
+      "Foothills of Himalayas",
+      "Endless Pine Tree Views",
+      "Fully Furnished Apartments",
+      "Valley View from Every Unit",
+      "Jacuzzi with Pine Views",
+      "Both Side Open Design",
+      "Terracotta Roof Architecture",
+      "RERA Registered"
+    ],
+
+    slug: "carnation-hills-dharampur"
+  },
+
+  // 5. TIARA NEW CHANDIGARH
+  {
+    id: "tiara-new-chandigarh",
+    name: "The Tiara",
+    logoimage: "https://thetiarachandigarh.com/wp-content/uploads/2023/08/the-tiara-new-chandigarh-logo.jpeg",
+    location: "New Chandigarh, Punjab",
+    city: "New Chandigarh",
+    type: "Residential",
+    status: "Under Construction",
+    image: "https://thetiarachandigarh.com/wp-content/uploads/2023/08/the-tiara-16.jpg",
+    // brochure: tiarabrochure,
+    developer: "Sham Exotic Group",
+    description: "The Tiara is a high-end residential project offering 4 & 5 BHK super luxury apartments (4100 to 8000 sq ft) in 5.6 acres. Experience ultimate luxury with 28-floor high-rise apartments, 60,000 sq ft clubhouse, and three-sided open views amidst Shivalik Hills.",
+
+    brandFoundation: {
+      title: "Experience Ultimate High-Class Living",
+      subtitle: "Luxury Amidst Nature",
+      philosophy: "The Tiara is dedicated to offer a lifestyle of luxury amidst nature. High-rise apartments designed to provide spacious living areas with high ceilings, expansive balconies, and three-sided open views surrounded by Shivalik Hills and protected forest belt.",
+      keyPrinciples: [
+        {
+          title: "Ultra-Spacious Residences",
+          description: "Exclusive 4 & 5 BHK apartments ranging from 4100 sq ft to 8000 sq ft with plenty of natural light, ventilation, and panoramic views."
+        },
+        {
+          title: "Premium Location",
+          description: "Proximity to Homi Bhabha Cancer Hospital (Tata Memorial Centre), PGIMER, Narsee Monjee Institute, Strawberry Fields School, and The Oberoi Sukhvilas Spa Resort."
+        },
+        {
+          title: "World-Class Amenities",
+          description: "60,000 sq ft approx. clubhouse with luxurious infinity pool, state-of-the-art fitness center, lush gardens, dedicated play areas, and premium facilities."
+        }
+      ]
+    },
+
+    gallery: [
+      {
+        id: 1,
+        type: "exterior",
+        title: "High-Rise Towers",
+        image: "https://thetiarachandigarh.com/wp-content/uploads/2023/08/the-tiara-17.jpg",
+        description: "28-floor premium residential towers"
+      },
+      {
+        id: 2,
+        type: "amenity",
+        title: "Clubhouse",
+        image: "https://thetiarachandigarh.com/wp-content/uploads/2023/08/3d-rendering-loft-luxury-living-room-with-bookshelf-near-bookshelf-1536x1024.jpg",
+        description: "60,000 sq ft world-class clubhouse"
+      },
+      {
+        id: 3,
+        type: "landscape",
+        title: "Shivalik Hills View",
+        image: "https://thetiarachandigarh.com/wp-content/uploads/2023/08/the-tiara-11.jpg",
+        description: "Panoramic views of Shivalik Hills"
+      },
+      {
+        id: 4,
+        type: "floorplan",
+        title: "4 BHK Layout",
+        image: "https://thetiarachandigarh.com/wp-content/uploads/2023/08/the-tiara-23.jpg",
+        description: "Spacious 4 BHK apartment layout"
+      }
+    ],
+
+    amenities: [
+      "60,000 Sq Ft Clubhouse",
+      "Infinity Swimming Pool",
+      "State-of-the-Art Fitness Center",
+      "Lush Green Gardens",
+      "Dedicated Play Areas",
+      "High Ceilings",
+      "Expansive Balconies",
+      "Three-Sided Open Views",
+      "Natural Light & Ventilation",
+      "Parks & Walking Trails",
+      "Recreational Facilities",
+      "24x7 Security",
+      "Power Backup",
+      "Covered Parking"
+    ],
+
+    specifications: {
+      developer: "Sham Exotic Group",
+      landParcel: "5.6 acres",
+      towers: 6,
+      floors: 28,
+      units: "308 units",
+      configurations: ["4 BHK", "4+1 BHK", "5 BHK"],
+      sizes: "4100 sq ft to 8000 sq ft",
+      avgPrice: "₹11K - ₹13K per sq ft",
+      startingPrice: "₹4 Cr onwards",
+      clubhouse: "60,000 sq ft",
+      possession: "April 2029",
+      approvals: ["PBRERA-SAS80-PR1063"]
+    },
+
+    connectivity: [
+      "Homi Bhabha Cancer Hospital - Nearby",
+      "PGIMER - Close proximity",
+      "Narsee Monjee Institute - Nearby",
+      "Strawberry Fields School - Adjacent",
+      "The Oberoi Sukhvilas Spa - Close",
+      "Holiday Inn - Nearby",
+      "Chandigarh - Well connected",
+      "Shivalik Hills - Surrounded"
+    ],
+
+    highlights: [
+      "5.6 Acre Premium Development",
+      "28-Floor High-Rise Towers",
+      "4100 to 8000 Sq Ft Apartments",
+      "60,000 Sq Ft Clubhouse",
+      "Three-Sided Open Views",
+      "Shivalik Hills & Forest Belt",
+      "Premium Healthcare Proximity",
+      "Luxury Resort Neighborhood"
+    ],
+
+    slug: "tiara-new-chandigarh"
+  },
 ];
 
 const ProjectContext = createContext<ProjectContextType | undefined>(undefined);

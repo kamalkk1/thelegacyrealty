@@ -46,11 +46,11 @@ const HeroSection = ({ formRef }: HeroSectionProps) => {
               
               <motion.h1 
                 variants={fadeIn}
-                className="text-4xl lg:text-5xl font-bold leading-tight mb-6 font-poiret"
+                className="text-4xl  lg:text-5xl bg-white/10 rounded-lg p-2 font-bold leading-tight mb-6 font-poiret backdrop-blur-sm"
               >
                 Commercial Property for Sale in 
                 <span className="text-primary"> Mohali High Street</span><br/>
-                <span className="text-2xl lg:text-3xl font-medium text-primary">
+                <span className="text-2xl lg:text-3xl font-medium text-secondary md:text-white">
                   Sector 114 Landran Road
                 </span>
               </motion.h1>
@@ -71,7 +71,7 @@ const HeroSection = ({ formRef }: HeroSectionProps) => {
               
               <motion.ul 
                 variants={fadeIn}
-                className="space-y-3 mb-8"
+                className="space-y-3 mb-8 bg-white/10 rounded-lg p-2 backdrop-blur-sm text-secondary md:text-white"
               >
                 <li className="flex items-center gap-3">
                   <span className="text-primary">✅</span>

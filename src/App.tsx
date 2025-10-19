@@ -11,6 +11,12 @@ import NewChandigarhCityPage from "./pages/NewChandigarhCityPage";
 import ProjectTypePage from "./pages/ProjectTypePage";
 import ChandigarhCityPage from "./pages/ChandigarhCityPage";
 import MapPage from "./pages/MapPage";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
+import OurTeam from "./pages/OurTeam";
+import CareersPage from "./pages/CareersPage";
+import HimachalCityPage from "./pages/HimachalCityPage";
+
 function App() {
   return (
     <ProjectProvider>
@@ -21,10 +27,11 @@ function App() {
               <Route path="/" element={<HomePage />} />
               <Route path="/projects" element={<HomePage />} />
               <Route path="/aboutus" element={<AboutUs />} />
+              <Route path="/our-team" element={<OurTeam />} />
               <Route path="/contact-us" element={<ContactUs />} />
               <Route path="/location-map-mohali-chandigarh-zirakpur-tricity" element={<MapPage />} />
               <Route path="/commercial/mohali-high-street-sector-114-landran-road" element={<MohaliHighStreetLanding />} />
-
+              <Route path="/careers" element={<CareersPage />} />
               <Route
                 path="/project/:projectName"
                 element={<ProjectDetailPage />}
@@ -38,8 +45,15 @@ function App() {
                 path="/cities/new-chandigarh"
                 element={<NewChandigarhCityPage />}
               />
+              <Route
+                path="/cities/himachal"
+                element={<HimachalCityPage />}
+              />
 
               <Route path="/projects/:type" element={<ProjectTypePage />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/terms-of-service" element={<TermsOfService />} />
+
             </Routes>
           </Layout>
         </div>
