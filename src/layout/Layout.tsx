@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import ContactFooter from "../components/ContactFooter";
 import ScrollToTop from "../lib/ScrollToTop";
+import SEOMeta from "../components/SEOMeta";
+import URLRedirectHandler from "../components/URLRedirectHandler";
 import backgroundImg from "../assets/layoutbg.webp";
 import CTAPopup from "../components/CTAPopup";
 import {  Mail, Phone } from "lucide-react";
@@ -43,6 +45,12 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   ];
   return (
     <div className="relative flex flex-col min-h-screen">
+      {/* SEO Meta Tags */}
+      <SEOMeta />
+      
+      {/* URL Redirect Handler */}
+      <URLRedirectHandler />
+      
       {/* Fixed Background */}
       <div
         className="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-5"

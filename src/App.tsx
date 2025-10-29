@@ -16,6 +16,7 @@ import TermsOfService from "./pages/TermsOfService";
 import OurTeam from "./pages/OurTeam";
 import CareersPage from "./pages/CareersPage";
 import HimachalCityPage from "./pages/HimachalCityPage";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -53,6 +54,9 @@ function App() {
               <Route path="/projects/:type" element={<ProjectTypePage />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/terms-of-service" element={<TermsOfService />} />
+              
+              {/* 404 Catch-all route - must be last */}
+              <Route path="*" element={<NotFound />} />
 
             </Routes>
           </Layout>

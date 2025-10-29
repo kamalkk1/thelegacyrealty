@@ -9,7 +9,6 @@ import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Badge } from '@/components/ui/badge';
 import CareerApplicationForm from '@/components/CareerApplicationForm';
 import WhyJoinUs from '@/components/WhyJoinUs';
-import EmployeeBenefits from '@/components/EmployeeBenefits';
 import LifeAtLegacy from '@/components/LifeAtLegacy';
 
 // SEO Meta tags

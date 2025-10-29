@@ -1,0 +1,32 @@
+User-agent: *
+Allow: /
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.env
+Disallow: /config/
+
+# Allow important pages for real estate SEO
+Allow: /cities/
+Allow: /projects/
+Allow: /project/
+Allow: /aboutus
+Allow: /our-team
+Allow: /contact-us
+
+# Sitemap location
+Sitemap: https://thelegacyrealty.com/sitemap.xml
+
+# Crawl delay (optional - helps manage server load)
+Crawl-delay: 1

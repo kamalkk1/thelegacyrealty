@@ -1,7 +1,7 @@
 // components/CareerApplicationForm.tsx
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Upload, CheckCircle, User, Mail, Phone, Briefcase, FileText } from 'lucide-react';
+import { X, Upload, CheckCircle, User, Mail, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
