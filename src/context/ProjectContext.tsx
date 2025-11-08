@@ -7,7 +7,7 @@ import onegroup from "../assets/onegroupclermont/clermont-banner.webp";
 import mayfields from "../assets/mayfields/mayfiledsmain.webp";
 import wellnesscity from "../assets/wellnesscity/wellnesscity.webp";
 import noblewillassa from "../assets/noblewillassa/noblewillassa.webp";
-import waveestate from "../assets/waveestate/waveestate.webp";
+import waveestate from "../assets/waveestate/mainwave.webp";
 import connaught from "../assets/connaught/connaught.webp";
 import bollywoodgreen from "../assets/bollywoodgreen/DJI_0514.webp";
 import thelakebrochure from "../assets/thelakeomaxe/thelake.pdf";
@@ -36,8 +36,8 @@ import onegroupfloor from "../assets/onegroupclermont/onegroupfloorplan.jpeg";
 import gardenia1 from "../assets/gardenia/gardeniainterior.png";
 import gardenia2 from "../assets/gardenia/gardeniaterrace.png";
 import gardenia3 from "../assets/gardenia/gardeniafloorplan.png";
-import wavegradens1 from "../assets/waveestate/waveestateLiving_Dining_Family_Lounge.jpg";
-import wavegradens2 from "../assets/waveestate/waveestateMaster-bedroom.jpg";
+import wavegradens1 from "../assets/waveestate/new.jpeg";
+import wavegradens2 from "../assets/waveestate/new2.jpeg";
 import wavegradens3 from "../assets/waveestate/waveestatefloorplan.jpg";
 import connught1 from "../assets/connaught/connaughthomeinterior.png";
 import connught2 from "../assets/connaught/connaughthomesexterior.png";
@@ -69,18 +69,30 @@ import mayfieldslogo from "../assets/projectlogos/MayfieldLogo.png";
 import greenwoodslogo from "../assets/projectlogos/GreenwoodLogo.png";
 import bollygreenlogo from "../assets/projectlogos/Bollywoodlogo.png"
 import khetanbrochure from "../assets/Khetanswissgarden/SwissGardenBrochure.pdf"
-
+import anandaCrownImage from "../assets/anandacrown/anandacrown.webp";
 import thelakelogo from "../assets/projectlogos/OmaxeLakeLogo.png";
 import noblelogo from "../assets/projectlogos/NobleWillasaLogo.png";
 import medallionlogo from "../assets/projectlogos/MedallionAurumlogo.png";
 import gardenialogo from "../assets/projectlogos/GardeniaHomesLogo.png";
-
+import mohalihighstreet from "../assets/bg-highstreet.webp";
+import mainsukh from "../assets/sukhvillas/mainsukhvillas.webp";
+import mainsukh1 from "../assets/sukhvillas/2.jpeg";
+import mainsukh2 from "../assets/sukhvillas/1.jpeg";
+import mainsukh3 from "../assets/sukhvillas/flayout.webp";
+import mainsukh4  from "../assets/sukhvillas/hotelsukhvillas.webp";
+import sukhvillasbrochure from "../assets/sukhvillas/LuxurioSukhPlazaBrochure.pdf";
+import alpine from "../assets/alpinegroup/WhatsApp Image 2025-10-30 at 2.08.42 PM.jpeg"
+import brochurewave from "../assets/waveestate/brochure.pdf";
+import wavegradensmain from "../assets/slp-moksha/main.jpeg";
+import moksha1 from "../assets/slp-moksha/1.jpeg";
+import moksha2 from "../assets/slp-moksha/2.jpeg";
+import moksha3 from "../assets/slp-moksha/floor.jpeg";
 
 export interface Project {
   id: string;
   name: string;
   location: string;
-  city: "Mohali" | "Chandigarh" | "New Chandigarh" | "Himachal";
+  city: "Mohali" | "Chandigarh" | "New Chandigarh" | "Himachal" | "Sirhind";
   type: "Residential" | "Commercial" | "Plots" | "Commercial";
   status:
     | "Ready to Move"
@@ -108,7 +120,8 @@ export interface Project {
       | "floorplan"
       | "amenity"
       | "landscape"
-      | "elevation";
+      | "elevation"
+      | "commercial";
     title: string;
     image: string;
     description?: string;
@@ -253,36 +266,36 @@ const projects: Project[] = [
     name: "Greenwoods Mohali",
     location: "Sector 115, Mohali",
     city: "Mohali",
-    type: "Plots",
+    type: "Residential",
     logoimage: greenwoodslogo,
     image: greenwood,
     brochure: greenwoodsbrochure,
     status: "Ready to Move",
     developer: "CEE DEE",
     description:
-      "Welcome to Greenwoods Mohali, our gated plotted development in Mohali Sector 115. Every plot here comes with the kind of luxury you'll only find at a resort. It's a home where you can plot a lifetime of happiness.",
+      "3BHK Floors in Greenwoods Sector 115 with Easy Payment Plan. Experience luxury living in a 25-acre RERA approved gated township with premium amenities including clubhouse, parks, sports courts, and premium fittings. Located on 80ft wide sector road with direct connectivity to 200ft wide PR-6 road.",
 
     // Brand Foundation Section
     brandFoundation: {
-      title: "Greenwoods Mohali",
-      subtitle: "Plot Your Lifetime of Happiness",
+      title: "3BHK Floors in Greenwoods Mohali",
+      subtitle: "25-Acre RERA Approved Township",
       philosophy:
-        "Choosing to purchase a plot is a better idea than purchasing a flat. A plot gives you a bigger sense of ownership and is a recommended investment option, as opposed to other property purchases. Simply because the value of the land keeps rising with time, and that's why it yields better returns.",
+        "Greenwoods offers premium 3BHK floors in a fully integrated 25-acre township with world-class amenities and premium fittings. With easy payment plans and strategic location near IT Hub, education centers, and commercial outlets, it's designed for modern family living.",
       keyPrinciples: [
         {
-          title: "Resort-Style Living",
+          title: "Premium 3BHK Floors",
           description:
-            "Every plot here comes with the kind of luxury you'll only find at a resort, offering an unparalleled living experience in a gated community setting.",
+            "Spacious 3BHK floors with UPVC doors/windows, Roca sanitary fittings, KEI wirings, and Legrand switches for modern comfortable living."
         },
         {
-          title: "Investment Excellence",
+          title: "25-Acre Integrated Township",
           description:
-            "Land value appreciation over time makes plots a superior investment choice compared to flats, providing better returns and complete ownership.",
+            "RERA approved gated & secured society with 24×7 CCTV surveillance, clubhouse (28,620 sq ft), and lush green parks (49,770 sq ft)."
         },
         {
-          title: "Strategic Location",
+          title: "Strategic Connectivity",
           description:
-            "Prime location with easy access to Mohali, Chandigarh, and Panchkula, along with proximity to hospitals, educational hubs, retail outlets and hotels.",
+            "Located on 80ft wide sector road with direct connection to 200ft wide PR-6 road, near IT Hub, Swaraj Factory, and education centers."
         },
       ],
     },
@@ -292,78 +305,98 @@ const projects: Project[] = [
       {
         id: 1,
         type: "landscape",
-        title: "Gated Community Overview",
+        title: "25-Acre Township Overview",
         image: greenwoods1,
         description:
-          "27-acre integrated plotted development with modern facilities",
+          "25-acre RERA approved gated township with modern facilities"
       },
       {
         id: 2,
         type: "amenity",
-        title: "Theme Gardens",
+        title: "Lush Green Parks",
         image: greenwood2,
         description:
-          "5 theme-based gardens with maximum greenery and landscaping",
+          "49,770 sq ft lush green parks with theme-based gardens"
       },
       {
         id: 3,
         type: "exterior",
         title: "Grand Entrance",
         image: greenwoods3,
-        description: "Dedicated grand entrance from 24 meters road",
+        description: "Gated & secured society entrance with 24×7 surveillance"
       },
       {
         id: 4,
         type: "amenity",
-        title: "Walkway & Roads",
+        title: "Clubhouse & Sports Courts",
         image: greenwoods4,
-        description: "2.5 km shaded walkway with 30/40/60 ft roads",
+        description: "28,620 sq ft clubhouse with badminton and basketball courts"
       },
     ],
 
     amenities: [
-      "Gated & Secured Community",
-      "5 Theme Based Gardens",
-      "24×7 Security Guard",
-      "2.5 km Shaded Walkway",
-      "Parks & Green Spaces",
-      "30/40/60 ft Roads",
-      "Maximum Greenery",
-      "Modern Facilities",
-      "Grand Entrance Gate",
-      "Integrated Development",
+      "25-Acre Township",
+      "RERA Approved",
+      "Gated & Secured Society",
+      "24×7 CCTV Surveillance",
+      "UPVC Doors/Windows",
+      "Roca Sanitary Fittings",
+      "KEI Wirings",
+      "Legrand Switches",
+      "Underground Wiring",
+      "Open Air Gym Parks",
+      "Lush Green Parks (49,770 sq ft)",
+      "Club House (28,620 sq ft)",
+      "Jogging Tracks",
+      "Gazebo (Sitting Area)",
+      "Kids Play Area",
+      "Badminton Court",
+      "Basketball Court",
+      "KFC & McDonald's Nearby",
+      "High Street Market on Footsteps"
     ],
 
     specifications: {
       developer: "CEE DEE",
-      landParcel: "27 acres",
-      plotSizes: ["100 Sq.Yrd", "125 Sq.Yrd", "150 Sq.Yrd"],
-      roadWidths: ["30 ft", "40 ft", "60 ft"],
-      walkwayLength: "2.5 km",
-      entranceRoad: "24 meters",
+      landParcel: "25 acres",
+      type: "3BHK Floors",
       approvals: ["RERA Approved"],
-      plotType: "Residential Plots",
-      pricing: "Price on Request",
+      society: "Gated & Secured",
+      clubhouseSize: "28,620 sq ft",
+      parkArea: "49,770 sq ft",
+      roadConnectivity: "80ft sector road + 200ft PR-6 road",
+      paymentPlan: "Easy Payment Plan Available",
+      fittings: {
+        doors: "UPVC Doors/Windows",
+        sanitary: "Roca Sanitary Fittings",
+        wiring: "KEI Wirings",
+        switches: "Legrand Switches",
+        wiringType: "Underground Wiring"
+      }
     },
 
     highlights: [
-      "Strategically Located Near Mohali, Chandigarh & Panchkula",
-      "Close to Major Hospitals & Educational Hubs",
-      "Grand Amenities & Modern Facilities",
-      "Dedicated Grand Entrance from 24m Road",
-      "2.5 km Shaded Walkway",
-      "Maximum Greenery with Theme Gardens",
-      "Integrated Plotted Development",
-      "Superior Investment Returns",
+      "3BHK Floors with Easy Payment Plan",
+      "25-Acre RERA Approved Township",
+      "Gated & Secured Society with 24×7 CCTV",
+      "Premium Fittings (Roca, KEI, Legrand)",
+      "Clubhouse (28,620 sq ft) & Parks (49,770 sq ft)",
+      "Sports Courts (Badminton & Basketball)",
+      "80ft Sector Road + 200ft PR-6 Connectivity",
+      "Near IT Hub, Swaraj Factory & Education Centers",
+      "KFC & McDonald's Nearby",
+      "High Street Market on Footsteps"
     ],
 
     connectivity: [
+      "80ft wide sector internal road",
+      "Direct connection to 200ft wide PR-6 road",
+      "Near IT Hub/Swaraj Factory/Commercial outlets",
+      "Close to Education Hub",
+      "KFC & McDonald's nearby",
+      "High Street Market on few footsteps",
       "Strategic proximity to Mohali, Chandigarh, and Panchkula",
-      "Close to major hospitals and medical facilities",
-      "Near educational hubs and schools",
-      "Adjacent to retail outlets and hotels",
-      "Direct access from 24 meters road",
-      "Well-connected road network",
+      "Well-connected road network"
     ],
 
     slug: "greenwoods-sector-115",
@@ -998,106 +1031,129 @@ const projects: Project[] = [
 
     slug: "gardenia-boutique",
   },
-  {
-    id: "wave-gardens",
-    name: "Wave Gardens",
-    location: "Wave Estate, Mohali",
-    city: "Mohali",
-    type: "Residential",
-    status: "Ready to Move",
-    image: waveestate,
-    // brochure: wavegardensbrochure,
+{
+  "id": "wave-gardens",
+  "name": "Wave Gardens",
+  "location": "Wave Estate, Sector 85, Mohali",
+  "city": "Mohali",
+  "type": "Residential",
+  "status": "Ready to Move",
+   "image": waveestate,
+  "logoimage": "https://www.waveestate.in/img/core-img/logo.png",
+  "slug": "wave-gardens",
+   brochure: brochurewave,
 
-    description:
-      "Wave Gardens Phase II at Wave Estate offers 3 & 4 BHK apartments, duplexes, and penthouses set across 12 acres with 70% open green spaces. Combining luxury, comfort, and convenience, it is one of Mohali’s premier residential communities.",
+  "description": "Wave Gardens Phase II at Wave Estate offers premium 3BHK flats in Mohali and 4BHK flats in Mohali, featuring spacious apartments in Sector 85 Mohali. Located on Airport Road near Homeland, these ready-to-move 3BHK apartments in Mohali offer luxury living in a 12-acre township with 70% open green space. Perfect choice for buyers seeking 3BHK flats near Airport Road Mohali, flats near Homeland, and flats on Airport Road with modern architecture, premium amenities, and excellent connectivity to Chandigarh International Airport.",
 
-    brandFoundation: {
-      title: "Luxury Living Amidst Greenery",
-      subtitle: "Where Architecture Meets Nature",
-      philosophy:
-        "Wave Gardens brings together modern design and natural serenity. With 70% open landscapes, premium residences, and world-class facilities, it represents a sanctuary of luxury and tranquility in Mohali.",
-      keyPrinciples: [
-        {
-          title: "Spacious Township Living",
-          description:
-            "12-acre development with meticulously designed apartments, duplexes, and penthouses.",
-        },
-        {
-          title: "Green & Open Spaces",
-          description:
-            "70% of the township dedicated to greenery and open landscaped areas for a serene lifestyle.",
-        },
-        {
-          title: "Proven Track Record",
-          description:
-            "Phase 1 successfully delivered with 100% occupancy, ensuring credibility and trust.",
-        },
-      ],
-    },
-
-    gallery: [
+  "brandFoundation": {
+    "title": "Premium 3BHK & 4BHK Flats in Sector 85 Mohali",
+    "subtitle": "Luxury Apartments on Airport Road Near Homeland",
+    "philosophy": "Wave Gardens brings together modern design and natural serenity with spacious 3BHK flats in Mohali and 4BHK flats in Mohali. Located in Sector 85 on Airport Road near Homeland, these premium apartments offer 70% open landscapes, world-class facilities, and a perfect sanctuary of luxury for families seeking flats near Airport Road Mohali.",
+    "keyPrinciples": [
       {
-        id: 1,
-        type: "exterior",
-        title: "Tower View",
-        image: wavegradens1,
-        description: "Modern towers with a backdrop of landscaped greenery",
+        "title": "Premium 3BHK & 4BHK Apartments in Mohali",
+        "description": "12-acre development with meticulously designed 3BHK flats in Sector 85 Mohali, 4BHK flats in Mohali, duplexes, and penthouses near Airport Road and Homeland."
       },
       {
-        id: 2,
-        type: "amenity",
-        title: "Clubhouse & Pool",
-        image: wavegradens2,
-        description:
-          "Premium clubhouse with swimming pool and wellness facilities",
+        "title": "Prime Location - Flats on Airport Road",
+        "description": "Strategically located flats near Homeland with 70% open green spaces, perfect for buyers seeking 3BHK flats near Airport Road Mohali with serene lifestyle and modern amenities."
       },
       {
-        id: 3,
-        type: "floorplan",
-        title: "Unit Plans",
-        image: wavegradens3,
-        description: "Options include 3BHK, 4BHK, duplexes, and penthouses",
-      },
-    ],
-
-    amenities: [
-      "Swimming Pool",
-      "Jogging & Cycling Track",
-      "Fully Equipped Gym",
-      "Club Facilities",
-      "Power Backup",
-      "Covered Car Parking",
-      "Landscaped Gardens",
-      "Children’s Play Area",
-    ],
-
-    specifications: {
-      structure: "High-Rise Towers",
-      units: "3 BHK, 4 BHK, Duplexes & Penthouses",
-      townshipSize: "12 Acres",
-      greenArea: "70% Open Green Spaces",
-      possession: "Ready to Move",
-      approvals: ["RERA Certified – PBRERA-SAS81-PR1009"],
-    },
-
-    connectivity: [
-      "Chandigarh International Airport – Nearby",
-      "Educational Institutions – Within 5-10 mins",
-      "Medical Centres – Within 10 mins",
-      "Shopping & Dining Destinations – Nearby",
-      "Chandigarh City – Easy Access",
-    ],
-
-    highlights: [
-      "12-acre township with 70% open green area",
-      "3 & 4 BHK, duplexes, and penthouses",
-      "Phase 1 delivered with 100% occupancy",
-      "Premium clubhouse and lifestyle amenities",
-      "Located in the heart of Wave Estate, Mohali",
-    ],
-
-    slug: "wave-gardens",
+        "title": "Ready-to-Move Flats in Sector 85 Mohali",
+        "description": "Phase 1 delivered with 100% occupancy, ensuring reliability for buyers of 3BHK apartments in Mohali and flats near Homeland. Ready-to-move options available."
+      }
+    ]
   },
+
+  "gallery": [
+    {
+      "id": 1,
+      "type": "exterior",
+      "title": "3BHK & 4BHK Flats in Sector 85 Mohali",
+      "image": wavegradens1, 
+      "description": "Modern towers showcasing premium 3BHK flats in Mohali and 4BHK apartments with lush greenery on Airport Road near Homeland."
+    },
+    {
+      "id": 2,
+      "type": "amenity",
+      "title": "Premium Amenities - Flats Near Homeland",
+      "image": wavegradens2,
+      "description": "World-class clubhouse, swimming pool and gym facilities for 3BHK flats near Airport Road Mohali residents."
+    },
+    {
+      "id": 3,
+      "type": "floorplan",
+      "title": "Floor Plans - 3BHK & 4BHK Apartments Mohali",
+      "image": wavegradens3,
+      "description": "Detailed floor plans for spacious 3BHK flats in Sector 85 Mohali, 4BHK flats, duplexes, and penthouses on Airport Road."
+    }
+  ],
+
+  "amenities": [
+    "Swimming Pool",
+    "Jogging & Cycling Track",
+    "Fully Equipped Gym",
+    "Clubhouse Facilities",
+    "Power Backup",
+    "Covered Car Parking",
+    "Landscaped Gardens",
+    "Children’s Play Area"
+  ],
+
+  "specifications": {
+    "structure": "High-Rise Towers - Premium 3BHK & 4BHK Flats in Mohali",
+    "units": "3BHK flats in Mohali, 4BHK flats in Mohali, Duplexes & Penthouses",
+    "location": "Sector 85 Mohali on Airport Road near Homeland",
+    "townshipSize": "12 Acres Premium Township",
+    "greenArea": "70% Open Green Spaces",
+    "possession": "Ready to Move - 3BHK Apartments in Mohali",
+    "approvals": [
+      "RERA Certified – PBRERA-SAS81-PR1009"
+    ]
+  },
+
+  "connectivity": [
+    "Located on Airport Road - Prime connectivity for flats on Airport Road",
+    "Homeland Mall - Walking distance from flats near Homeland",
+    "Chandigarh International Airport - 10 mins from 3BHK flats near Airport Road Mohali",
+    "Sector 85 Mohali - Prime location for 3BHK flats in Sector 85 Mohali",
+    "Educational Institutions - Within 5-10 mins from 3BHK apartments in Mohali",
+    "Medical Centres - Within 10 mins",
+    "Shopping & Dining Destinations - Homeland and nearby malls",
+    "Chandigarh City Centre - 15 mins connectivity",
+    "Easy access to major IT hubs and business centers"
+  ],
+
+  "highlights": [
+    "Premium 3BHK flats in Mohali and 4BHK flats in Mohali",
+    "3BHK apartments in Mohali Sector 85 near Airport Road",
+    "3BHK flats in Sector 85 Mohali - Ready to Move",
+    "Flats near Homeland - Prime Location on Airport Road",
+    "3BHK flats near Airport Road Mohali with 70% open green areas",
+    "Flats on Airport Road - 12-acre luxury township",
+    "Multiple configurations: 3BHK, 4BHK, duplexes, penthouses",
+    "100% occupancy in Phase 1 - Trusted Developer",
+    "Premium clubhouse and lifestyle amenities",
+    "Flats near Homeland Mall and Chandigarh Airport"
+  ],
+
+  // "seo": {
+  //   "metaTitle": "3BHK & 4BHK Flats in Mohali Sector 85 | Wave Gardens – Luxury Apartments Near Airport Road",
+  //   "metaDescription": "Discover ready-to-move 3BHK & 4BHK flats in Mohali’s Wave Gardens, Sector 85. Premium township, 70% open green space, luxury amenities, prime connectivity near Airport Road and Homeland Mall. Schedule a site visit today!",
+  //   "slug": "wave-gardens",
+  //   "keywords": [
+  //     "3bhk flats in mohali", 
+  //     "4bhk flats in mohali",
+  //     "3bhk apartments in mohali",
+  //     "3bhk flats in sector 85 mohali",
+  //     "4bhk flats in sector 85 mohali",
+  //     "flats near airport road mohali",
+  //     "flats for sale near homeland mall",
+  //     "luxury apartments mohali"
+  //   ]
+  // }
+}
+,
   {
     id: "omaxe-the-lake",
     name: "Omaxe The Lake",
@@ -1511,8 +1567,8 @@ const projects: Project[] = [
     city: "Mohali",
     type: "Residential",
     status: "Under Construction",
-    image: "https://thepinnacle-mohali.com/wp-content/uploads/2025/01/Screenshot-2025-01-27-185636.png", // Add your main image
-    brochure: pinnaclebrochure, // Add your brochure PDF
+    image: "https://thepinnacle-mohali.com/wp-content/uploads/2025/01/Screenshot-2025-01-27-185636.png",
+    brochure: pinnaclebrochure,
     developer: "STJ Group & GB Realty",
     description: "The Pinnacle Mohali is a luxurious residential project offering 3, 4, and 5 BHK ultra-luxury apartments designed by renowned architect Hafeez Contractor. Located in IT City Mohali with world-class 5-star amenities spread across 8 acres.",
 
@@ -2096,6 +2152,876 @@ const projects: Project[] = [
     ],
 
     slug: "tiara-new-chandigarh"
+  },
+  {
+    id: "victoria-street-sirhind",
+    name: "Victoria Street",
+    logoimage: "https://bklanddevelopers.com/wp-content/uploads/2025/08/Victoria-Street-Logo2-min-scaled.png",
+    location: "Sirhind-Chandigarh International Airport Road",
+    city: "Sirhind",
+    type: "Commercial",
+    status: "Under Construction",
+    image: "https://bklanddevelopers.com/wp-content/uploads/2025/06/bkland-14.jpg",
+    brochure: "https://example.com/victoria-street-brochure.pdf",
+    developer: "BK Land Developers",
+    description: "Victoria Street is Sirhind's first and largest retail destination, a grand commercial landmark at the gateway of a 64-acre mega township. This vibrant high street brings together mixed-use luxury retail spaces for premium brands, featuring shopping, entertainment, fine dining, and world-class hospitality with strategic highway location.",
+
+    brandFoundation: {
+      title: "Sirhind's Premier Retail Destination",
+      subtitle: "Landmark High Street at 64-Acre Township Gateway",
+      philosophy: "Victoria Street redefines commercial excellence as a glitzy hub of shopping, entertainment, fine dining, and hospitality. With strategic location and proximity to residential colonies, it guarantees a strong captive audience while serving as a cosmopolitan commercial landmark.",
+      keyPrinciples: [
+        {
+          title: "Highway Commercial Hub",
+          description: "Prime location on Sirhind-Chandigarh International Airport Road with maximum visibility and high footfall potential."
+        },
+        {
+          title: "Mixed-Use Luxury Retail",
+          description: "29 acres of diverse commercial spaces including 200+ premium showrooms, entertainment zones, food street, and multiplex facilities."
+        },
+        {
+          title: "Future-Ready Infrastructure",
+          description: "State-of-the-art architecture with wide roads (100-150 ft), 3000+ car parking spaces, and modern design for sustained growth."
+        }
+      ]
+    },
+
+    gallery: [
+      {
+        id: 1,
+        type: "exterior",
+        title: "Victoria Street Entrance",
+        image: "https://bklanddevelopers.com/wp-content/uploads/2025/09/1366-%C3%97-768-px.jpg",
+        description: "1000 sq ft grand entrance with magnificent façade and prime road frontage"
+      },
+      {
+        id: 2,
+        type: "amenity",
+        title: "Entertainment Zone",
+        image: "https://bklanddevelopers.com/wp-content/uploads/2025/06/Replace-to-water-fountains.jpg",
+        description: "42,000 sq ft entertainment zone with multiplex and microbrewery"
+      },
+      {
+        id: 3,
+        type: "commercial",
+        title: "Premium Showrooms",
+        image: "https://bklanddevelopers.com/wp-content/uploads/2025/09/Shopping.jpg",
+        description: "200+ premium showrooms in G+1 configuration for global brands"
+      },
+      {
+        id: 4,
+        type: "amenity",
+        title: "Food Street",
+        image: "https://bklanddevelopers.com/wp-content/uploads/2025/06/1290-%C3%97-710-px-021.jpg",
+        description: "10,000 sq ft food street with 4 drive-thrus and multiple dining booths"
+      }
+    ],
+
+    amenities: [
+      "29 Acres Commercial Hub",
+      "200+ Premium Showrooms", 
+      "42,000 Sq Ft Entertainment Zone",
+      "Multiplex Cinema",
+      "Microbrewery",
+      "10,000 Sq Ft Food Street",
+      "4 Drive-Thru Restaurants",
+      "3000+ Car Parking Spaces",
+      "1000 Sq Ft Grand Entrance",
+      "Wide 100-150 Ft Roads",
+      "Gaming Zones",
+      "Global Brand Showrooms",
+      "24x7 Security",
+      "Power Backup"
+    ],
+
+    specifications: {
+      developer: "BK Land Developers",
+      landParcel: "29 acres",
+      totalShowrooms: "200+",
+      structure: "G+1 Various Sizes",
+      entertainmentZone: "42,000 sq ft",
+      foodStreet: "10,000 sq ft",
+      parking: "3000+ spaces",
+      roadWidth: "100-150 ft",
+      phase1Clearance: "11 acres CLU Cleared by GMADA",
+      approvals: ["GMADA Approved Phase 1"]
+    },
+
+    connectivity: [
+      "Sirhind-Chandigarh International Airport Road",
+      "Gateway to 64-acre mega township",
+      "Close proximity to residential colonies",
+      "Strategic highway location",
+      "High visibility commercial corridor",
+      "Direct airport road connectivity"
+    ],
+
+    highlights: [
+      "Sirhind's First & Largest Retail Destination",
+      "Gateway of 64-Acre Mega Township",
+      "29 Acres Mixed-Use Commercial Hub",
+      "200+ Premium Brand Showrooms",
+      "42,000 Sq Ft Entertainment Complex",
+      "Prime Highway Location with Maximum Visibility",
+      "3000+ Car Parking Spaces",
+      "One-of-its-Kind in Sirhind"
+    ],
+
+    slug: "victoria-street-sirhind"
+  },
+  {
+    id: "alpine-grove-dera-bassi",
+    name: "Alpine Nest Homes",
+    logoimage: "https://alpinegroove.in/images/logo.png",
+    location: "Barwala Highway, Dera Bassi",
+    city: "Chandigarh",
+    type: "Residential",
+    status: "Upcoming",
+    image: alpine,
+    brochure: "https://example.com/alpine-grove-brochure.pdf",
+    developer: "Alpine Next Homes LLP",
+    description: "Alpine Nest Homes presents 1 BHK Premium Residences on Barwala Highway – The Fastest Growing Investment Belt! Experience smart & stylish 1 BHK homes with ~435 sq ft super area in S+22 high-rise towers. Only 32 exclusive units available with 80% open space, lush gardens, and premium amenities.",
+
+    brandFoundation: {
+      title: "1 BHK Premium Residences",
+      subtitle: "The Fastest Growing Investment Belt",
+      philosophy: "Alpine Nest Homes offers smart & stylish 1 BHK homes designed for modern living on Barwala Highway. With only 32 limited, exclusive & high-demand units, this development combines contemporary design with strategic location for maximum investment potential.",
+      keyPrinciples: [
+        {
+          title: "Smart & Stylish Design",
+          description: "1 BHK premium residences with ~435 sq ft super area, thoughtfully designed for optimal space utilization and modern lifestyle."
+        },
+        {
+          title: "Strategic Investment Location",
+          description: "Located on Barwala Highway – The Fastest Growing Investment Belt with excellent connectivity and growth potential."
+        },
+        {
+          title: "Exclusive Limited Units",
+          description: "Only 32 units available making it limited, exclusive & high-demand investment opportunity with premium amenities."
+        }
+      ]
+    },
+
+    gallery: [
+      {
+        id: 1,
+        type: "exterior",
+        title: "Alpine Nest Homes Towers",
+        image: "https://alpinegroove.in/images/new/building.webp",
+        description: "S+22 high-rise towers with contemporary design on Barwala Highway"
+      },
+      {
+        id: 2,
+        type: "amenity",
+        title: "Poolside Retreat",
+        image: "https://alpinegroove.in/images/new/3.webp",
+        description: "Luxurious swimming pool with landscaped surroundings"
+      },
+      {
+        id: 3,
+        type: "landscape",
+        title: "Lush Gardens",
+        image: "https://alpinegroove.in/images/2.jpg",
+        description: "80% open space with expansive green landscapes and fountains"
+      },
+      {
+        id: 4,
+        type: "interior",
+        title: "1 BHK Premium Interior",
+        image: "https://alpinegroove.in/images/new/2.webp",
+        description: "Smart & stylish 1 BHK home interior with modern design"
+      }
+    ],
+
+    amenities: [
+      "80% Open Green Space",
+      "Grand Entrance with Fountains",
+      "Poolside Retreat",
+      "Fully-Equipped Clubhouse",
+      "Swimming Pool",
+      "Children's Play Areas",
+      "Fitness Zones",
+      "Lush Gardens & Landscapes",
+      "5-Tier Security System",
+      "Ample Car Parking",
+      "Spacious Balconies",
+      "24x7 Security",
+      "Power Backup",
+      "Modern Elevators"
+    ],
+
+    specifications: {
+      developer: "Alpine Next Homes LLP",
+      structure: "S+22 High-Rise Towers",
+      configurations: ["1 BHK Premium Residences"],
+      superArea: "~435 sq ft",
+      totalUnits: "Only 32 Units",
+      exclusivity: "Limited, Exclusive & High-Demand",
+      construction: "Mivan Technology",
+      openSpace: "80%",
+      status: "Investment Opportunity",
+      approvals: ["Under Process"],
+      security: "5-Tier Security System"
+    },
+
+    connectivity: [
+      "Barwala Highway - Fastest Growing Investment Belt",
+      "Chandigarh - 15 mins",
+      "Mohali - 20 mins", 
+      "Zirakpur - 10 mins",
+      "Chandigarh-Delhi Highway - Close proximity",
+      "Indus Hospital & HIIMS Dera Bassi - Nearby",
+      "Paras Downtown Square Mall - Nearby",
+      "Elante Mall - 20 mins",
+      "VR Punjab Mall - 25 mins"
+    ],
+
+    highlights: [
+      "1 BHK Premium Residences",
+      "Barwala Highway – Fastest Growing Investment Belt",
+      "Super Area: ~435 sq ft",
+      "Smart & Stylish 1 BHK Homes",
+      "Only 32 Units – Limited, Exclusive & High-Demand",
+      "S+22 High-Rise Living",
+      "80% Open Green Space",
+      "Premium Investment Opportunity"
+    ],
+
+    slug: "alpine-grove-dera-bassi"
+  },
+  {
+    id: "ananda-crown-mohali",
+    name: "Ananda Crown",
+    logoimage: "https://assets.zyrosite.com/YZ9VoV177xUOwgWd/ai-logo-mk3zozb5ezh8bOgM.svg",
+    location: "Sector 78, Mohali",
+    city: "Mohali",
+    type: "Residential",
+    status: "Upcoming",
+    image: anandaCrownImage,
+    brochure: "https://example.com/ananda-crown-brochure.pdf",
+    developer: "Ananda Developers",
+    description: "Discover luxury living at Ananda Crown, offering ultra-luxury apartments with modern amenities in the heart of Mohali's prime Sector 78 location. Experience redefined luxury with spacious 3BHK, 3+1 BHK, and 4+1 BHK layouts designed for your ultimate comfort and lifestyle.",
+
+    brandFoundation: {
+      title: "Luxury Living Redefined",
+      subtitle: "Ultra-Luxury Apartments in Prime Mohali",
+      philosophy: "Ananda Crown represents the epitome of luxury living in Mohali's prestigious Sector 78. Every apartment is meticulously designed with modern amenities and spacious layouts to provide an unparalleled living experience that caters to your lifestyle needs.",
+      keyPrinciples: [
+        {
+          title: "Ultra-Luxury Design",
+          description: "Premium apartments with contemporary architecture and high-end finishes that redefine luxury living standards in Mohali."
+        },
+        {
+          title: "Spacious Living",
+          description: "Choose from thoughtfully designed 3BHK, 3+1 BHK, and 4+1 BHK layouts tailored for your lifestyle with ample space and modern conveniences."
+        },
+        {
+          title: "Modern Amenities",
+          description: "World-class facilities including clubhouse, swimming pools, and kids play area designed for your ultimate comfort and recreation."
+        }
+      ]
+    },
+
+    gallery: [
+      {
+        id: 1,
+        type: "exterior",
+        title: "Ananda Crown Facade",
+        image: "https://images.unsplash.com/photo-1571832725367-7b7a782fe3aa?auto=format&fit=crop&w=800&h=928",
+        description: "Ultra-luxury residential towers with contemporary architecture"
+      },
+      {
+        id: 2,
+        type: "amenity",
+        title: "Swimming Pool",
+        image: "https://images.unsplash.com/photo-1618404399394-123316e32859?auto=format&fit=crop&w=800&h=928",
+        description: "Premium swimming pools designed for ultimate comfort"
+      },
+      {
+        id: 3,
+        type: "amenity",
+        title: "Clubhouse",
+        image: "https://images.unsplash.com/photo-1580041065738-e72023775cdc?auto=format&fit=crop&w=800&h=792",
+        description: "Modern clubhouse with luxury amenities and facilities"
+      },
+      {
+        id: 4,
+        type: "interior",
+        title: "Spacious Apartment Interior",
+        image: "https://images.unsplash.com/photo-1572381384575-d9f15ca07264?auto=format&fit=crop&w=800&h=792",
+        description: "Luxurious interiors with modern design and premium finishes"
+      }
+    ],
+
+    amenities: [
+      "Ultra-Luxury Apartments",
+      "Modern Clubhouse",
+      "Swimming Pools",
+      "Kids Play Area",
+      "Premium Finishes",
+      "Spacious Layouts",
+      "24x7 Security",
+      "Power Backup",
+      "Covered Parking",
+      "Landscaped Gardens",
+      "Modern Elevators",
+      "Recreational Facilities"
+    ],
+
+    specifications: {
+      developer: "Ananda Developers",
+      location: "Sector 78, Mohali",
+      configurations: ["3 BHK", "3+1 BHK", "4+1 BHK"],
+      features: "Ultra-luxury apartments with modern amenities",
+      amenities: "Clubhouse, Swimming Pools, Kids Play Area",
+      status: "Upcoming Project",
+      approvals: ["Under Process"]
+    },
+
+    connectivity: [
+      "Prime Sector 78 location",
+      "Heart of Mohali",
+      "Easy access to major roads",
+      "Close to commercial centers",
+      "Well-connected to Chandigarh",
+      "Proximity to educational institutions",
+      "Near healthcare facilities",
+      "Shopping and entertainment nearby"
+    ],
+
+    highlights: [
+      "Ultra-Luxury Apartments in Prime Location",
+      "Sector 78, Mohali - Premium Address",
+      "3BHK, 3+1 BHK & 4+1 BHK Layouts",
+      "Modern Amenities & Clubhouse",
+      "Swimming Pools & Kids Play Area",
+      "Luxury Living Redefined",
+      "Contemporary Architecture",
+      "Premium Finishes Throughout"
+    ],
+
+    slug: "ananda-crown-mohali"
+  },
+  {
+    id: "f-towers-mohali",
+    name: "F-Towers by FashionTV",
+    logoimage: "https://reconsultadvisory.com/wp-content/uploads/2024/07/F-Tower-logo-by-Fashion-TV-Property-in-mohali-call-9988091143.png",
+    location: "Sector 121, Mohali",
+    city: "Mohali",
+    type: "Residential",
+    status: "Under Construction",
+    image: "https://reconsultadvisory.com/wp-content/uploads/2024/07/F-Tower-by-FashionTV-Property-in-mohali-call91-9988091143-elevation6.webp",
+    brochure: "https://example.com/f-towers-brochure.pdf",
+    developer: "Glenworld Realtors",
+    description: "F Towers Mohali brings the glamour of Fashion TV right into your home. This premier residential project is a collaboration between Fashion TV and Glenworld Realtors, offering 3 & 4 BHK luxury apartments with servant quarters. Experience the ultimate living with Fashion TV branded residences, MIVAN construction technology, and world-class amenities across 8 acres with 7 towers.",
+
+    brandFoundation: {
+      title: "Join the Fashion TV Lifestyle",
+      subtitle: "Where Glamour Meets Modern Living",
+      philosophy: "F Towers stands as a testament to luxury and style, combining the sophistication of high fashion with the comfort and convenience of modern urban living. Each residence is crafted with precision, featuring high-end finishes and premium fixtures that reflect the glamour and elegance associated with the Fashion TV brand.",
+      keyPrinciples: [
+        {
+          title: "Fashion TV Branded Residences",
+          description: "Elegant and stylish interiors reflecting the glamour of Fashion TV with meticulously designed spaces that exude opulence and sophistication."
+        },
+        {
+          title: "MIVAN Construction Technology",
+          description: "Advanced aluminum formwork construction method for stronger, longer-lasting structure with faster construction timelines and reduced maintenance costs."
+        },
+        {
+          title: "World-Class Amenities",
+          description: "Exclusive F Clubhouse with F Lounge and F Bar, fitness center, swimming pool, mini golf course, and premium lifestyle facilities."
+        }
+      ]
+    },
+
+    gallery: [
+      {
+        id: 1,
+        type: "exterior",
+        title: "F-Towers Facade",
+        image: "https://reconsultadvisory.com/wp-content/uploads/2024/07/F-Tower-by-FashionTV-Property-in-mohali-call91-9988091143-elevation1.webp",
+        description: "Seven luxury towers with Fashion TV branded architecture"
+      },
+      {
+        id: 2,
+        type: "amenity",
+        title: "F Clubhouse",
+        image: "https://reconsultadvisory.com/wp-content/uploads/2024/07/F-Tower-by-FashionTV-Property-in-mohali-call91-9988091143-elevation2.webp",
+        description: "Exclusive F Clubhouse with F Lounge and F Bar"
+      },
+      {
+        id: 3,
+        type: "floorplan",
+        title: "3 BHK + Servant Layout",
+        image: "https://reconsultadvisory.com/wp-content/uploads/2024/07/F-Tower-by-FashionTV-Property-in-mohali-call91-9988091143-elevation4.webp",
+        description: "2247 sq ft spacious 3 BHK apartment with servant quarter"
+      },
+      {
+        id: 4,
+        type: "floorplan",
+        title: "4 BHK + Servant Layout",
+        image: "https://reconsultadvisory.com/wp-content/uploads/2024/07/F-Tower-by-FashionTV-Property-in-mohali-call91-9988091143-about.jpg",
+        description: "3000 sq ft luxury 4 BHK apartment with servant quarter"
+      }
+    ],
+
+    amenities: [
+      "Fashion TV Branded Residences",
+      "Exclusive F Clubhouse with F Lounge & F Bar",
+      "Basketball Court",
+      "Badminton/Tennis Court",
+      "Hi-Tech Gymnasium",
+      "CCTV Surveillance System",
+      "24x7 Security & Support",
+      "Skating Rink",
+      "Cycling Track",
+      "Indoor Squash Court",
+      "Temple",
+      "Yoga Center",
+      "Spa and Jacuzzi",
+      "Rainwater Harvesting",
+      "Jogging Track",
+      "Terrace Area for Events",
+      "Amphitheatre",
+      "Open Roof Garden",
+      "1100 Basement Car Parking"
+    ],
+
+    specifications: {
+      developer: "Glenworld Realtors",
+      collaboration: "Fashion TV Partnership",
+      landParcel: "8 acres",
+      towers: 7,
+      floors: 25,
+      totalUnits: 350,
+      configurations: ["3 BHK + Servant", "4 BHK + Servant"],
+      sizes: {
+        "3 BHK + Servant": "2247 sq ft",
+        "4 BHK + Servant": "3000 sq ft"
+      },
+      construction: "MIVAN Technology",
+      parking: "1100 Basement Cars",
+      possession: "End of 2027 / Mid-2028",
+      approvals: ["RERA Approval Coming Soon"]
+    },
+
+    connectivity: [
+      "Sector 121, Mohali - Prime Location",
+      "0.5 km from Chandigarh",
+      "Easy access to key areas in Chandigarh region",
+      "Major roads and highways connectivity",
+      "Well-connected to essential services",
+      "Seamless travel to Mohali and Chandigarh",
+      "Close to commercial centers",
+      "Near educational institutions"
+    ],
+
+    highlights: [
+      "Fashion TV Branded Luxury Residences",
+      "8 Acres Premium Development",
+      "7 Towers with 350 Units",
+      "MIVAN Construction Technology",
+      "3 & 4 BHK with Servant Quarters",
+      "Exclusive F Clubhouse with F Lounge & F Bar",
+      "World-Class Amenities & Facilities",
+      "Prime Sector 121 Location",
+      "0.5 km from Chandigarh",
+      "Possession by End 2027"
+    ],
+
+    slug: "f-towers-mohali"
+  },
+  {
+    id: "mohali-high-street-114",
+    name: "Mohali High Street",
+    logoimage: mohalihighstreet,
+    location: "Sector 114, Landran Road, Mohali",
+    city: "Mohali",
+    type: "Commercial",
+    status: "Booking Open",
+    image: mohalihighstreet,
+    brochure: "https://example.com/mohali-high-street-brochure.pdf",
+    developer: "Ansal Properties",
+    description: "Premium commercial showrooms on prime Landran Road frontage with basement parking, ground floor retail, and upper floors for offices or storage. RERA approved commercial development with double-height showrooms starting from ₹3.5 Crore in the growing commercial hub of Sector 114.",
+
+    brandFoundation: {
+      title: "Prime Commercial Property in Mohali",
+      subtitle: "RERA Approved Showrooms Starting ₹3.5 Crore",
+      philosophy: "Mohali High Street offers premium commercial showrooms strategically located on Landran Road frontage in Sector 114. With basement parking, double-height showrooms, and flexible upper floors, it's designed for retail chains, branded stores, and businesses seeking high-footfall commercial spaces.",
+      keyPrinciples: [
+        {
+          title: "Prime Landran Road Frontage",
+          description: "Strategic location on Landran Road with high visibility and footfall in the growing commercial corridor of Sector 114 Ansal."
+        },
+        {
+          title: "Flexible Commercial Spaces",
+          description: "Double-height ground floor showrooms with basement parking and upper floors suitable for offices, storage, or additional retail space."
+        },
+        {
+          title: "Investment Ready",
+          description: "RERA approved project with flexible payment plans, high rental yields expected, and ready for possession timeline."
+        }
+      ]
+    },
+
+    gallery: [
+      {
+        id: 1,
+        type: "exterior",
+        title: "Mohali High Street Facade",
+        image: mohalihighstreet,
+        description: "Premium commercial development on Landran Road frontage"
+      },
+      {
+        id: 2,
+        type: "commercial",
+        title: "Double Height Showrooms",
+        image: mohalihighstreet,
+        description: "Ground floor double-height showrooms with basement parking"
+      },
+      {
+        id: 3,
+        type: "floorplan",
+        title: "₹3.5 Cr Unit Layout",
+        image: mohalihighstreet,
+        description: "16.6 × 50 ft plot with basement + G + 1 + 2 floors"
+      },
+      {
+        id: 4,
+        type: "floorplan",
+        title: "₹6.5 Cr Premium Unit",
+        image: mohalihighstreet,
+        description: "16.6 × 66 ft plot with basement + G + 1 + 2 + 3 floors"
+      }
+    ],
+
+    amenities: [
+      "RERA Approved Commercial Project",
+      "Prime Landran Road Frontage",
+      "Double-Height Ground Floor Showrooms",
+      "Basement + Ground Level Parking",
+      "Basement + G + 1 + 2 + 3 Floors",
+      "High Footfall Commercial Corridor",
+      "Easy Connectivity to Airport & IT City",
+      "Suitable for Retail Chains & Branded Stores",
+      "Flexible Payment Plans",
+      "Ready for Possession Timeline"
+    ],
+
+    specifications: {
+      developer: "Ansal Properties",
+      location: "Sector 114, Landran Road, Mohali",
+      totalUnits: 30,
+      unitTypes: [
+        {
+          price: "₹3.5 Crore",
+          units: 22,
+          plotSize: "16.6 × 50 ft",
+          floors: "Basement + G + 1 + 2",
+          totalArea: "~3,300 sq ft",
+          parking: "Basement + Ground",
+          bestFor: "Retail + Small Office"
+        },
+        {
+          price: "₹6.5 Crore",
+          units: 8,
+          plotSize: "16.6 × 66 ft", 
+          floors: "Basement + G + 1 + 2 + 3",
+          totalArea: "~5,500 sq ft",
+          parking: "Double Basement + Ground",
+          bestFor: "Large Retail + Offices"
+        }
+      ],
+      approvals: ["RERA Approved"],
+      possession: "Ready for Possession"
+    },
+
+    connectivity: [
+      "Prime Landran Road frontage location",
+      "Growing commercial hub in Sector 114",
+      "Easy connectivity to Airport & IT City",
+      "High footfall commercial corridor",
+      "Close to residential developments",
+      "Well-connected to major roads",
+      "Strategic location in Ansal Sector 114"
+    ],
+
+    highlights: [
+      "RERA Approved Commercial Development",
+      "Starting from ₹3.5 Crore",
+      "30 Units Available",
+      "Prime Landran Road Frontage",
+      "Double-Height Showrooms with Parking",
+      "High Footfall Commercial Corridor",
+      "Flexible Payment Plans Available",
+      "Ready for Possession",
+      "High ROI Investment Opportunity"
+    ],
+
+    slug: "mohali-high-street-114"
+  },
+  {
+    id: "slp-moksha-kharar",
+    name: "SLP Moksha",
+    location: "Kharar-Landran Road, Near Chandigarh University",
+    city: "Mohali",
+    type: "Residential",
+    logoimage: wavegradens3, // Add logo import when available
+    image: wavegradensmain, // Add main image import when available
+    brochure: wavegradens3, // Add brochure import when available
+    status: "Under Construction",
+    developer: "SLP Group",
+    description:
+      "Welcome to SLP Moksha, a premium 18-acre township designed for modern living, located just minutes away from Chandigarh University. Experience a blend of comfort, convenience, and luxury with 2 BHK & 3 BHK high-rise apartments featuring Mivan construction technology.",
+
+    // Brand Foundation Section
+    brandFoundation: {
+      title: "SLP Moksha",
+      subtitle: "Premium 18-Acre Township for Modern Living",
+      philosophy:
+        "SLP Moksha is designed for modern living with a perfect blend of comfort, convenience, and luxury. Located strategically near Chandigarh University, it offers high-rise apartments with superior Mivan construction technology in a gated township environment with world-class amenities.",
+      keyPrinciples: [
+        {
+          title: "Mivan Construction Technology",
+          description:
+            "Superior strength, durability, and seamless finish with advanced Mivan construction technology ensuring quality construction and long-lasting structures."
+        },
+        {
+          title: "Strategic Location",
+          description:
+            "Located just minutes away from Chandigarh University with excellent connectivity to Mohali, Kharar & Chandigarh, making it perfect for families and professionals."
+        },
+        {
+          title: "Premium Township Living",
+          description:
+            "18-acre gated township with 24×7 security, modern amenities including clubhouse, gym, swimming pool, and landscaped gardens for a complete lifestyle experience."
+        },
+      ],
+    },
+
+    // Gallery Images
+    gallery: [
+      {
+        id: 1,
+        type: "exterior",
+        title: "SLP Moksha High-Rise Towers",
+        image: moksha1, // Add image import when available
+        description:
+          "18-floor high-rise towers with Mivan construction technology"
+      },
+      {
+        id: 2,
+        type: "amenity",
+        title: "Clubhouse & Swimming Pool",
+        image: moksha2, // Add image import when available
+        description:
+          "Premium clubhouse with swimming pool and recreational facilities"
+      },
+      {
+        id: 3,
+        type: "landscape",
+        title: "Landscaped Gardens",
+        image: moksha3, // Add image import when available
+        description: "Beautifully landscaped gardens and green spaces"
+      },
+      {
+        id: 4,
+        type: "amenity",
+        title: "Kids Play Area & Gym",
+        image: wavegradensmain, // Add image import when available
+        description: "Modern gym facilities and dedicated kids play area"
+      },
+    ],
+
+    amenities: [
+      "18-Acre Premium Township",
+      "Gated Community with 24×7 Security",
+      "Mivan Construction Technology",
+      "18-Floor High-Rise Towers",
+      "2 BHK & 3 BHK Apartments",
+      "Landscaped Gardens",
+      "Clubhouse",
+      "Swimming Pool",
+      "Gymnasium",
+      "Kids Play Area",
+      "24×7 Security",
+      "Modern Amenities",
+      "Superior Strength & Durability",
+      "Seamless Finish",
+      "Near Chandigarh University"
+    ],
+
+    specifications: {
+      developer: "SLP Group",
+      totalArea: "18 Acres",
+      projectType: "High-Rise Apartments",
+      configuration: "2 BHK & 3 BHK",
+      towers: "18 Floors each",
+      constructionTechnology: "Mivan Construction Technology",
+      security: "Gated Township with 24×7 Security",
+      location: "Kharar-Landran Road",
+      university: "Near Chandigarh University"
+    },
+
+    highlights: [
+      "Premium 18-Acre Township",
+      "Near Chandigarh University",
+      "2 BHK & 3 BHK High-Rise Apartments",
+      "18-Floor Towers with Mivan Construction",
+      "Gated Township with 24×7 Security",
+      "Clubhouse, Swimming Pool & Gym",
+      "Landscaped Gardens & Kids Play Area",
+      "Superior Strength & Durability",
+      "Perfect for Families & Professionals",
+      "Excellent Connectivity to Major Cities"
+    ],
+
+    connectivity: [
+      "Near Chandigarh University",
+      "Kharar-Landran Road location",
+      "Excellent connectivity to Mohali",
+      "Easy access to Kharar",
+      "Direct connectivity to Chandigarh",
+      "Close to educational institutions",
+      "Well-connected road network",
+      "Strategic location for professionals"
+    ],
+
+    slug: "slp-moksha-kharar",
+  },
+  {
+    id: "luxurio-sukh-plaza",
+    name: "Luxurio Sukh Plaza",
+    location: "NH-05, Chandigarh-Ludhiana Road, Kharar",
+    city: "Mohali",
+    type: "Commercial",
+    logoimage: "https://newprojects.99acres.com/projects/psp_group/psp_luxurio_sukh_plaza/pdxgpiz_1719309066_500467223.jpg", // Add logo import when available
+    image: mainsukh, // Add main image import when available
+    brochure: sukhvillasbrochure, // Add brochure import when available
+    status: "Under Construction",
+    developer: "PSP Group",
+    description:
+      "A prestigious commercial real estate project that sets a new standard for business success. First commercial project on the Chandigarh-Ludhiana Highway near Chandigarh, offering prime location, innovative design, and versatile spaces for unparalleled growth and prosperity.",
+
+    // Brand Foundation Section
+    brandFoundation: {
+      title: "Luxurio Sukh Plaza",
+      subtitle: "Better Than Expected - Where Shopping & Hospitality Meets the Cosmos of Outlets",
+      philosophy:
+        "Luxurio Sukh Plaza is not only a shopping destination but a galaxy of outlets offering diverse options to cater to various needs and preferences. Experience the advantage of a bustling neighborhood with constant stream of visitors, shoppers, businessmen, and office-goers for unmatched exposure and footfall.",
+      keyPrinciples: [
+        {
+          title: "Prime Location Advantage",
+          description:
+            "First commercial project on Chandigarh-Ludhiana Highway near Chandigarh, ensuring maximum visibility, footfall, and accessibility with a steady stream of potential customers."
+        },
+        {
+          title: "Versatile Commercial Spaces",
+          description:
+            "From corporate offices and showrooms to microbrewery, food courts, gaming arcade, and 3-star hotel space - catering to all business needs in one prestigious destination."
+        },
+        {
+          title: "Investment Excellence",
+          description:
+            "Spanning across low-rise magnificent floors with 97 showrooms & SOHOs, 235 covered parking slots, and 150 ft wide frontage on National Highway for maximum business opportunities."
+        },
+      ],
+    },
+
+    // Gallery Images
+    gallery: [
+      {
+        id: 1,
+        type: "exterior",
+        title: "Luxurio Sukh Plaza Facade",
+        image: mainsukh1, // Add image import when available
+        description:
+          "Prestigious commercial destination with iconic design excellence"
+      },
+      {
+        id: 2,
+        type: "amenity",
+        title: "Food Court & Dining",
+        image: mainsukh2, // Add image import when available
+        description:
+          "Expansive food court with diverse dining options and microbrewery"
+      },
+      {
+        id: 3,
+        type: "commercial",
+        title: "Showrooms & SOHOs",
+        image: mainsukh4, // Add image import when available
+        description: "97 showrooms and SOHOs with modern design and versatile spaces"
+      },
+      {
+        id: 4,
+        type: "amenity",
+        title: "3-Star Hotel Space",
+        image: mainsukh3, // Add image import when available
+        description: "Dedicated 3-star hotel space with business lounges"
+      },
+    ],
+
+    amenities: [
+      "97 Showrooms & SOHOs",
+      "235 Covered Car Parking Slots",
+      "150 ft Wide Frontage",
+      "Dedicated 3-Star Hotel Space",
+      "24×7 Security & Maintenance",
+      "National Highway Visibility",
+      "Corporate Office Spaces",
+      "Microbrewery",
+      "Food Court",
+      "Kiosks & Drive-Thrus",
+      "Hyper Market",
+      "Smart Retail",
+      "Gaming Arcade",
+      "Kids Play Area",
+      "Business Lounges",
+      "Food & Beverages",
+      "Readily Available Customer Base"
+    ],
+
+    specifications: {
+      developer: "PSP Group",
+      projectType: "Commercial Complex",
+      totalShowrooms: "97 Showrooms & SOHOs",
+      parking: "235 Covered Car Parking Slots",
+      frontage: "150 ft Wide",
+      location: "NH-05, Chandigarh-Ludhiana Road",
+      uniqueFeature: "First Commercial Project on Chandigarh-Ludhiana Highway",
+      hotelSpace: "Dedicated 3-Star Hotel Space",
+      security: "24×7 Security & Maintenance",
+      visibility: "National Highway Visibility"
+    },
+
+    highlights: [
+      "First Commercial Project on Chandigarh-Ludhiana Highway",
+      "Prime Location Near Chandigarh",
+      "97 Showrooms & SOHOs",
+      "235 Covered Car Parking Slots",
+      "150 ft Wide National Highway Frontage",
+      "Dedicated 3-Star Hotel Space",
+      "Microbrewery & Gaming Arcade",
+      "24×7 Security & Maintenance",
+      "PSP Group - A Diamond of Trust",
+      "Multiple Commercial Spaces Under One Roof"
+    ],
+
+    connectivity: [
+      "NH-05, Chandigarh-Ludhiana Road, Kharar",
+      "Chandigarh University: 2 mins",
+      "Kharar Bus Stand: 2 mins", 
+      "Rayat Bahra: 5 mins",
+      "Railway Station Mohali: 20 mins",
+      "Cricket Stadium Mohali: 20 mins",
+      "International Airport: 25 mins",
+      "Direct National Highway connectivity",
+      "High visibility location with maximum footfall"
+    ],
+
+    slug: "luxurio-sukh-plaza",
   },
 ];
 

@@ -157,14 +157,18 @@ const ProjectDetails = ({ project }: ProjectDetailsProps) => {
               <MapPin className="w-5 h-5 sm:w-6 sm:h-6 mr-2 sm:mr-3" />
               <span className="text-lg sm:text-xl">{project.location}</span>
             </motion.div>
-
-            <motion.p
-              variants={slideIn}
-              className="text-base sm:text-lg lg:text-xl leading-relaxed max-w-lg opacity-90 mb-8"
+            <div
+              className=" top-4 right-4 w-auto min-w-[260px] px-3 py-2 rounded-lg 
+             bg-gradient-to-tr from-foreground/60 via-secondary/40 to-transparent 
+             flex items-center gap-3 shadow-lg"
             >
-              {project.description}
-            </motion.p>
-
+              <motion.p
+                variants={slideIn}
+                className="text-base sm:text-lg lg:text-xl leading-relaxed max-w-lg opacity-90 mb-8"
+              >
+                {project.description}
+              </motion.p>
+            </div>
             {project.brochure && (
               <>
                 {" "}

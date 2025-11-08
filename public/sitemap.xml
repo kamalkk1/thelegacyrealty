@@ -37,6 +37,20 @@
     <priority>0.7</priority>
   </url>
   
+  <url>
+    <loc>https://thelegacyrealty.in/commercial/mohali-high-street-sector-114-landran-road</loc>
+    <lastmod>2024-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://thelegacyrealty.in/careers</loc>
+    <lastmod>2024-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
   <!-- City Pages -->
   <url>
     <loc>https://thelegacyrealty.in/cities/mohali</loc>
@@ -203,7 +217,42 @@
   
   <url>
     <loc>https://thelegacyrealty.in/project/wave-gardens</loc>
-    <lastmod>2024-10-28</lastmod>
+    <lastmod>2024-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://thelegacyrealty.in/project/victoria-street-sirhind</loc>
+    <lastmod>2024-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://thelegacyrealty.in/project/alpine-grove-dera-bassi</loc>
+    <lastmod>2024-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://thelegacyrealty.in/project/ananda-crown-mohali</loc>
+    <lastmod>2024-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://thelegacyrealty.in/project/f-towers-mohali</loc>
+    <lastmod>2024-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://thelegacyrealty.in/project/mohali-high-street-114</loc>
+    <lastmod>2024-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
