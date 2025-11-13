@@ -16,7 +16,7 @@ import {
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import BrochureModal from "./BrochureModal";
 import type { Variants } from "framer-motion";
@@ -61,16 +61,32 @@ const iconMap: Record<string, any> = {
 const ProjectDetails = ({ project }: ProjectDetailsProps) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
   // Safe gallery operations with defaults
   const gallery = project.gallery || [];
   // const keyPrinciples = project.brandFoundation?.keyPrinciples || [];
+
+  // Auto-play carousel
+  useEffect(() => {
+    if (!isAutoPlaying || gallery.length <= 1) return;
+
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) =>
+        prev === gallery.length - 1 ? 0 : prev + 1
+      );
+    }, 4000); // Change image every 4 seconds
+
+    return () => clearInterval(interval);
+  }, [isAutoPlaying, gallery.length]);
 
   const nextImage = () => {
     if (gallery.length > 0) {
       setCurrentImageIndex((prev) =>
         prev === gallery.length - 1 ? 0 : prev + 1
       );
+      setIsAutoPlaying(false); // Pause auto-play when user manually navigates
+      setTimeout(() => setIsAutoPlaying(true), 10000); // Resume after 10 seconds
     }
   };
 
@@ -79,6 +95,8 @@ const ProjectDetails = ({ project }: ProjectDetailsProps) => {
       setCurrentImageIndex((prev) =>
         prev === 0 ? gallery.length - 1 : prev - 1
       );
+      setIsAutoPlaying(false); // Pause auto-play when user manually navigates
+      setTimeout(() => setIsAutoPlaying(true), 10000); // Resume after 10 seconds
     }
   };
 

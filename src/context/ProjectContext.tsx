@@ -87,6 +87,10 @@ import wavegradensmain from "../assets/slp-moksha/main.jpeg";
 import moksha1 from "../assets/slp-moksha/1.jpeg";
 import moksha2 from "../assets/slp-moksha/2.jpeg";
 import moksha3 from "../assets/slp-moksha/floor.jpeg";
+import kayra2 from "../assets/kayrahomes/kayranew.jpg";
+import kayra3 from "../assets/kayrahomes/kayra2.jpg";
+import kayra4 from "../assets/kayrahomes/kayra3.jpg";
+
 
 export interface Project {
   id: string;
@@ -3022,6 +3026,133 @@ const projects: Project[] = [
     ],
 
     slug: "luxurio-sukh-plaza",
+  },
+
+  {
+    id: "kayra-homes-sector-125",
+    name: "Kayra Homes",
+    location: "Sector 125, Sunny Enclave, Mohali",
+    city: "Mohali",
+    type: "Residential",
+    logoimage: kayra2,
+    image: kayra4, 
+    brochure: "",
+    status: "Ready to Move",
+    developer: "Kayra Homes",
+    description:
+      "Kayra Homes presents fully furnished 4BHK kothi in Sector 125 Sunny Enclave Mohali on 118 sq yards. These ready-to-move 4BHK independent houses in Mohali come completely furnished with bed, sofa, chimney, RO, geyser, false ceiling, premium lights, and complete sanitary fittings. Perfect for families seeking 4BHK kothi for sale in Sunny Enclave Mohali with modern amenities and immediate possession. Prices starting from ₹1.45 Crore for these luxury 4BHK villas in Mohali.",
+
+    // Brand Foundation Section
+    brandFoundation: {
+      title: "Fully Furnished 4BHK Kothi in Sector 125 Sunny Enclave Mohali",
+      subtitle: "Ready-to-Move Independent Houses Starting ₹1.45 Cr",
+      philosophy:
+        "Kayra Homes offers premium 4BHK kothi in Sunny Enclave Mohali, designed for modern families seeking ready-to-move independent houses. Each 118 sq yard villa comes fully furnished with high-end furniture, appliances, and fittings, providing hassle-free immediate possession in Sector 125 Mohali.",
+      keyPrinciples: [
+        {
+          title: "Fully Furnished 4BHK Kothi - Move-in Ready",
+          description:
+            "Each 4BHK independent house in Mohali comes completely furnished with premium bed, sofa, modular kitchen with chimney, RO water purifier, geyser, false ceiling, designer lights, and complete sanitary fittings for immediate occupancy."
+        },
+        {
+          title: "Prime Location - Sector 125 Sunny Enclave Mohali",
+          description:
+            "Strategically located 4BHK kothi for sale in Sunny Enclave Mohali with excellent connectivity to Chandigarh, schools, hospitals, and shopping centers. Ideal for families seeking independent houses in Mohali."
+        },
+        {
+          title: "118 Sq Yards - Spacious 4BHK Villas",
+          description:
+            "Premium 4BHK kothi on 118 sq yards plot offering spacious living areas, modern architecture, and complete privacy. Best value for 4BHK independent houses in Mohali at ₹1.45 Crore onwards."
+        },
+      ],
+    },
+
+    // Gallery Images
+    gallery: [
+      {
+        id: 1,
+        type: "exterior",
+        title: "4BHK Kothi Exterior - Sunny Enclave",
+        image: kayra2, // Add image import when available
+        description:
+          "Modern 4BHK independent house in Sector 125 Sunny Enclave Mohali with contemporary architecture"
+      },
+      {
+        id: 2,
+        type: "interior",
+        title: "Fully Furnished Living Room",
+        image: kayra3, // Add image import when available
+        description:
+          "Luxurious fully furnished 4BHK kothi with premium sofa, false ceiling, and designer lighting"
+      },
+      {
+        id: 3,
+        type: "interior",
+        title: "Modern Modular Kitchen",
+        image: kayra4, // Add image import when available
+        description: "Fully equipped modular kitchen with chimney, RO, and premium fittings in 4BHK villa Mohali"
+      },
+     
+    ],
+
+    amenities: [
+      "Fully Furnished 4BHK Kothi",
+      "118 Sq Yards Plot Area",
+      "Premium Bed & Wardrobes",
+      "Luxury Sofa Set",
+      "Modular Kitchen with Chimney",
+      "RO Water Purifier",
+      "Geyser in All Bathrooms",
+      "False Ceiling Throughout",
+      "Designer LED Lights",
+      "Complete Sanitary Fittings",
+      "Premium Flooring",
+      "Car Parking",
+      "Gated Community",
+      "24×7 Security",
+      "Power Backup",
+      "Ready to Move"
+    ],
+
+    specifications: {
+      developer: "Kayra Homes",
+      propertyType: "4BHK Kothi / Independent House",
+      plotSize: "118 Sq Yards",
+      configuration: "4BHK Fully Furnished",
+      location: "Sector 125, Sunny Enclave, Mohali",
+      priceRange: "Starting ₹1.45 Crore",
+      furnishing: "Fully Furnished (Bed, Sofa, Chimney, RO, Geyser, etc.)",
+      possession: "Ready to Move - Immediate Possession",
+      features: "False Ceiling, Designer Lights, Complete Sanitary Fittings",
+      community: "Gated Society with 24×7 Security"
+    },
+
+    highlights: [
+      "4BHK Kothi in Sector 125 Sunny Enclave Mohali - Ready to Move",
+      "Fully Furnished Independent House - ₹1.45 Cr Onwards",
+      "118 Sq Yards - Spacious 4BHK Villa in Mohali",
+      "Complete Furnishing: Bed, Sofa, Chimney, RO, Geyser",
+      "False Ceiling & Designer Lights Throughout",
+      "Premium Sanitary Fittings & Modular Kitchen",
+      "4BHK Kothi for Sale in Sunny Enclave Mohali",
+      "Immediate Possession - Move-in Ready",
+      "Gated Community with 24×7 Security",
+      "Prime Location in Sector 125 Mohali"
+    ],
+
+    connectivity: [
+      "Located in Sector 125, Sunny Enclave, Mohali",
+      "Easy access to Chandigarh city center",
+      "Close to top schools and educational institutions",
+      "Nearby hospitals and medical facilities",
+      "Shopping malls and markets within reach",
+      "Well-connected to Airport Road",
+      "Proximity to IT parks and business hubs",
+      "Public transport readily available",
+      "Excellent road connectivity to Panchkula and Zirakpur"
+    ],
+
+    slug: "kayra-homes-sector-125-sunny-enclave",
   },
 ];
 
