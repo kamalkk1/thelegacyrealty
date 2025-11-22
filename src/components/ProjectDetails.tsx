@@ -67,6 +67,13 @@ const ProjectDetails = ({ project }: ProjectDetailsProps) => {
   const gallery = project.gallery || [];
   // const keyPrinciples = project.brandFoundation?.keyPrinciples || [];
 
+  // Calendly function
+  // const openCalendly = () => {
+  //   // Replace 'your-calendly-link' with your actual Calendly scheduling link
+  //   // Example: 'https://calendly.com/yourname/site-visit' or 'https://calendly.com/thelegacyrealty/site-visit'
+  //   window.open('https://calendly.com/thelegacyrealty/site-visit', '_blank', 'width=800,height=700');
+  // };
+
   // Auto-play carousel
   useEffect(() => {
     if (!isAutoPlaying || gallery.length <= 1) return;
@@ -231,6 +238,32 @@ const ProjectDetails = ({ project }: ProjectDetailsProps) => {
             )}
           </div>
         </div>
+
+        {/* Book Site Visit Button - Bottom Right */}
+        {/* <motion.button
+          onClick={openCalendly}
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="absolute bottom-8 right-8 z-20 bg-secondary hover:bg-foreground text-white px-6 py-4 rounded-full shadow-2xl flex items-center gap-3 font-semibold text-lg transition-all duration-300 group"
+        >
+          <svg
+            className="w-6 h-6 group-hover:rotate-12 transition-transform"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+            />
+          </svg>
+          <span>Book Site Visit</span>
+        </motion.button> */}
       </motion.section>
 
       {/* Brand Foundation Section */}

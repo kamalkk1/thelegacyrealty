@@ -90,6 +90,12 @@ import moksha3 from "../assets/slp-moksha/floor.jpeg";
 import kayra2 from "../assets/kayrahomes/kayranew.jpg";
 import kayra3 from "../assets/kayrahomes/kayra2.jpg";
 import kayra4 from "../assets/kayrahomes/kayra3.jpg";
+import atlantis360logo from "../assets/atlantis360/Atlantis-Three-Sixtylogo.png";
+import atlantis360image from "../assets/atlantis360/Screenshot 2025-11-17 at 11.21.35 AM.webp";
+import atlantis360brochure from "../assets/atlantis360/ATLANTIS_360_ROUGH_FOR_APPROVAL.pdf";
+import atlantis3601 from "../assets/atlantis360/atlantis-360.jpeg";
+import atlantis3602 from "../assets/atlantis360/gl.jpg";
+import atlantis3603 from "../assets/atlantis360/WhatsApp Image 2025-11-17 at 11.01.37 AM.jpeg";
 
 
 export interface Project {
@@ -1037,7 +1043,7 @@ const projects: Project[] = [
   },
 {
   "id": "wave-gardens",
-  "name": "Wave Gardens",
+  "name": "Wave Gardens - Luxury Flats in Mohali",
   "location": "Wave Estate, Sector 85, Mohali",
   "city": "Mohali",
   "type": "Residential",
@@ -1047,24 +1053,24 @@ const projects: Project[] = [
   "slug": "wave-gardens",
    brochure: brochurewave,
 
-  "description": "Wave Gardens Phase II at Wave Estate offers premium 3BHK flats in Mohali and 4BHK flats in Mohali, featuring spacious apartments in Sector 85 Mohali. Located on Airport Road near Homeland, these ready-to-move 3BHK apartments in Mohali offer luxury living in a 12-acre township with 70% open green space. Perfect choice for buyers seeking 3BHK flats near Airport Road Mohali, flats near Homeland, and flats on Airport Road with modern architecture, premium amenities, and excellent connectivity to Chandigarh International Airport.",
+  "description": "Wave Gardens - Premium flats in Mohali featuring luxury 3BHK & 4BHK apartments in Sector 85. Wave Gardens offers ready-to-move flats near Homeland with 70% green spaces. Discover vastu compliant apartment design in Mohali, low rise home living, and harmony in modern architecture. Perfect for apartment mohali buyers seeking flats in mohali near Airport Road on a 12-acre gated community. Book your site visit today at Wave Gardens Mohali.",
 
   "brandFoundation": {
-    "title": "Premium 3BHK & 4BHK Flats in Sector 85 Mohali",
-    "subtitle": "Luxury Apartments on Airport Road Near Homeland",
-    "philosophy": "Wave Gardens brings together modern design and natural serenity with spacious 3BHK flats in Mohali and 4BHK flats in Mohali. Located in Sector 85 on Airport Road near Homeland, these premium apartments offer 70% open landscapes, world-class facilities, and a perfect sanctuary of luxury for families seeking flats near Airport Road Mohali.",
+    "title": "Wave Gardens - Premium Flats in Mohali | Sector 85 Luxury Apartments",
+    "subtitle": "Vastu Compliant Low-Rise Homes with 70% Green Spaces - Wave Estate",
+    "philosophy": "Wave Gardens brings harmony through vastu compliant design in a low rise home environment. Our flats in Mohali blend modern luxury with natural serenity, offering apartment mohali residents the perfect balance. Wave Gardens provides ready-to-move flats near Homeland with exceptional connectivity to Chandigarh.",
     "keyPrinciples": [
       {
-        "title": "Premium 3BHK & 4BHK Apartments in Mohali",
-        "description": "12-acre development with meticulously designed 3BHK flats in Sector 85 Mohali, 4BHK flats in Mohali, duplexes, and penthouses near Airport Road and Homeland."
+        "title": "Vastu Compliant Apartment Design - Harmony Greens Inspired",
+        "description": "Wave Gardens features vastu compliant flats in Mohali with optimal spatial harmony. Each apartment mohali unit ensures positive energy flow, inspired by harmony greens principles, creating vastu compliant homes for modern families."
       },
       {
-        "title": "Prime Location - Flats on Airport Road",
-        "description": "Strategically located flats near Homeland with 70% open green spaces, perfect for buyers seeking 3BHK flats near Airport Road Mohali with serene lifestyle and modern amenities."
+        "title": "Low Rise Home Living - Wave of Harmony",
+        "description": "Experience low rise home luxury at Wave Gardens. Our 3BHK & 4BHK flats in Mohali provide a wave of harmony with intimate community living, perfect for families seeking peaceful apartment mohali options away from high-rise congestion."
       },
       {
-        "title": "Ready-to-Move Flats in Sector 85 Mohali",
-        "description": "Phase 1 delivered with 100% occupancy, ensuring reliability for buyers of 3BHK apartments in Mohali and flats near Homeland. Ready-to-move options available."
+        "title": "Ready-to-Move Flats Near Homeland - 12-Acre Estate",
+        "description": "Wave Gardens offers ready-to-move flats in Mohali with 70% green landscaping. Located near Homeland, these vastu compliant apartment options in Sector 85 ensure immediate possession with premium amenities and gated security."
       }
     ]
   },
@@ -1073,23 +1079,23 @@ const projects: Project[] = [
     {
       "id": 1,
       "type": "exterior",
-      "title": "3BHK & 4BHK Flats in Sector 85 Mohali",
+      "title": "Wave Gardens - Flats in Mohali Low-Rise Community",
       "image": wavegradens1, 
-      "description": "Modern towers showcasing premium 3BHK flats in Mohali and 4BHK apartments with lush greenery on Airport Road near Homeland."
+      "description": "Modern low rise home architecture at Wave Gardens showcasing vastu compliant apartment design with lush greenery. Premium flats in Mohali featuring wave-inspired low rise home aesthetics near Homeland."
     },
     {
       "id": 2,
       "type": "amenity",
-      "title": "Premium Amenities - Flats Near Homeland",
+      "title": "Premium Amenities - Harmony Greens Quality",
       "image": wavegradens2,
-      "description": "World-class clubhouse, swimming pool and gym facilities for 3BHK flats near Airport Road Mohali residents."
+      "description": "World-class clubhouse, swimming pool and gym at Wave Gardens. These amenities rival harmony greens, offering apartment mohali residents premium facilities in a ready-to-move low rise home setting."
     },
     {
       "id": 3,
       "type": "floorplan",
-      "title": "Floor Plans - 3BHK & 4BHK Apartments Mohali",
+      "title": "Vastu Compliant Floor Plans - 3BHK & 4BHK Flats in Mohali",
       "image": wavegradens3,
-      "description": "Detailed floor plans for spacious 3BHK flats in Sector 85 Mohali, 4BHK flats, duplexes, and penthouses on Airport Road."
+      "description": "Detailed vastu compliant floor plans for flats in Mohali at Wave Gardens. Each apartment mohali layout ensures optimal energy flow with low rise home design near Homeland on Airport Road."
     }
   ],
 
@@ -1117,28 +1123,29 @@ const projects: Project[] = [
   },
 
   "connectivity": [
-    "Located on Airport Road - Prime connectivity for flats on Airport Road",
-    "Homeland Mall - Walking distance from flats near Homeland",
-    "Chandigarh International Airport - 10 mins from 3BHK flats near Airport Road Mohali",
-    "Sector 85 Mohali - Prime location for 3BHK flats in Sector 85 Mohali",
-    "Educational Institutions - Within 5-10 mins from 3BHK apartments in Mohali",
+    "Wave Estate Sector 85 - Prime location for flats in Mohali",
+    "Located near Homeland - Walking distance apartment mohali access",
+    "Chandigarh International Airport - 10 mins from Wave Gardens",
+    "Low rise home community with excellent connectivity",
+    "Educational Institutions - Within 5-10 mins from apartment mohali",
     "Medical Centres - Within 10 mins",
-    "Shopping & Dining Destinations - Homeland and nearby malls",
+    "Wave of Harmony - Shopping & Dining at Homeland",
     "Chandigarh City Centre - 15 mins connectivity",
-    "Easy access to major IT hubs and business centers"
+    "Easy access to IT parks, business hubs, and professional centers",
+    "Proximity to Vastu Compliant cultural centers"
   ],
 
   "highlights": [
-    "Premium 3BHK flats in Mohali and 4BHK flats in Mohali",
-    "3BHK apartments in Mohali Sector 85 near Airport Road",
-    "3BHK flats in Sector 85 Mohali - Ready to Move",
-    "Flats near Homeland - Prime Location on Airport Road",
-    "3BHK flats near Airport Road Mohali with 70% open green areas",
-    "Flats on Airport Road - 12-acre luxury township",
-    "Multiple configurations: 3BHK, 4BHK, duplexes, penthouses",
-    "100% occupancy in Phase 1 - Trusted Developer",
-    "Premium clubhouse and lifestyle amenities",
-    "Flats near Homeland Mall and Chandigarh Airport"
+    "Wave Gardens - Premium Flats in Mohali Sector 85",
+    "Vastu Compliant Apartment Design - Harmony Greens Quality",
+    "Low Rise Home Living - 3BHK & 4BHK Flats Near Homeland",
+    "Ready-to-Move Apartment Mohali on Airport Road",
+    "70% Green Space - Wave of Harmony Estate",
+    "Vastu Compliant Apartment Mohali with Low Rise Home Architecture",
+    "12-Acre Wave Gardens - Luxury Gated Community",
+    "100% Occupancy Phase 1 - Trusted Developer",
+    "Low Rise Home Amenities - Clubhouse, Pool, Gym",
+    "Wave Estate Premium Flats Near Homeland Mall & Airport"
   ],
 
   // "seo": {
@@ -3027,7 +3034,146 @@ const projects: Project[] = [
 
     slug: "luxurio-sukh-plaza",
   },
+{
+  id: "atlantis360-mohali",
+  name: "Atlantis360",
+  location: "PR7 Airport Road, Mohali",
+  city: "Mohali",
+  type: "Residential",
+  logoimage: atlantis360logo, // Replace with actual logo import
+  status: "Under Construction",
+  image: atlantis360image, // Replace with actual image import
+  brochure: atlantis360brochure, // Replace with actual brochure import
 
+  description:
+    "Atlantis360 by Atlantis Group offers premium high-rise luxury apartments on PR7 Airport Road, Mohali. Spread across 4.75 acres with 5 towers housing 176 spacious units, this RERA-approved project features 3BHK and 4BHK residences with exclusive amenities including personal lifts, wraparound balconies, and mountain-facing views. Built with advanced MIVAN construction technology, it's a self-financed, debt-free project offering world-class living with seamless connectivity to Punjab, Chandigarh, Himachal, Haryana, and Delhi.",
+
+  brandFoundation: {
+    title: "High-Rise Luxury on Airport Road",
+    subtitle: "Exclusive Living with Mountain Views",
+    philosophy:
+      "Atlantis360 redefines luxury living in Mohali with spacious high-rise apartments designed for privacy and exclusivity. With only 2 flats per floor, personal lifts in every home, and panoramic mountain views, this project combines contemporary architecture with premium lifestyle amenities on the 200-ft wide Airport Road.",
+    keyPrinciples: [
+      {
+        title: "Exclusive Privacy",
+        description:
+          "Only 2 spacious apartments per floor with private lifts in each unit, ensuring complete privacy and personalized living experience across 5 elegant towers.",
+      },
+      {
+        title: "Prime Location",
+        description:
+          "Strategically located on 200-ft wide PR7 Airport Road with exceptional connectivity to Punjab, Chandigarh, Himachal Pradesh, Haryana, and Delhi.",
+      },
+      {
+        title: "Premium Construction",
+        description:
+          "Advanced MIVAN construction technology ensuring superior quality, durability, and faster completion. Self-financed, debt-free project by Atlantis Group.",
+      },
+    ],
+  },
+
+  gallery: [
+    {
+      id: 1,
+      type: "exterior",
+      title: "Tower Elevation",
+      image: atlantis3601, // Replace with actual image URL
+      description:
+        "Modern high-rise towers (B+S+15-16-22) with contemporary architecture on Airport Road",
+    },
+    {
+      id: 2,
+      type: "amenity",
+      title: "Clubhouse & Recreation",
+      image: atlantis3602, // Replace with actual image URL
+      description: "State-of-the-art clubhouse with 15+ leisure activities and swimming pool",
+    },
+    {
+      id: 3,
+      type: "amenity",
+      title: "Mountain View",
+      image: atlantis3603, // Replace with actual image URL
+      description: "Breathtaking mountain-facing views with wraparound balconies",
+    },
+  ],
+
+  amenities: [
+    "15+ Leisure Activities in Premium Clubhouse",
+    "Swimming Pool with Deck",
+    "Personal Lift in Every Apartment",
+    "Wraparound Balconies",
+    "Landscaped Green Parks",
+    "MIVAN Construction Technology",
+    "24/7 Security with CCTV",
+    "Power Backup",
+    "Covered Parking",
+    "Children's Play Area",
+    "Jogging Track",
+    "Indoor Games Room",
+    "Gymnasium & Fitness Center",
+    "Multi-purpose Hall",
+  ],
+
+  specifications: {
+    structure: "5 High-Rise Towers (B+S+15-16-22 Floors)",
+    units: "176 Luxury Apartments - 3BHK, 3+1BHK & 4+1BHK",
+    townshipSize: "4.75 Acres",
+    possession: "1st Tower Ready - Possession in 2 Years",
+    approvals: ["RERA Approved", "Self-Financed & Debt-Free Project"],
+    apartmentSizes: [
+      "3BHK - 2325 sq ft approx",
+      "3+1BHK - 2600 sq ft approx",
+      "3+1BHK - 2660 sq ft approx",
+      "4+1BHK - 3204 sq ft approx",
+    ],
+    exclusiveFeatures: [
+      "Only 2 Flats Per Floor",
+      "Private Lift in Each Apartment",
+      "Wraparound Balconies",
+      "Mountain Facing Views",
+      "Park Facing Units",
+    ],
+  },
+
+  connectivity: [
+    "Located on 200 ft Wide PR7 Airport Road",
+    "Chandigarh International Airport - 15 mins",
+    "Chandigarh City Center - 20 mins",
+    "Panchkula - 25 mins",
+    "Multi-connectivity to Punjab, Himachal Pradesh & Haryana",
+    "Easy Access to Delhi via National Highway",
+    "Schools & Hospitals - Within 10 mins",
+    "Shopping Malls & Markets - Nearby",
+  ],
+
+  highlights: [
+    "RERA-approved luxury high-rise project",
+    "4.75 acres with 5 towers and 176 units",
+    "Only 2 exclusive apartments per floor",
+    "Personal lift in every flat",
+    "Wraparound balconies with mountain views",
+    "Advanced MIVAN construction",
+    "15+ leisure activities in clubhouse",
+    "Self-financed & debt-free project",
+    "1st tower ready for possession",
+    "Flexible payment plans available",
+  ],
+
+  // paymentPlan: {
+  //   options: [
+  //     {
+  //       plan: "Construction Linked",
+  //       details: "25% in 4 quarterly installments",
+  //     },
+  //     {
+  //       plan: "Easy Payment",
+  //       details: "40% now, 60% on possession (after 2 years)",
+  //     },
+  //   ],
+  // },
+
+  slug: "atlantis360-mohali-airport-road",
+},
   {
     id: "kayra-homes-sector-125",
     name: "Kayra Homes",
