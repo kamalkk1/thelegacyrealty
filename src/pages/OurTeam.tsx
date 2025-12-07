@@ -16,6 +16,10 @@ import {
 import rahul from "../assets/Rahul-Ahuja.png";
 import gaurav from "../assets/projectlogos/Gaurav.jpeg";
 import anmol from "../assets/anmol.jpeg";
+import kamal from "../assets/ourteam/kamal.png";
+import aman from "../assets/ourteam/Aman_Gill.jpg";
+import prabjot from "../assets/ourteam/Prabjot_singh.jpg";
+import inderjeet from "../assets/ourteam/Inderjeet.jpg";
 // Team member interface
 interface TeamMember {
   id: string;
@@ -84,6 +88,58 @@ const teamMembers: TeamMember[] = [
     contact: {
       email: "arjun@thelegacyrealty.com",
       phone: "+91 98123 45678"
+    }
+  },
+  {
+    id: "digital-partner-kamal",
+    name: "Kamal Kishore",
+    position: "Digital Partner",
+    role: "manager",
+    image: kamal,
+    description: "Expert in digital strategy and online presence management, ensuring The Legacy Realty reaches the right audience effectively.",
+    experience: "10+ Years",
+    specialization: ["Digital Marketing", "Brand Strategy", "Online Presence"],
+    contact: {
+      email: "info.thelegacyrealty@gmail.com"
+    }
+  },
+  {
+    id: "sales-manager-aman",
+    name: "Aman Gill",
+    position: "Sales Manager",
+    role: "manager",
+    image: aman,
+    description: "Seasoned sales professional with a decade of experience in driving growth and building lasting client relationships.",
+    experience: "10+ Years",
+    specialization: ["Sales Strategy", "Client Relationship", "Market Analysis"],
+    contact: {
+      email: "info.thelegacyrealty@gmail.com"
+    }
+  },
+  {
+    id: "sales-manager-prabjot",
+    name: "Prabjot Singh",
+    position: "Sales Manager",
+    role: "manager",
+    image: prabjot,
+    description: "Dedicated sales manager focused on understanding client needs and delivering exceptional real estate solutions.",
+    experience: "10+ Years",
+    specialization: ["Property Sales", "Client Consultation", "Negotiation"],
+    contact: {
+      email: "info.thelegacyrealty@gmail.com"
+    }
+  },
+  {
+    id: "sales-manager-inderjeet",
+    name: "Inderjeet",
+    position: "Sales Manager",
+    role: "manager",
+    image: inderjeet,
+    description: "Experienced sales manager committed to guiding clients through seamless property transactions with expertise and integrity.",
+    experience: "10+ Years",
+    specialization: ["Real Estate Sales", "Customer Service", "Market Trends"],
+    contact: {
+      email: "info.thelegacyrealty@gmail.com"
     }
   },
 //   {
