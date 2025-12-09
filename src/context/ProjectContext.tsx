@@ -96,6 +96,12 @@ import atlantis360brochure from "../assets/atlantis360/ATLANTIS_360_ROUGH_FOR_AP
 import atlantis3601 from "../assets/atlantis360/atlantis-360.jpeg";
 import atlantis3602 from "../assets/atlantis360/gl.jpg";
 import atlantis3603 from "../assets/atlantis360/WhatsApp Image 2025-11-17 at 11.01.37 AM.jpeg";
+import homelandBrochure from "../assets/homelandglobalpark/brochure.pdf";
+import homelandMain from "../assets/homelandglobalpark/homelandmain.jpg";
+import homeland1 from "../assets/homelandglobalpark/homeland1.jpg";
+import homeland2 from "../assets/homelandglobalpark/homeland2.jpg";
+import homeland3 from "../assets/homelandglobalpark/homeland3.jpg";
+import homelandLogo from "../assets/homelandglobalpark/logo.png";
 
 
 export interface Project {
@@ -3299,6 +3305,104 @@ const projects: Project[] = [
     ],
 
     slug: "kayra-homes-sector-125-sunny-enclave",
+  },
+  {
+    id: "homeland-global-park",
+    name: "Homeland Global Park",
+    location: "Sector 75, International Airport Road, Mohali",
+    city: "Mohali",
+    type: "Commercial",
+    status: "Upcoming",
+    logoimage: homelandLogo,
+    image: homelandMain,
+    brochure: homelandBrochure,
+    description: "Homeland Global Park is a massive mixed-use development in Sector 75, Mohali, featuring uber-premium malls, luxury business suites, and serviced apartments. Located on the International Airport Road, it redefines shopping, working, and living in Punjab.",
+    
+    brandFoundation: {
+      title: "The Most Lucrative Investment Destination",
+      subtitle: "Shop, Work, Play, and Stay",
+      philosophy: "Capitalizing on Punjab's golden land of opportunities, Homeland Global Park is designed to be an avenue of global inspiration, blending luxury retail, fine dining, and executive workspaces with sophisticated living.",
+      keyPrinciples: [
+        {
+          title: "Luxe Retail & High Street",
+          description: "Meticulously curated retail boulevards and an exclusive confluence of international maisons setting a new benchmark for refinement."
+        },
+        {
+          title: "Executive Offices",
+          description: "Elevated work environments integrating state-of-the-art infrastructure with modern business luxuries."
+        },
+        {
+          title: "Serviced Residences",
+          description: "Bespoke hospitality meets sophisticated design in these refined spaces tailored for comfort and style."
+        }
+      ]
+    },
+
+    gallery: [
+      {
+        id: 1,
+        type: "commercial",
+        title: "High Street & Retail",
+        image: homeland1,
+        description: "Avenue of global inspiration with curated retail boulevards."
+      },
+      {
+        id: 2,
+        type: "interior",
+        title: "Luxury Suites",
+        image: homeland2,
+        description: "Contemporary architecture with premium finishes."
+      },
+      {
+        id: 3,
+        type: "exterior",
+        title: "Project Overview",
+        image: homeland3,
+        description: "Sprawling 15-acre mixed-use development on Airport Road."
+      }
+    ],
+
+    amenities: [
+      "Luxe Retail Mall",
+      "High Street Shopping",
+      "Fine Dining Boulevard",
+      "Avant-garde Cinemas",
+      "Gaming Arcades",
+      "Executive Offices",
+      "Serviced Apartments",
+      "Indoor Courts",
+      "Bespoke Billiards Lounge",
+      "Smart Infrastructure"
+    ],
+
+    specifications: {
+      developer: "Homeland Group",
+      landParcel: "15 Acres",
+      location: "Sector 75, International Airport Road",
+      type: "Mixed Use (Retail, Office, Residential)",
+      status: "Pre-launch",
+      offerings: ["Luxury Suites", "Office Spaces", "Retail Showrooms"],
+      connectivity: ["International Airport", "Key City Hubs"],
+      infrastructure: ["Grade-A Offices", "Smart Infrastructure"]
+    },
+
+    highlights: [
+      "Located on International Airport Road, Sector 75",
+      "Punjab's Most Influential Real Estate Brand",
+      "Mixed-Use: Mall, Offices, Serviced Apartments",
+      "World-Class Entertainment Enclave",
+      "Investment Friendly: High ROI Potential",
+      "Pre-launch Phase - Register Interest Now"
+    ],
+
+    connectivity: [
+      "Directly on International Airport Road",
+      "Unparalleled connectivity to Chandigarh International Airport",
+      "Easy access to Tricity's key business hubs",
+      "Located in the heart of Mohali's growth corridor"
+    ],
+
+    slug: "homeland-global-park"
   },
 ];
 

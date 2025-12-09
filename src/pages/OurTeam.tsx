@@ -179,7 +179,7 @@ const milestones: Milestone[] = [
   },
   {
     icon: Target,
-    number: "98%",
+    number: "99%",
     label: "Success Rate",
     description: "Client satisfaction and successful property closures"
   }
