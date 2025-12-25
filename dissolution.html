@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digivibe - Invoice</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            padding: 40px 20px;
+        }
+        
+        .invoice-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 50px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #2c3e50;
+        }
+        
+        .logo {
+            font-size: 36px;
+            font-weight: bold;
+            color: #2c3e50;
+            letter-spacing: 2px;
+        }
+        
+        .logo-subtitle {
+            font-size: 12px;
+            color: #7f8c8d;
+            letter-spacing: 3px;
+            margin-top: 5px;
+        }
+        
+        .invoice-title {
+            text-align: right;
+        }
+        
+        .invoice-title h1 {
+            color: #e74c3c;
+            font-size: 32px;
+            margin-bottom: 5px;
+        }
+        
+        .invoice-number {
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        
+        .info-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .info-box h3 {
+            color: #2c3e50;
+            font-size: 14px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+        
+        .info-box p {
+            color: #555;
+            line-height: 1.8;
+            font-size: 14px;
+        }
+        
+        .invoice-details {
+            background: #ecf0f1;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+        
+        .invoice-details table {
+            width: 100%;
+        }
+        
+        .invoice-details td {
+            padding: 8px 0;
+            color: #2c3e50;
+            font-size: 14px;
+        }
+        
+        .invoice-details td:first-child {
+            font-weight: 600;
+        }
+        
+        .items-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        
+        .items-table thead {
+            background: #2c3e50;
+            color: white;
+        }
+        
+        .items-table th {
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .items-table td {
+            padding: 15px;
+            border-bottom: 1px solid #ecf0f1;
+            color: #555;
+        }
+        
+        .items-table tbody tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .text-right {
+            text-align: right;
+        }
+        
+        .totals {
+            margin-left: auto;
+            width: 350px;
+        }
+        
+        .totals table {
+            width: 100%;
+        }
+        
+        .totals td {
+            padding: 10px 0;
+            font-size: 14px;
+        }
+        
+        .totals .total-row {
+            border-top: 2px solid #2c3e50;
+            font-weight: bold;
+            font-size: 18px;
+            color: #2c3e50;
+        }
+        
+        .totals .total-row td {
+            padding-top: 15px;
+        }
+        
+        .notes {
+            margin-top: 40px;
+            padding: 20px;
+            background: #fff9e6;
+            border-left: 4px solid #f39c12;
+            border-radius: 5px;
+        }
+        
+        .notes h4 {
+            color: #f39c12;
+            margin-bottom: 10px;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        
+        .notes p {
+            color: #555;
+            line-height: 1.8;
+            font-size: 13px;
+        }
+        
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 2px solid #ecf0f1;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 12px;
+        }
+        
+        .payment-terms {
+            background: #ffe6e6;
+            border-left: 4px solid #e74c3c;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 5px;
+        }
+        
+        .payment-terms h4 {
+            color: #e74c3c;
+            margin-bottom: 10px;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        
+        .payment-terms p {
+            color: #555;
+            line-height: 1.8;
+            font-size: 13px;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .invoice-container {
+                box-shadow: none;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="invoice-container">
+        <div class="header">
+            <div>
+                <div class="logo">DIGIVIBE</div>
+                <div class="logo-subtitle">IGNITING DIGITAL POSSIBILITIES</div>
+            </div>
+            <div class="invoice-title">
+                <h1>INVOICE</h1>
+                <p class="invoice-number">Invoice #DIGI-2025</p>
+            </div>
+        </div>
+        
+        <div class="info-section">
+            <div class="info-box">
+                <h3>From</h3>
+                <p>
+                    <strong>Digivibe</strong><br>
+                    Kamal Kishore<br>
+                    Mohali, India<br>
+                    Email: kamalk2620@gmail.com<br>
+                    Phone: +91-9780267246<br>
+                    Web: www.digivibe.in
+                </p>
+            </div>
+            <div class="info-box">
+                <h3>Bill To</h3>
+                <p>
+                    <strong>Redbean Hospitality Pvt. Ltd</strong><br>
+                    SCO 526, 527, 528, 2nd Floor<br>
+                    TDI TAJ PLAZA, Sector 118<br>
+                    Sahibzada Ajit Singh Nagar<br>
+                    Punjab 160055
+                </p>
+            </div>
+        </div>
+        
+        <div class="invoice-details">
+            <table>
+                <tr>
+                    <td>Invoice Date:</td>
+                    <td>December 16, 2025</td>
+                </tr>
+                <tr>
+                    <td>Invoice Type:</td>
+                    <td>Invoice</td>
+                </tr>
+                <tr>
+                    <td>Payment Due:</td>
+                    <td>December 17, 2025</td>
+                </tr>
+                <tr>
+                    <td>Projects:</td>
+                    <td>bobbysingh.in & redbeanhospitality.com</td>
+                </tr>
+            </table>
+        </div>
+        
+        <table class="items-table">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Period</th>
+                    <th class="text-right">Amount (INR)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <strong>November 2025 Services</strong><br>
+                        <small>Website development, designing, hosting & server management for bobbysingh.in and redbeanhospitality.com</small>
+                    </td>
+                    <td>November 1-30, 2025</td>
+                    <td class="text-right">32,000.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>October 2025 Services (Pro-rated)</strong><br>
+                        <small>Development, maintenance, and support services (15 days)</small>
+                    </td>
+                    <td>October 16-31, 2025</td>
+                    <td class="text-right">6,250.00</td>
+                </tr>
+               
+            </tbody>
+        </table>
+        
+        <div class="totals">
+            <table>
+                <tr>
+                    <td>Subtotal:</td>
+                    <td class="text-right">INR 38,250</td>
+                </tr>
+                <tr>
+                    <td>Tax (if applicable):</td>
+                    <td class="text-right">INR 0.00</td>
+                </tr>
+                <tr class="total-row">
+                    <td>TOTAL DUE:</td>
+                    <td class="text-right">INR 38,250</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="payment-terms">
+            <h4>⚠️ Payment Terms - 16-31 OCTOBER  & NOVEMBER</h4>
+            <p>
+                This is a <strong>16-31 OCTOBER  & NOVEMBER</strong> for the dissolution of our service agreement. Payment is due <strong>(by December 17, 2025)</strong>. Upon receipt of full payment, domain transfers for bobbysingh.in and redbeanhospitality.com will be completed by January 2026 with all necessary credentials and documentation provided.
+            </p>
+        </div>
+        
+        <div class="notes">
+            <h4>Payment Instructions</h4>
+            <p>
+                <strong>Bank Transfer Details:</strong><br>
+                Name: Kamal Kishore<br>
+                Account No: 50100805393093<br>
+                IFSC Code: HDFC0004393<br>
+                Bank: HDFC Bank<br>
+                Mobile: +91-9780267246<br><br>
+                Please send payment confirmation to kamalk2620@gmail.com once transferred.
+            </p>
+        </div>
+        
+        <div class="footer">
+            <p><strong>DIGIVIBE</strong> | Digital Solutions & Web Development</p>
+            <p>www.digivibe.in | kamalk2620@gmail.com | +91-9780267246</p>
+            <p style="margin-top: 10px;">Thank you for your business. We wish you continued success.</p>
+        </div>
+    </div>
+</body>
+</html>

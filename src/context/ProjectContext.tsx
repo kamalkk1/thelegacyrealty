@@ -102,6 +102,20 @@ import homeland1 from "../assets/homelandglobalpark/homeland1.jpg";
 import homeland2 from "../assets/homelandglobalpark/homeland2.jpg";
 import homeland3 from "../assets/homelandglobalpark/homeland3.jpg";
 import homelandLogo from "../assets/homelandglobalpark/logo.png";
+import opusMain from "../assets/opus1/opusmain.webp";
+import opusLogo from "../assets/opus1/logo.webp";
+import opusBrochure from "../assets/opus1/brochure.pdf";
+import opus1 from "../assets/opus1/opus1.webp";
+import opus2 from "../assets/opus1/opus2.jpg";
+import opus3 from "../assets/opus1/opus3.jpg";
+import opusFloor from "../assets/opus1/floorplan.webp";
+import parkeastMain from "../assets/parkeast_navdesh/parkeast_main.jpeg";
+import parkeastLogo from "../assets/parkeast_navdesh/logo.avif";
+import parkeastBrochure from "../assets/parkeast_navdesh/Park East Broucher.pdf";
+import parkeast1 from "../assets/parkeast_navdesh/WhatsApp Image 2025-12-25 at 12.54.55 PM.jpeg";
+import parkeast2 from "../assets/parkeast_navdesh/WhatsApp Image 2025-12-25 at 12.54.56 PM.jpeg";
+import parkeast3 from "../assets/parkeast_navdesh/WhatsApp Image 2025-12-25 at 12.54.57 PM.jpeg";
+import parkeast4 from "../assets/parkeast_navdesh/WhatsApp Image 2025-12-25 at 12.54.56 PM (1).jpeg";
 
 
 export interface Project {
@@ -168,6 +182,230 @@ export const generateSlug = (text: string): string => {
 };
 
 const projects: Project[] = [
+  {
+    id: "park-east-kharar",
+    name: "Park East",
+    logoimage: parkeastLogo,
+    location: "NH-5, Kharar",
+    city: "Mohali",
+    type: "Residential",
+    status: "Booking Open",
+    image: parkeastMain,
+    brochure: parkeastBrochure,
+    developer: "Navdesh Developers",
+    description:
+      "Experience Premium Living at Park East Kharar – Discover luxury 1, 2 & 3 BHK apartments with world-class amenities, modern design, and a vibrant community lifestyle. Located on NH-5 with excellent connectivity to Chandigarh, Mohali, and key educational and healthcare institutions.",
+
+    brandFoundation: {
+      title: "Premium Living at Park East",
+      subtitle: "Luxury Apartments in Kharar",
+      philosophy:
+        "Park East offers thoughtfully designed 1, 2 & 3 BHK apartments with premium specifications, modern amenities, and 24/7 security in a gated community. With 50% green area and prime NH-5 location, it's the perfect blend of urban convenience and serene living.",
+      keyPrinciples: [
+        {
+          title: "Premium Specifications",
+          description:
+            "Vitrified flooring, UPVC windows, modular kitchen with granite counter, premium CP fittings, and quality paint finishes throughout.",
+        },
+        {
+          title: "World-Class Amenities",
+          description:
+            "Gymnasium, kids play area, clubhouse, dedicated car parking, lifts in each tower, and retail shops within the complex.",
+        },
+        {
+          title: "Strategic Location",
+          description:
+            "Prime NH-5 location with proximity to Chandigarh University, IT Park Mohali, International Airport, and major hospitals.",
+        },
+      ],
+    },
+
+    gallery: [
+      {
+        id: 1,
+        type: "exterior",
+        title: "Park East Elevation",
+        image: parkeast1,
+        description: "Modern architecture with premium finishes",
+      },
+      {
+        id: 2,
+        type: "amenity",
+        title: "Community Lifestyle",
+        image: parkeast2,
+        description: "World-class amenities for modern living",
+      },
+      {
+        id: 3,
+        type: "interior",
+        title: "Premium Interiors",
+        image: parkeast3,
+        description: "Luxury finishes and contemporary design",
+      },
+      {
+        id: 4,
+        type: "landscape",
+        title: "Green Spaces",
+        image: parkeast4,
+        description: "50% green area with landscaped gardens",
+      },
+    ],
+
+    amenities: [
+      "Both-Side Open Apartments",
+      "Retail Shops",
+      "Lift in Each Tower",
+      "Kids Play Area",
+      "Abundant Water Supply",
+      "50% Green Area",
+      "Dedicated Car Parking",
+      "24/7 CCTV Surveillance",
+      "Gymnasium",
+      "Clubhouse",
+      "Gated Community",
+    ],
+
+    specifications: {
+      developer: "Navdesh Developers",
+      configurations: ["1 BHK", "2 BHK", "3 BHK"],
+      location: "NH-5, Kharar",
+      flooring: "Vitrified Tiles",
+      windows: "UPVC/Hardwood",
+      kitchen: "Modular with Granite Counter & SS Sink",
+      toilets: "Anti-skid Ceramic Tiles, Premium CP Fittings",
+      staircase: "Premium Granite Marble with MS Railing",
+      balconies: "Premium Tiles with MS Railing",
+    },
+
+    highlights: [
+      "Premium 1, 2 & 3 BHK Apartments",
+      "24/7 Security with CCTV & Gated Community",
+      "50% Green Area",
+      "Prime NH-5 Location",
+      "Lift in Each Tower",
+    ],
+
+    connectivity: [
+      "St. Ezra School – 1 Min",
+      "Civil Hospital – 2 Min",
+      "Chandigarh University – 2 Min",
+      "Bus Stand Kharar – 3 Min",
+      "Rayat Bahra University – 4 Min",
+      "VR Punjab Mall – 6 Min",
+      "Kharar Railway Station – 6 Min",
+      "Max Hospital – 8 Min",
+      "IT Park Mohali – 10 Min",
+      "International Airport – 12 Min",
+      "PGI Chandigarh – 14 Min",
+      "Fortis Hospital – 15 Min",
+    ],
+
+    slug: "park-east-kharar",
+  },
+  {
+    id: "opus-one-new-chandigarh",
+    name: "Opus One",
+    logoimage: opusLogo,
+    location: "EcoCity 2, New Chandigarh",
+    city: "New Chandigarh",
+    type: "Residential",
+    status: "Booking Open",
+    image: opusMain,
+    brochure: opusBrochure,
+    description:
+      "Opus One New Chandigarh rises as a landmark of ultra-premium living, setting a new benchmark for luxury and elegance in the heart of Eco-City. This iconic address blends timeless design, world-class amenities, and serene surroundings to create an extraordinary lifestyle experience.",
+
+    brandFoundation: {
+      title: "Ultra-Premium Living in Eco-City",
+      subtitle: "Comfort, Wellness, and Leisure",
+      philosophy:
+        "At Opus One, every residence is a masterpiece of design, comfort, and luxury. The thoughtfully crafted 3, 4, and 5 BHK premium residences offer expansive spaces and elegant interiors that reflect refined living at its finest.",
+      keyPrinciples: [
+        {
+          title: "Leisure & Wellness",
+          description:
+            "Grand clubhouse with lounge & banquet, infinity pool with spa zone, and landscaped gardens with jogging tracks.",
+        },
+        {
+          title: "Health & Recreation",
+          description:
+            "Fully equipped fitness centre, peaceful yoga studio, and indoor games/sports facilities for all ages.",
+        },
+        {
+          title: "Family & Security",
+          description:
+            "Thoughtfully designed family zones, kids’ play areas, and round-the-clock security with smart access systems.",
+        },
+      ],
+    },
+
+    gallery: [
+      {
+        id: 1,
+        type: "exterior",
+        title: "Opus One Views",
+        image: opus1,
+        description: "Iconic architecture in Eco-City 2",
+      },
+      {
+        id: 2,
+        type: "interior",
+        title: "Premium Interiors",
+        image: opus2,
+        description: "Elegant living spaces designed for luxury",
+      },
+      {
+        id: 3,
+        type: "amenity",
+        title: "Lifestyle Amenities",
+        image: opus3,
+        description: "World-class amenities for a refined lifestyle",
+      },
+      {
+        id: 4,
+        type: "floorplan",
+        title: "Floor Plan",
+        image: opusFloor,
+        description: "Spacious layout design",
+      },
+    ],
+
+    amenities: [
+      "Grand Clubhouse",
+      "Infinity Pool",
+      "Spa Zone",
+      "Fitness Centre",
+      "Yoga Studio",
+      "Banquet Hall",
+      "Kids Play Area",
+      "Jogging Tracks",
+      "24/7 Smart Security",
+      "Landscaped Gardens",
+    ],
+
+    specifications: {
+      developer: "GB Realty",
+      configurations: ["3 BHK", "4 BHK", "5 BHK"],
+      location: "EcoCity 2, New Chandigarh",
+      highlights: ["Ultra-Premium", "Smart Access", "Green Surroundings"],
+    },
+
+    highlights: [
+      "Flagship Project by GB Realty",
+      "3, 4 & 5 BHK Premium Residences",
+      "Located in Eco-City 2, New Chandigarh",
+      "Near Upcoming Metro Corridor",
+    ],
+
+    connectivity: [
+      "PR-7 Airport Road Connectivity",
+      "Near PCA Stadium",
+      "Near PGI Chandigarh & Punjab University",
+      "Seamless drive to Chandigarh & Mohali",
+    ],
+
+    slug: "opus-one-new-chandigarh",
+  },
   {
     id: "mdb-lutyens",
     name: "MDB The Lutyens",
