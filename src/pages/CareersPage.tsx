@@ -276,7 +276,7 @@ const CareersPage: React.FC = () => {
                 />
               </div>
               <Tabs value={selectedDepartment} onValueChange={setSelectedDepartment} className="w-full md:w-auto">
-                <TabsList className="grid grid-cols-3 lg:grid-cols-6 w-full">
+                <TabsList className="grid grid-cols-3 lg:grid-cols-6 w-full whitespace-nowrap overflow-x-auto flex">
                   {departments.map((dept) => (
                     <TabsTrigger key={dept} value={dept} className="capitalize">
                       {dept}

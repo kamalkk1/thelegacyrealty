@@ -37,7 +37,7 @@ const mapsData: MapData[] = [
   },
   {
     title: "Chandigarh Sectors Map",
-    image: "https://images.unsplash.com/photo-1588421357574-87938a86fa28?w=800&q=80",
+    image: "https://cdn.sketchbubble.com/pub/media/catalog/product/optimized1/8/1/816d92a219a93f2bfeb46c3ce6256790190f70e3e46564f212f75ddd036ff00b/chandigarh-map-slide1.png",
     brochure: chandigarh,
     description: "Official Chandigarh city sector layout"
   },

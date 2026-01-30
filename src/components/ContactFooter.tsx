@@ -44,10 +44,11 @@ const ContactFooter = () => {
               <div className="flex items-center space-x-4">
                 <Phone className="h-6 w-6 text-secondary flex-shrink-0" />
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+919695798957"
                   className="font-poiret text-blue-100 hover:text-white transition-colors duration-200"
                 >
-                  (+91) 98882 47787 , (+91) 94639 00803, (+91) 9695798957
+                  (+91) 9695798957, (+91) 94639 00803 
+                  (+91) 98882 47787
                 </a>
               </div>
 
@@ -117,7 +118,7 @@ const ContactFooter = () => {
         <div className="border-t border-blue-70 mt-12 pt-8">
           <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
             <p className="font-poiret text-blue-200 text-center lg:text-left">
-              © 2025 thelegacyrealty. All rights reserved.
+              © {new Date().getFullYear()} thelegacyrealty. All rights reserved.
             </p>
 
             <div className="flex space-x-6">

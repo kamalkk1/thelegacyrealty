@@ -116,6 +116,18 @@ import parkeast1 from "../assets/parkeast_navdesh/WhatsApp Image 2025-12-25 at 1
 import parkeast2 from "../assets/parkeast_navdesh/WhatsApp Image 2025-12-25 at 12.54.56 PM.jpeg";
 import parkeast3 from "../assets/parkeast_navdesh/WhatsApp Image 2025-12-25 at 12.54.57 PM.jpeg";
 import parkeast4 from "../assets/parkeast_navdesh/WhatsApp Image 2025-12-25 at 12.54.56 PM (1).jpeg";
+import victoriaMain from "../assets/homelandglobalpark/victoria street/Victoria_Street_Image_2_Property_13131.webp";
+import victoria2 from "../assets/homelandglobalpark/victoria street/Victoria_Street_Image_4_Property_13131.webp";
+import victoria3 from "../assets/homelandglobalpark/victoria street/Victoria_Street_Image_6_Property_13131.webp";
+import victoriaShowroom from "../assets/homelandglobalpark/victoria street/Victoria_Street_Showroom_View_Property_13131.webp";
+import victoriaLogo from "../assets/homelandglobalpark/victoria street/logo.png";
+import grandSkyMain from "../assets/thegrandsky/main.jpg";
+import grandSkyLogo from "../assets/thegrandsky/logo.jpg";
+import grandSkyAmenity from "../assets/thegrandsky/ameneties.jpg";
+import grandSkyBalcony from "../assets/thegrandsky/balconybedroom.jpg";
+import grandSkyInterior from "../assets/thegrandsky/interior.jpg";
+import grandSkyKitchen from "../assets/thegrandsky/kitchen.jpg";
+import grandSkyBrochure from "../assets/thegrandsky/brochure.pdf";
 
 
 export interface Project {
@@ -184,7 +196,7 @@ export const generateSlug = (text: string): string => {
 const projects: Project[] = [
   {
     id: "park-east-kharar",
-    name: "Park East",
+    name: "Navdesh ParkEast",
     logoimage: parkeastLogo,
     location: "NH-5, Kharar",
     city: "Mohali",
@@ -194,13 +206,13 @@ const projects: Project[] = [
     brochure: parkeastBrochure,
     developer: "Navdesh Developers",
     description:
-      "Experience Premium Living at Park East Kharar – Discover luxury 1, 2 & 3 BHK apartments with world-class amenities, modern design, and a vibrant community lifestyle. Located on NH-5 with excellent connectivity to Chandigarh, Mohali, and key educational and healthcare institutions.",
+      "Experience Premium Living at Navdesh Park East Kharar – Discover luxury 1, 2 & 3 BHK apartments with world-class amenities, modern design, and a vibrant community lifestyle. Located on NH-5 with excellent connectivity to Chandigarh, Mohali, and key educational and healthcare institutions.",
 
     brandFoundation: {
-      title: "Premium Living at Park East",
+      title: "Premium Living at Navdesh Park East",
       subtitle: "Luxury Apartments in Kharar",
       philosophy:
-        "Park East offers thoughtfully designed 1, 2 & 3 BHK apartments with premium specifications, modern amenities, and 24/7 security in a gated community. With 50% green area and prime NH-5 location, it's the perfect blend of urban convenience and serene living.",
+        "Navdesh Park East offers thoughtfully designed 1, 2 & 3 BHK apartments with premium specifications, modern amenities, and 24/7 security in a gated community. With 50% green area and prime NH-5 location, it's the perfect blend of urban convenience and serene living.",
       keyPrinciples: [
         {
           title: "Premium Specifications",
@@ -224,7 +236,7 @@ const projects: Project[] = [
       {
         id: 1,
         type: "exterior",
-        title: "Park East Elevation",
+        title: "Navdesh ParkEast Elevation",
         image: parkeast1,
         description: "Modern architecture with premium finishes",
       },
@@ -2411,12 +2423,12 @@ const projects: Project[] = [
   {
     id: "victoria-street-sirhind",
     name: "Victoria Street",
-    logoimage: "https://bklanddevelopers.com/wp-content/uploads/2025/08/Victoria-Street-Logo2-min-scaled.png",
+    logoimage: victoriaLogo,
     location: "Sirhind-Chandigarh International Airport Road",
     city: "Sirhind",
     type: "Commercial",
     status: "Under Construction",
-    image: "https://bklanddevelopers.com/wp-content/uploads/2025/06/bkland-14.jpg",
+    image: victoriaMain,
     brochure: "https://example.com/victoria-street-brochure.pdf",
     developer: "BK Land Developers",
     description: "Victoria Street is Sirhind's first and largest retail destination, a grand commercial landmark at the gateway of a 64-acre mega township. This vibrant high street brings together mixed-use luxury retail spaces for premium brands, featuring shopping, entertainment, fine dining, and world-class hospitality with strategic highway location.",
@@ -2446,28 +2458,28 @@ const projects: Project[] = [
         id: 1,
         type: "exterior",
         title: "Victoria Street Entrance",
-        image: "https://bklanddevelopers.com/wp-content/uploads/2025/09/1366-%C3%97-768-px.jpg",
+        image: victoriaMain,
         description: "1000 sq ft grand entrance with magnificent façade and prime road frontage"
       },
       {
         id: 2,
         type: "amenity",
         title: "Entertainment Zone",
-        image: "https://bklanddevelopers.com/wp-content/uploads/2025/06/Replace-to-water-fountains.jpg",
+        image: victoria2,
         description: "42,000 sq ft entertainment zone with multiplex and microbrewery"
       },
       {
         id: 3,
         type: "commercial",
         title: "Premium Showrooms",
-        image: "https://bklanddevelopers.com/wp-content/uploads/2025/09/Shopping.jpg",
+        image: victoriaShowroom,
         description: "200+ premium showrooms in G+1 configuration for global brands"
       },
       {
         id: 4,
         type: "amenity",
         title: "Food Street",
-        image: "https://bklanddevelopers.com/wp-content/uploads/2025/06/1290-%C3%97-710-px-021.jpg",
+        image: victoria3,
         description: "10,000 sq ft food street with 4 drive-thrus and multiple dining booths"
       }
     ],
@@ -2643,6 +2655,131 @@ const projects: Project[] = [
     ],
 
     slug: "alpine-grove-dera-bassi"
+  },
+  {
+    id: "the-grand-sky-mohali",
+    name: "The Grand Sky",
+    logoimage: grandSkyLogo,
+    location: "NH-21, Kharar-Kurali Highway, Mohali",
+    city: "Mohali",
+    type: "Residential",
+    status: "Booking Open",
+    image: grandSkyMain,
+    brochure: grandSkyBrochure,
+    developer: "MRLK Builders and Promoters",
+    description: "The Grand Sky is an architectural masterpiece designed to redefine modern living through a seamless blend of opulence, comfort, and innovation. Developed by MRLK Builders and Promoters, this project offers 3 BHK luxury apartments that serve as a sanctuary of timeless elegance and 21st-century craftsmanship.",
+
+    brandFoundation: {
+      title: "Redefining Modern Living",
+      subtitle: "Opulence, Comfort, and Innovation",
+      philosophy: "A sanctuary of timeless elegance and 21st-century craftsmanship, designed to inspire with expansive layouts and premium finishes.",
+      keyPrinciples: [
+        {
+          title: "Architectural Masterpiece",
+          description: "Seamless blend of opulence, comfort, and innovation developed by MRLK Builders and Promoters."
+        },
+        {
+          title: "Exquisite Residences",
+          description: "Expansive layouts featuring floor-to-ceiling windows, imported marble flooring, and bespoke cabinetry."
+        },
+        {
+          title: "Grand Amenities",
+          description: "Comprehensive suite of lifestyle and security features including club house, gymnasium, and lush green gardens."
+        }
+      ]
+    },
+
+    gallery: [
+      {
+        id: 1,
+        type: "exterior",
+        title: "High-Rise Towers",
+        image: grandSkyMain,
+        description: "2 High-rise towers consisting of 16 floors plus a stilt level"
+      },
+      {
+        id: 2,
+        type: "interior",
+        title: "Spacious Interiors",
+        image: grandSkyInterior,
+        description: "Features floor-to-ceiling windows for natural light and breathtaking skyline views"
+      },
+      {
+        id: 3,
+        type: "interior",
+        title: "Modern Kitchen",
+        image: grandSkyKitchen,
+        description: "Fully modular kitchen spaces designed for the contemporary lifestyle"
+      },
+      {
+        id: 4,
+        type: "exterior",
+        title: "Luxurious Balconies",
+        image: grandSkyBalcony,
+        description: "Expansive private retreats with sleek glass railings and stunning city views"
+      },
+      {
+        id: 5,
+        type: "amenity",
+        title: "Premium Amenities",
+        image: grandSkyAmenity,
+        description: "Club House, Gymnasium, and Lush Green Gardens"
+      }
+    ],
+
+    amenities: [
+      "Club House",
+      "Gymnasium",
+      "Lush Green Gardens",
+      "Children’s Play Area",
+      "Basement & Stilt Parking (240+ units)",
+      "Visitor Parking",
+      "24/7 CCTV Surveillance",
+      "Gated Security",
+      "Fire Alarms",
+      "Smart Home Systems",
+      "Spa-inspired Bathrooms",
+      "Imported Marble Flooring",
+      "Power Backup",
+      "Internal Street Lights"
+    ],
+
+    specifications: {
+      developer: "MRLK Builders and Promoters",
+      reraCnumber: "PBRERA-SAS80-PR0927",
+      structure: "2 High-rise Towers (S+16 Floors)",
+      totalUnits: "120 Units",
+      configurations: ["3 BHK Luxury Residences"],
+      size: "1,800 Sq.Ft.",
+      construction: "RCC & Mivan Technology, Earthquake Resistant",
+      flooring: "Imported Marble & Vitrified Tiles",
+      parking: "240+ Units (Basement + Stilt)"
+    },
+
+    connectivity: [
+      "NH-21, Kharar-Kurali Highway",
+      "Near Rayat-Bahra University",
+      "Near Chandigarh University",
+      "Steps away from VR Punjab Mall",
+      "The Grand Sky Plaza - On-site",
+      "Close to Max Hospital",
+      "Near Mohali Bus Stand",
+      "Near Mohali Railway Station",
+      "Chandigarh International Airport - Nearby"
+    ],
+
+    highlights: [
+      "Luxury 3 BHK Apartments (1800 Sq.Ft.)",
+      "Mivan Construction Technology",
+      "Smart Home Integration",
+      "Steps away from VR Punjab Mall",
+      "Gated Community with 24/7 Security",
+      "Extensive Parking (240+ spaces)",
+      "Spa-inspired Bathrooms",
+      "Floor-to-Ceiling Windows"
+    ],
+
+    slug: "the-grand-sky-mohali"
   },
   {
     id: "ananda-crown-mohali",

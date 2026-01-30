@@ -16,7 +16,7 @@ import {
 import rahul from "../assets/Rahul-Ahuja.png";
 import gaurav from "../assets/projectlogos/Gaurav.jpeg";
 import anmol from "../assets/anmol.jpeg";
-import kamal from "../assets/ourteam/kamal.png";
+import kamal from "../assets/kamalpic.jpg";
 import aman from "../assets/ourteam/Aman_Gill.jpg";
 import prabjot from "../assets/ourteam/Prabjot_singh.jpg";
 import inderjeet from "../assets/ourteam/Inderjeet.jpg";
@@ -83,7 +83,7 @@ const teamMembers: TeamMember[] = [
     role: "manager",
     image: anmol,
     description: "Experienced property consultant specializing in residential and commercial properties across Tricity region.",
-    experience: "8+ Years",
+    experience: "5+ Years",
     specialization: ["Residential Sales", "Investment Advisory", "Property Valuation"],
     contact: {
       email: "arjun@thelegacyrealty.com",
@@ -110,7 +110,7 @@ const teamMembers: TeamMember[] = [
     role: "manager",
     image: aman,
     description: "Seasoned sales professional with a decade of experience in driving growth and building lasting client relationships.",
-    experience: "10+ Years",
+    experience: "5+ Years",
     specialization: ["Sales Strategy", "Client Relationship", "Market Analysis"],
     contact: {
       email: "info.thelegacyrealty@gmail.com"
@@ -136,7 +136,7 @@ const teamMembers: TeamMember[] = [
     role: "manager",
     image: inderjeet,
     description: "Experienced sales manager committed to guiding clients through seamless property transactions with expertise and integrity.",
-    experience: "10+ Years",
+    experience: "5+ Years",
     specialization: ["Real Estate Sales", "Customer Service", "Market Trends"],
     contact: {
       email: "info.thelegacyrealty@gmail.com"

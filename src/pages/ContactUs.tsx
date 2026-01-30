@@ -111,7 +111,7 @@ export default function ContactPage() {
           ></iframe>
           <div className="mt-6 space-y-2 text-gray-700">
             <p>
-              <strong>Call:</strong> +91 98882 47787{" "}
+              <strong>Call:</strong> +91 9695798957{" "}
             </p>
             <p>
               <strong>Write:</strong> info.thelegacyrealty@gmail.com
