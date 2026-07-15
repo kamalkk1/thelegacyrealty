@@ -3,12 +3,44 @@ import { MapPin, Building2, Home, MapIcon, TrendingUp } from "lucide-react";
 import { motion } from "framer-motion";
 import { useProjects } from "../context/ProjectContext";
 import { Link } from "react-router-dom";
+import BreadcrumbSchema from "../components/BreadcrumbSchema";
+import InternalLinks from "../components/InternalLinks";
 import mohalicity from "../assets/mohalicitypage.jpg";
 const MohaliCityPage = () => {
   const { getProjectsByCity } = useProjects();
   const properties = getProjectsByCity("Mohali");
+
+  // Related cities for internal linking
+  const relatedCities = [
+    {
+      title: "Chandigarh",
+      description: "Explore premium properties in India's most planned city with world-class infrastructure",
+      slug: "chandigarh",
+      category: "city" as const,
+      icon: "🏢"
+    },
+    {
+      title: "New Chandigarh",
+      description: "Discover emerging real estate opportunities in the fast-growing New Chandigarh region",
+      slug: "new-chandigarh",
+      category: "city" as const,
+      icon: "🏗️"
+    },
+    {
+      title: "Panchkula",
+      description: "Find luxury living and investment properties in Panchkula's prime locations",
+      slug: "panchkula",
+      category: "city" as const,
+      icon: "🏠"
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-gray-50">
+      <BreadcrumbSchema breadcrumbs={[
+        { name: 'Cities', url: 'https://thelegacyrealty.in/cities' },
+        { name: 'Mohali', url: 'https://thelegacyrealty.in/cities/mohali' }
+      ]} />
       {/* Hero Section with Map */}
       <motion.section
         initial={{ opacity: 0 }}
@@ -202,6 +234,12 @@ const MohaliCityPage = () => {
           </div>
         </div>
       </section>
+
+      {/* Related Cities Internal Links */}
+      <InternalLinks 
+        title="Explore Other Cities" 
+        relatedItems={relatedCities}
+      />
     </div>
   );
 };

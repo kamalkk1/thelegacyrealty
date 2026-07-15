@@ -12,7 +12,9 @@ import {
   Instagram,
   Youtube,
   ChevronDown,
+  ShieldCheck,
 } from "lucide-react";
+import { QRCodeSVG } from "qrcode.react";
 import logo from "../assets/tlrlogo.webp";
 
 // Example: Social mapping (React / TSX)
@@ -77,7 +79,7 @@ export default function Header() {
   return (
     <>
       <header className="bg-foreground sticky top-0 z-50 shadow-sm py-4">
-        <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 -z-10">
+        <div className="absolute inset-0 flex flex-col items-center top-[3.2em] gap-2 -z-10">
           <div className="w-full">
             <div className="h-[2px] bg-white origin-left animate-grow"></div>
           </div>
@@ -85,15 +87,32 @@ export default function Header() {
             <div className="h-[2px] bg-white origin-left animate-grow"></div>
           </div>
         </div>
-        <div className="container sticky mx-auto px-4 sm:px-6 lg:px-8 ">
+        <div className="container sticky mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div
-            className="flex justify-between  font-poiret items-center px-6 py-3 bg-white/90 backdrop-blur-lg border border-white/20 shadow-lg rounded-xl
-           transition"
+            className="relative z-20 flex justify-between font-poiret items-center px-4 md:px-6 py-3 bg-white/90 backdrop-blur-lg border border-white/20 shadow-lg rounded-xl transition gap-2"
           >
-            {/* Logo */}
-            <Link to="/" className="flex items-center space-x-2">
-              <img src={logo} alt="The Legacy Realty" className="h-14 w-auto" />
-            </Link>
+            {/* Left Section: QR Code & Logo */}
+            <div className="flex items-center gap-2 sm:gap-4 shrink-0">
+              <a 
+                href="https://rera.punjab.gov.in/reraindex/publicview/agentinfo" 
+                target="_blank" 
+                rel="noreferrer" 
+                className="bg-white p-1 sm:p-1.5 rounded-lg border border-gray-200 shadow-sm shrink-0 transition-transform hover:scale-105"
+                title="Verify RERA No"
+              >
+                <QRCodeSVG 
+                  value="https://rera.punjab.gov.in/reraindex/publicview/agentinfo" 
+                  size={36}
+                  level="M"
+                  includeMargin={false}
+                  fgColor="#081218"
+                  className="w-8 h-8 sm:w-10 sm:h-10"
+                />
+              </a>
+              <Link to="/" className="shrink-0 flex items-center">
+                <img src={logo} alt="The Legacy Realty" className="h-10 sm:h-14 w-auto" />
+              </Link>
+            </div>
 
             {/* Desktop Nav */}
             <nav className="hidden md:flex items-center space-x-8 text-lg  font-weight-900">
@@ -185,6 +204,14 @@ export default function Header() {
                 <Menu className="w-6 h-6" />
               )}
             </button>
+          </div>
+
+          {/* RERA text strip under the nav */}
+          <div className="relative z-10 -mt-3 mx-auto w-[92%] md:w-[75%] lg:w-[65%] flex justify-center items-center text-xs sm:text-sm font-sans font-bold pt-4 pb-1 sm:pb-1.5 px-4 sm:px-6 rounded-b-xl border-b border-x border-white/20 bg-white/90 backdrop-blur-lg shadow-md text-[#081218] uppercase tracking-wider whitespace-nowrap">
+            <div className="flex items-center gap-1 sm:gap-1.5">
+              <ShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#c9a84c]" />
+              <span><span className="text-[#c9a84c] hidden sm:inline">RERA NUMBER: </span>PBRERA-SAS81-REA3241</span>
+            </div>
           </div>
 
           {/* ✅ Mobile Nav */}

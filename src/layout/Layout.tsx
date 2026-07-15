@@ -53,7 +53,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       
       {/* Fixed Background */}
       <div
-        className="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-5"
+        className="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-5 pointer-events-none"
         style={{
           backgroundImage: `url(${backgroundImg})`,
         }}

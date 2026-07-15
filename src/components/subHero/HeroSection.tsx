@@ -60,12 +60,12 @@ const HeroSection = ({ formRef }: HeroSectionProps) => {
                 className="grid grid-cols-2 gap-4 mb-8"
               >
                 <div className="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
-                  <h3 className="text-2xl font-bold text-primary">₹3.5 Cr</h3>
+                  <h3 className="text-2xl font-bold text-primary">₹0.85 Cr</h3>
                   <p className="text-sm text-secondary">Starting Price</p>
                 </div>
                 <div className="bg-white/10 p-4 rounded-lg backdrop-blur-sm">
-                  <h3 className="text-2xl font-bold text-primary">30 Units</h3>
-                  <p className="text-sm text-secondary">Available</p>
+                  <h3 className="text-2xl font-bold text-primary">3 Sizes</h3>
+                  <p className="text-sm text-secondary">Available Options</p>
                 </div>
               </motion.div>
               
@@ -79,15 +79,15 @@ const HeroSection = ({ formRef }: HeroSectionProps) => {
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="text-primary">✅</span>
-                  <span>Basement + G + 1 + 2 + 3 Floors</span>
+                  <span>16.6 × 66 ft, 16.6 × 50 ft, and 14 × 40 ft inventory</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="text-primary">✅</span>
-                  <span>Double-Height Showrooms with Parking</span>
+                  <span>Floor-wise commercial pricing from third floor to ground + basement</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="text-primary">✅</span>
-                  <span>High Footfall Commercial Corridor</span>
+                  <span>10% booking, 15% in 30 days, 25% at key construction milestones</span>
                 </li>
               </motion.ul>
               

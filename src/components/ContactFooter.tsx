@@ -6,8 +6,10 @@ import {
   Instagram,
   Linkedin,
   Youtube,
+  ShieldCheck,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { QRCodeSVG } from "qrcode.react";
 import logo from "../assets/LOGO-1.png";
 const ContactFooter = () => {
   return (
@@ -114,8 +116,40 @@ const ContactFooter = () => {
           </div>
         </div>
 
+        {/* RERA Verification Section */}
+        <div className="mt-16 bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-8 backdrop-blur-sm hover:border-[#c9a84c]/30 transition-colors duration-300">
+          <div className="flex flex-col space-y-4 md:max-w-xl text-center md:text-left">
+            <div className="flex items-center justify-center md:justify-start gap-2 text-[#c9a84c]">
+              <ShieldCheck className="w-7 h-7" />
+              <h4 className="font-poiret font-bold text-2xl tracking-wider">RERA APPROVED</h4>
+            </div>
+            <p className="font-poiret text-blue-100 text-sm md:text-base leading-relaxed">
+              The Legacy Realty is officially registered under the Real Estate (Regulation and Development) Act, ensuring transparency, integrity, and trust in all our property dealings.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 mt-2 justify-center md:justify-start">
+              <div className="bg-black/40 px-5 py-3 rounded-lg border border-white/5 shadow-inner">
+                <span className="block text-xs text-gray-400 font-poiret mb-1 uppercase tracking-wider">Registration Number</span>
+                <span className="font-bold text-[#c9a84c] tracking-wider text-lg">PBRERA-SAS81-REA3241</span>
+              </div>
+            </div>
+          </div>
+          
+          <div className="flex flex-col items-center gap-3">
+            <div className="bg-white p-3.5 rounded-xl shadow-[0_0_30px_rgba(201,168,76,0.15)] ring-1 ring-white/10 hover:scale-105 transition-transform duration-300">
+              <QRCodeSVG 
+                value="https://rera.punjab.gov.in/reraindex/publicview/agentinfo" 
+                size={130}
+                level="M"
+                includeMargin={false}
+                fgColor="#081218"
+              />
+            </div>
+            <span className="font-poiret text-xs text-gray-400 uppercase tracking-[0.2em]">Scan to Verify</span>
+          </div>
+        </div>
+
         {/* Bottom Bar */}
-        <div className="border-t border-blue-70 mt-12 pt-8">
+        <div className="border-t border-white/10 mt-12 pt-8">
           <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
             <p className="font-poiret text-blue-200 text-center lg:text-left">
               © {new Date().getFullYear()} thelegacyrealty. All rights reserved.

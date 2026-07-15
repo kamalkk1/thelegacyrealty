@@ -13,19 +13,19 @@ const FAQSection = () => {
     },
     {
       question: "What are the sizes of showrooms available?",
-      answer: "Two options are available: 16.6 × 50 ft showrooms priced at ₹3.5 Cr with Basement + G + 1 + 2 floors, and 16.6 × 66 ft premium showrooms at ₹6.5 Cr with Basement + G + 1 + 2 + 3 floors."
+      answer: "Current price lists show three configurations: 16.6 × 66 ft with Ground + Basement at ₹3.30 Cr, First Floor at ₹1.65 Cr, Second Floor at ₹1.40 Cr, and Third Floor at ₹1.15 Cr; 16.6 × 50 ft with Ground + Basement at ₹2.00 Cr, First Floor at ₹1.20 Cr, Second Floor at ₹0.95 Cr, and Third Floor at ₹0.85 Cr; and a 14 × 40 ft unit with Basement + Ground + First at ₹2.50 Cr."
     },
     {
       question: "What is the payment plan for commercial space?",
-      answer: "We offer flexible payment plans tailored to your investment capacity. Options include construction-linked payments, down payment plans, and bank loan assistance. Contact our experts for customized payment schedules."
+      answer: "The payment plan in the latest price sheet is 10% on booking, 15% within 30 days of booking, 25% at layout or plan approval, 25% at super structure, and 25% at possession."
     },
     {
       question: "When will the project be ready for possession?",
-      answer: "Construction is progressing as per schedule. The project is expected to be ready for possession by [specific timeline]. We provide regular construction updates to all our investors."
+      answer: "Project details currently position Mohali High Street as ready for possession while bookings remain open. Before booking, it is still best to confirm the exact handover status of the specific unit or floor you are evaluating."
     },
     {
       question: "What is the expected rental yield?",
-      answer: "Based on market analysis, the expected rental yield ranges from 12-15% annually. ₹3.5 Cr showrooms can generate ₹35,000-45,000/month, while ₹6.5 Cr showrooms can fetch ₹65,000-80,000/month in rent."
+      answer: "Rental yield depends on the frontage, floor level, and commercial use case. Ground + basement inventory typically commands stronger visibility-led rents, while upper floors are usually evaluated for office, clinic, or service-led usage. We can estimate rent and ROI once you shortlist a specific unit."
     },
     {
       question: "Are there any additional charges?",

@@ -14,7 +14,7 @@ interface SEOMetaProps {
 
 const SEOMeta: React.FC<SEOMetaProps> = ({
   title = 'The Legacy Realty - Premium Properties in Tricity | Mohali, Chandigarh, Himachal',
-  description = 'Discover luxury residential and commercial properties in Mohali, Chandigarh, New Chandigarh, and Himachal Pradesh. The Legacy Realty offers premium real estate solutions with trusted developers.',
+  description = 'The Legacy Realty - Premium real estate in Tricity. Residential flats, commercial spaces & plots in Chandigarh, Mohali & New Chandigarh. RERA approved.',
   keywords = 'real estate mohali, properties chandigarh, luxury apartments mohali, commercial spaces chandigarh, himachal properties, new chandigarh real estate, tricity properties, the legacy realty',
   canonical,
   ogTitle,

@@ -12,8 +12,8 @@ const LocationAdvantages = () => {
     },
     {
       icon: Building,
-      title: "Double Height",
-      description: "Ground Floor Double-Height Showrooms",
+      title: "Multiple Floor-Wise Inventory Options",
+      description: "Ground Floor Showrooms",
       color: "text-green-500"
     },
     {
@@ -37,7 +37,7 @@ const LocationAdvantages = () => {
     "Easy connectivity to Airport & IT City",
     "Suitable for retail chains & branded stores",
     "High rental yields expected",
-    "Flexible payment plans available",
+    "Construction-linked payment plan: 10% / 15% / 25% / 25% / 25%",
     "Ready for possession timeline"
   ];
 

@@ -128,6 +128,12 @@ import grandSkyBalcony from "../assets/thegrandsky/balconybedroom.jpg";
 import grandSkyInterior from "../assets/thegrandsky/interior.jpg";
 import grandSkyKitchen from "../assets/thegrandsky/kitchen.jpg";
 import grandSkyBrochure from "../assets/thegrandsky/brochure.pdf";
+import mohaliWalkMain from "../assets/mohaliwalk/main.jpg";
+import mohaliWalkLogo from "../assets/mohaliwalk/logo.png";
+import mohaliWalkBrands from "../assets/mohaliwalk/brands.webp";
+import mohaliWalkInterior from "../assets/mohaliwalk/interior.jpg";
+import mohaliWalkRestaurant from "../assets/mohaliwalk/restaurant.webp";
+import mohaliWalkBrochure from "../assets/mohaliwalk/Mohaliwalk.pdf";
 
 
 export interface Project {
@@ -3035,24 +3041,24 @@ const projects: Project[] = [
     image: mohalihighstreet,
     brochure: "https://example.com/mohali-high-street-brochure.pdf",
     developer: "Ansal Properties",
-    description: "Premium commercial showrooms on prime Landran Road frontage with basement parking, ground floor retail, and upper floors for offices or storage. RERA approved commercial development with double-height showrooms starting from ₹3.5 Crore in the growing commercial hub of Sector 114.",
+    description: "Premium commercial inventory on prime Landran Road frontage with floor-wise options across 16.6 × 66 ft, 16.6 × 50 ft, and 14 × 40 ft configurations. Pricing starts at ₹0.85 Crore, with ground + basement combinations going up to ₹3.30 Crore and a construction-linked payment plan in Sector 114, Mohali.",
 
     brandFoundation: {
       title: "Prime Commercial Property in Mohali",
-      subtitle: "RERA Approved Showrooms Starting ₹3.5 Crore",
-      philosophy: "Mohali High Street offers premium commercial showrooms strategically located on Landran Road frontage in Sector 114. With basement parking, double-height showrooms, and flexible upper floors, it's designed for retail chains, branded stores, and businesses seeking high-footfall commercial spaces.",
+      subtitle: "Commercial Floors Starting ₹0.85 Crore",
+      philosophy: "Mohali High Street offers premium commercial inventory strategically located on Landran Road frontage in Sector 114. With basement-linked retail formats, multiple upper-floor buying options, and a structured construction-linked payment plan, it caters to retailers, investors, and businesses seeking visibility in a growing commercial corridor.",
       keyPrinciples: [
         {
           title: "Prime Landran Road Frontage",
           description: "Strategic location on Landran Road with high visibility and footfall in the growing commercial corridor of Sector 114 Ansal."
         },
         {
-          title: "Flexible Commercial Spaces",
-          description: "Double-height ground floor showrooms with basement parking and upper floors suitable for offices, storage, or additional retail space."
+          title: "Floor-Wise Buying Options",
+          description: "Choose between 16.6 × 66 ft, 16.6 × 50 ft, and 14 × 40 ft configurations with separate pricing for ground + basement, upper floors, and full-stack inventory."
         },
         {
-          title: "Investment Ready",
-          description: "RERA approved project with flexible payment plans, high rental yields expected, and ready for possession timeline."
+          title: "Structured Payment Plan",
+          description: "Inventory is offered with a staged plan of 10% on booking, 15% within 30 days, and the balance linked to approval, super structure, and possession milestones."
         }
       ]
     },
@@ -3068,62 +3074,85 @@ const projects: Project[] = [
       {
         id: 2,
         type: "commercial",
-        title: "Double Height Showrooms",
+        title: "16.6 × 66 Price Band",
         image: mohalihighstreet,
-        description: "Ground floor double-height showrooms with basement parking"
+        description: "Ground + basement at ₹3.30 Cr, with upper floors from ₹1.15 Cr to ₹1.65 Cr"
       },
       {
         id: 3,
         type: "floorplan",
-        title: "₹3.5 Cr Unit Layout",
+        title: "16.6 × 50 Price Band",
         image: mohalihighstreet,
-        description: "16.6 × 50 ft plot with basement + G + 1 + 2 floors"
+        description: "Ground + basement at ₹2.00 Cr, with upper floors from ₹0.85 Cr to ₹1.20 Cr"
       },
       {
         id: 4,
         type: "floorplan",
-        title: "₹6.5 Cr Premium Unit",
+        title: "14 × 40 Full Stack",
         image: mohalihighstreet,
-        description: "16.6 × 66 ft plot with basement + G + 1 + 2 + 3 floors"
+        description: "Basement + ground + first floor configuration priced at ₹2.50 Cr"
       }
     ],
 
     amenities: [
       "RERA Approved Commercial Project",
-      "Prime Landran Road Frontage",
-      "Double-Height Ground Floor Showrooms",
+      "Prime Landran Road Frontage, Sector 114 Ansal",
       "Basement + Ground Level Parking",
-      "Basement + G + 1 + 2 + 3 Floors",
+      "Multiple Floor-Wise Inventory Options",
       "High Footfall Commercial Corridor",
       "Easy Connectivity to Airport & IT City",
       "Suitable for Retail Chains & Branded Stores",
-      "Flexible Payment Plans",
+      "Construction-Linked Payment Plan",
       "Ready for Possession Timeline"
     ],
 
     specifications: {
       developer: "Ansal Properties",
       location: "Sector 114, Landran Road, Mohali",
+      price: "8500000",
+      priceRange: "₹0.85 Crore to ₹3.30 Crore",
       totalUnits: 30,
       unitTypes: [
         {
-          price: "₹3.5 Crore",
-          units: 22,
-          plotSize: "16.6 × 50 ft",
-          floors: "Basement + G + 1 + 2",
-          totalArea: "~3,300 sq ft",
+          plotSize: "16.6 × 66 ft",
+          floors: "Ground + Basement / First / Second / Third",
+          floorPricing: [
+            { floor: "Ground + Basement", price: "₹3.30 Crore" },
+            { floor: "First Floor", price: "₹1.65 Crore" },
+            { floor: "Second Floor", price: "₹1.40 Crore" },
+            { floor: "Third Floor", price: "₹1.15 Crore" }
+          ],
           parking: "Basement + Ground",
-          bestFor: "Retail + Small Office"
+          bestFor: "Flagship retail frontage and larger commercial formats"
         },
         {
-          price: "₹6.5 Crore",
-          units: 8,
-          plotSize: "16.6 × 66 ft", 
-          floors: "Basement + G + 1 + 2 + 3",
-          totalArea: "~5,500 sq ft",
-          parking: "Double Basement + Ground",
-          bestFor: "Large Retail + Offices"
+          plotSize: "16.6 × 50 ft",
+          floors: "Ground + Basement / First / Second / Third",
+          floorPricing: [
+            { floor: "Ground + Basement", price: "₹2.00 Crore" },
+            { floor: "First Floor", price: "₹1.20 Crore" },
+            { floor: "Second Floor", price: "₹0.95 Crore" },
+            { floor: "Third Floor", price: "₹0.85 Crore" }
+          ],
+          parking: "Basement + Ground",
+          bestFor: "Retail, clinic, office, and investor-led commercial use"
+        },
+        {
+          plotSize: "14 × 40 ft",
+          floors: "Basement + Ground + First",
+          floorPricing: [
+            { floor: "Basement + Ground + First", price: "₹2.50 Crore" }
+          ],
+          parking: "Integrated basement access",
+          bestFor: "Compact full-stack retail and office combination"
         }
+      ],
+      paymentPlan: [
+        { milestone: "Booking", amount: "10%" },
+        { milestone: "Within 30 Days of Booking", amount: "15%" },
+        { milestone: "At the Time of Layout / Plan Approval", amount: "25%" },
+        { milestone: "At the Time of Super Structure", amount: "25%" },
+        { milestone: "At the Time of Possession", amount: "25%" }
       ],
       approvals: ["RERA Approved"],
       possession: "Ready for Possession"
@@ -3141,12 +3170,13 @@ const projects: Project[] = [
 
     highlights: [
       "RERA Approved Commercial Development",
-      "Starting from ₹3.5 Crore",
-      "30 Units Available",
+      "Starting from ₹0.85 Crore",
+      "Three Commercial Configuration Options",
       "Prime Landran Road Frontage",
-      "Double-Height Showrooms with Parking",
+      "Floor-Wise Pricing Across 16.6 × 66 ft and 16.6 × 50 ft Inventory",
+      "14 × 40 Full Stack Available at ₹2.50 Crore",
       "High Footfall Commercial Corridor",
-      "Flexible Payment Plans Available",
+      "10% / 15% / 25% / 25% / 25% Payment Plan",
       "Ready for Possession",
       "High ROI Investment Opportunity"
     ],
@@ -3778,6 +3808,144 @@ const projects: Project[] = [
     ],
 
     slug: "homeland-global-park"
+  },
+  {
+    id: "mohali-walk",
+    name: "Mohali Walk",
+    logoimage: mohaliWalkLogo,
+    location: "Sector 62, Sahibzada Ajit Singh Nagar",
+    city: "Mohali",
+    type: "Commercial",
+    status: "Under Construction",
+    image: mohaliWalkMain,
+    brochure: mohaliWalkBrochure,
+    developer: "PP Buildwell",
+    description:
+      "Welcome to Mohali Walk, your destination for the ultimate shopping and entertainment experience in Mohali. We are thrilled to be your #1 Biggest Anchor Mall, proudly presented by PP Buildwell—a name synonymous with excellence in retail and commercial development with 15 years of magnificent performance. Mohali Walk, designed by the acclaimed Bentel Associates and expertly managed by PPZ, represents a new era in shopping and leisure.",
+
+    brandFoundation: {
+      title: "MOHALI WALK: A World of Endless Possibilities",
+      subtitle: "#1 Biggest Anchor Mall by PP Buildwell",
+      philosophy:
+        "Mohali Walk represents a new era in shopping and leisure. Our vision is clear: to redefine shopping as an exciting and immersive experience. We bring brands to life, making every visit memorable. More than a mall, it's a vibrant community where families create lasting memories, friends gather, shoppers find joy, and investors secure a promising future.",
+      keyPrinciples: [
+        {
+          title: "Prime Location & Investment",
+          description:
+            "Prime 2-acre site with four-side open access, located adjacent to Chandigarh and in the heart of Mohali. Strategic intersection of Chandigarh Road and Mohali Road offers unparalleled visibility and accessibility."
+        },
+        {
+          title: "Premium Brand Ecosystem",
+          description:
+            "140+ reputable brand associations including PVR, DMart, Shoppers Stop, Haldirams, and many more offering a diverse retail experience under one roof—from latest fashion trends to gourmet dining and entertainment."
+        },
+        {
+          title: "Investor Friendly",
+          description:
+            "12% assured return pre-possession with 9-year leases and minimum income guarantees. Debt-free project with 100% GMADA auctioned money paid, making it an attractive option for long-term value."
+        }
+      ]
+    },
+
+    gallery: [
+      {
+        id: 1,
+        type: "commercial",
+        title: "Mohali Walk Mall Exterior",
+        image: mohaliWalkMain,
+        description: "Prime 2-acre site with four-side open access in the heart of Mohali"
+      },
+      {
+        id: 2,
+        type: "commercial",
+        title: "Brand Partners",
+        image: mohaliWalkBrands,
+        description: "140+ reputable brand associations including PVR, DMart, Shoppers Stop, Haldirams"
+      },
+      {
+        id: 3,
+        type: "interior",
+        title: "Premium Interiors",
+        image: mohaliWalkInterior,
+        description: "World-class interiors designed by acclaimed Bentel Associates"
+      },
+      {
+        id: 4,
+        type: "commercial",
+        title: "Food Court & Restaurants",
+        image: mohaliWalkRestaurant,
+        description: "Gourmet dining with top food brands like Haldirams, Chinese Wok, Giani's"
+      }
+    ],
+
+    amenities: [
+      "PVR Cinema",
+      "DMart Supermarket",
+      "Shoppers Stop",
+      "Haldirams",
+      "Prism Club",
+      "Bounce Fitness",
+      "Chinese Wok",
+      "Adidas",
+      "Giani's",
+      "The Indian Momo Co",
+      "Keventers",
+      "Burger Singh",
+      "Café Chennai",
+      "Amritsari Express",
+      "Metro",
+      "Numero Uno",
+      "Super 99",
+      "American Swan",
+      "Go Colors",
+      "Biba",
+      "Food Court",
+      "Entertainment Zone",
+      "4-Side Open Access",
+      "Ample Parking"
+    ],
+
+    specifications: {
+      developer: "PP Buildwell",
+      architect: "Bentel Associates",
+      management: "PPZ",
+      landParcel: "2 Acres",
+      type: "Commercial Mall",
+      status: "Advanced Construction Nearing Completion",
+      brandPartners: "140+ Brands",
+      returns: "12% Assured Return Pre-Possession",
+      leaseTerms: "9-Year Leases with Minimum Income Guarantees",
+      projectStatus: "Debt Free - 0% Debt",
+      gmadaStatus: "100% Auctioned Money Paid to GMADA",
+      experience: "15 Years of Excellence in Real Estate"
+    },
+
+    highlights: [
+      "#1 Biggest Anchor Mall in Mohali",
+      "Site Auctioned by GMADA - Debt Free Project",
+      "12% Assured Return Pre-Possession",
+      "9-Year Leases with Minimum Income Guarantees",
+      "140+ Premium Brand Associations",
+      "Advanced Construction Nearing Completion",
+      "Designed by Acclaimed Bentel Associates",
+      "Wide Catchment Area with High Income Group",
+      "Four-Side Open Access on Prime 2-Acre Site"
+    ],
+
+    connectivity: [
+      "Adjacent to Chandigarh - 2 Min",
+      "Fortis Hospital - 1 Min",
+      "PUDA Bhawan - 1 Min",
+      "Sri Ambh Sahib Gurudwara - Adjacent",
+      "Punjab School Education Board - 1 Min",
+      "Phase 7 Market - 2 Min",
+      "PCA Stadium - 5 Min",
+      "Bus Stand - 5 Min",
+      "International Airport - 15 Min",
+      "Located on Intersection of Chandigarh Road & Mohali Road"
+    ],
+
+    slug: "mohali-walk"
   },
 ];
 

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://thelegacyrealty.in</loc>
+    <image:image>
+      <image:loc>https://thelegacyrealty.in/assets/tlrlogo.webp</image:loc>
+      <image:caption>The Legacy Realty Logo</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://thelegacyrealty.in/assets/TheLegacyRealtyCEOs.jpg</image:loc>
+      <image:caption>The Legacy Realty CEO's</image:caption>
+    </image:image>
+  </url>
+
+  <!-- About Us Page -->
+  <url>
+    <loc>https://thelegacyrealty.in/aboutus</loc>
+    <image:image>
+      <image:loc>https://thelegacyrealty.in/assets/bg-highstreet.webp</image:loc>
+      <image:caption>Our Real Estate Projects</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Our Team Page -->
+  <url>
+    <loc>https://thelegacyrealty.in/our-team</loc>
+    <image:image>
+      <image:loc>https://thelegacyrealty.in/assets/ourteam/anmol.jpeg</image:loc>
+      <image:caption>Anmol - Team Member</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://thelegacyrealty.in/assets/ourteam/kamalpic.jpg</image:loc>
+      <image:caption>Kamal - Team Member</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://thelegacyrealty.in/assets/ourteam/Rahul-Ahuja.png</image:loc>
+      <image:caption>Rahul Ahuja - Team Member</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Mohali City Page -->
+  <url>
+    <loc>https://thelegacyrealty.in/cities/mohali</loc>
+    <image:image>
+      <image:loc>https://thelegacyrealty.in/assets/cities/mohalicitypage.jpg</image:loc>
+      <image:caption>Mohali Real Estate Market</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://thelegacyrealty.in/assets/cities/mohali-highstreet.webp</image:loc>
+      <image:caption>Mohali High Street Project</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Chandigarh City Page -->
+  <url>
+    <loc>https://thelegacyrealty.in/cities/chandigarh</loc>
+    <image:image>
+      <image:loc>https://thelegacyrealty.in/assets/cities/chandigarhcitypage.jpg</image:loc>
+      <image:caption>Chandigarh Real Estate Market</image:caption>
+    </image:image>
+  </url>
+
+  <!-- New Chandigarh City Page -->
+  <url>
+    <loc>https://thelegacyrealty.in/cities/new-chandigarh</loc>
+    <image:image>
+      <image:loc>https://thelegacyrealty.in/assets/cities/newchandigarhcitypage.jpeg</image:loc>
+      <image:caption>New Chandigarh Real Estate Market</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Himachal City Page -->
+  <url>
+    <loc>https://thelegacyrealty.in/cities/himachal</loc>
+    <image:image>
+      <image:loc>https://thelegacyrealty.in/assets/cities/Kazulhimachal.webp</image:loc>
+      <image:caption>Himachal Pradesh Real Estate Market</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Contact Us Page -->
+  <url>
+    <loc>https://thelegacyrealty.in/contact-us</loc>
+    <image:image>
+      <image:loc>https://thelegacyrealty.in/assets/tlrlogo.webp</image:loc>
+      <image:caption>Contact The Legacy Realty</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Location Map Page -->
+  <url>
+    <loc>https://thelegacyrealty.in/location-map-mohali-chandigarh-zirakpur-tricity</loc>
+    <image:image>
+      <image:loc>https://thelegacyrealty.in/assets/citymaps/tricity-map.webp</image:loc>
+      <image:caption>Tricity Location Map</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Mohali High Street Project Page -->
+  <url>
+    <loc>https://thelegacyrealty.in/commercial/mohali-high-street-sector-114-landran-road</loc>
+    <image:image>
+      <image:loc>https://thelegacyrealty.in/assets/mohaliwalk/gallery1.webp</image:loc>
+      <image:caption>Mohali High Street - Image 1</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://thelegacyrealty.in/assets/mohaliwalk/gallery2.webp</image:loc>
+      <image:caption>Mohali High Street - Image 2</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://thelegacyrealty.in/assets/mohaliwalk/gallery3.webp</image:loc>
+      <image:caption>Mohali High Street - Image 3</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://thelegacyrealty.in/assets/mohaliwalk/gallery4.webp</image:loc>
+      <image:caption>Mohali High Street - Image 4</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Wave Gardens Project Page -->
+  <url>
+    <loc>https://thelegacyrealty.in/project/wave-gardens</loc>
+    <image:image>
+      <image:loc>https://thelegacyrealty.in/assets/waveestate/gallery1.webp</image:loc>
+      <image:caption>Wave Gardens - Gallery 1</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://thelegacyrealty.in/assets/waveestate/gallery2.webp</image:loc>
+      <image:caption>Wave Gardens - Gallery 2</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://thelegacyrealty.in/assets/waveestate/gallery3.webp</image:loc>
+      <image:caption>Wave Gardens - Gallery 3</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://thelegacyrealty.in/assets/waveestate/gallery4.webp</image:loc>
+      <image:caption>Wave Gardens - Gallery 4</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Kayra Homes Project Page -->
+  <url>
+    <loc>https://thelegacyrealty.in/project/kayra-homes</loc>
+    <image:image>
+      <image:loc>https://thelegacyrealty.in/assets/kayrahomes/gallery1.webp</image:loc>
+      <image:caption>Kayra Homes - Gallery 1</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://thelegacyrealty.in/assets/kayrahomes/gallery2.webp</image:loc>
+      <image:caption>Kayra Homes - Gallery 2</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://thelegacyrealty.in/assets/kayrahomes/gallery3.webp</image:loc>
+      <image:caption>Kayra Homes - Gallery 3</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://thelegacyrealty.in/assets/kayrahomes/gallery4.webp</image:loc>
+      <image:caption>Kayra Homes - Gallery 4</image:caption>
+    </image:image>
+  </url>
+
+  <!-- SLP Moksha Project Page -->
+  <url>
+    <loc>https://thelegacyrealty.in/project/slp-moksha</loc>
+    <image:image>
+      <image:loc>https://thelegacyrealty.in/assets/slp-moksha/gallery1.webp</image:loc>
+      <image:caption>SLP Moksha - Gallery 1</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://thelegacyrealty.in/assets/slp-moksha/gallery2.webp</image:loc>
+      <image:caption>SLP Moksha - Gallery 2</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://thelegacyrealty.in/assets/slp-moksha/gallery3.webp</image:loc>
+      <image:caption>SLP Moksha - Gallery 3</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://thelegacyrealty.in/assets/slp-moksha/gallery4.webp</image:loc>
+      <image:caption>SLP Moksha - Gallery 4</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Greenwoods Project Page -->
+  <url>
+    <loc>https://thelegacyrealty.in/project/greenwoods</loc>
+    <image:image>
+      <image:loc>https://thelegacyrealty.in/assets/greenwoods/gallery1.webp</image:loc>
+      <image:caption>Greenwoods - Gallery 1</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://thelegacyrealty.in/assets/greenwoods/gallery2.webp</image:loc>
+      <image:caption>Greenwoods - Gallery 2</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://thelegacyrealty.in/assets/greenwoods/gallery3.webp</image:loc>
+      <image:caption>Greenwoods - Gallery 3</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://thelegacyrealty.in/assets/greenwoods/gallery4.webp</image:loc>
+      <image:caption>Greenwoods - Gallery 4</image:caption>
+    </image:image>
+  </url>
+
+</urlset>

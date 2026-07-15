@@ -8,6 +8,33 @@ import { useScrollToForm } from '../pages/MohaliHghStreetLanding';
 
 const ProjectOverview = () => {
   const { scrollToForm } = useScrollToForm();
+  const pricingOptions = [
+    {
+      title: "16.6 × 66 ft",
+      subtitle: "Premium frontage inventory",
+      pricing: [
+        ["Ground + Basement", "₹3.30 Cr"],
+        ["First Floor", "₹1.65 Cr"],
+        ["Second Floor", "₹1.40 Cr"],
+        ["Third Floor", "₹1.15 Cr"],
+      ],
+    },
+    {
+      title: "16.6 × 50 ft",
+      subtitle: "Flexible retail and office format",
+      pricing: [
+        ["Ground + Basement", "₹2.00 Cr"],
+        ["First Floor", "₹1.20 Cr"],
+        ["Second Floor", "₹0.95 Cr"],
+        ["Third Floor", "₹0.85 Cr"],
+      ],
+    },
+    {
+      title: "14 × 40 ft",
+      subtitle: "Compact full-stack commercial unit",
+      pricing: [["Basement + Ground + First", "₹2.50 Cr"]],
+    },
+  ];
   
   const fadeInUp = {
     hidden: { opacity: 0, y: 30 },
@@ -25,125 +52,78 @@ const ProjectOverview = () => {
           className="text-center mb-12 "
         >
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 ">
-            RERA Approved Showrooms Starting ₹3.5 Crore
+            Commercial Floors Starting ₹0.85 Crore
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Premium commercial showrooms on prime Landran Road frontage with basement parking, 
-            ground floor retail, and upper floors for offices or storage.
+            Premium commercial pricing on Landran Road frontage with floor-wise rates across
+            three inventory formats and a construction-linked payment plan.
           </p>
         </motion.div>
         
-        <div className="grid lg:grid-cols-2 gap-8 mb-12 ">
-          {/* Option 1 */}
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-            variants={{ ...fadeInUp}}
-          >
-            <Card className="h-full shadow-lg hover:shadow-xl transition-shadow relative before:absolute before:inset-0 before:bg-white before:-z-[1] bg-white/100 ">
-              <CardContent className="p-8">
-                <div className="flex items-center gap-3 mb-4">
-                  <Building className="w-8 h-8 text-secondary" />
-                  <h3 className="text-2xl font-bold text-secondary ">
-                    ₹3.5 Cr Showrooms
-                  </h3>
-                  <span className="bg-primary/10 text-secondary px-2 py-1 rounded-full text-sm">
-                    22 Units
-                  </span>
-                </div>
-                
-                <div className="space-y-3 mb-6">
-                  <div className="flex justify-between">
-                    <span className="font-medium">Plot Size:</span>
-                    <span>16.6 × 50 ft</span>
+        <div className="grid lg:grid-cols-3 gap-8 mb-12 ">
+          {pricingOptions.map((option) => (
+            <motion.div
+              key={option.title}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              variants={{ ...fadeInUp }}
+            >
+              <Card className="h-full shadow-lg hover:shadow-xl transition-shadow relative before:absolute before:inset-0 before:bg-white before:-z-[1] bg-white/100 ">
+                <CardContent className="p-8">
+                  <div className="flex items-center gap-3 mb-4">
+                    <Building className="w-8 h-8 text-secondary" />
+                    <div>
+                      <h3 className="text-2xl font-bold text-secondary ">
+                        {option.title}
+                      </h3>
+                      <p className="text-sm text-gray-500">{option.subtitle}</p>
+                    </div>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="font-medium">Floors:</span>
-                    <span>Basement + G + 1 + 2</span>
+
+                  <div className="space-y-3 mb-6">
+                    {option.pricing.map(([floor, price]) => (
+                      <div key={floor} className="flex justify-between gap-4">
+                        <span className="font-medium">{floor}</span>
+                        <span className="text-secondary font-semibold">{price}</span>
+                      </div>
+                    ))}
                   </div>
-                  <div className="flex justify-between">
-                    <span className="font-medium">Total Area:</span>
-                    <span>~3,300 sq ft</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="font-medium">Parking:</span>
-                    <span>Basement + Ground</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="font-medium">Best For:</span>
-                    <span className="text-secondary font-medium">Retail + Small Office</span>
-                  </div>
-                </div>
-                
-                <Button 
-                  onClick={scrollToForm}
-                  className="w-full bg-secondary hover:bg-secondary/90"
-                >
-                  <Download className="w-4 h-4 mr-2" />
-                  Get Brochure & Floor Plans
-                </Button>
-              </CardContent>
-            </Card>
-          </motion.div>
-          
-          {/* Option 2 - Premium */}
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-            variants={{ ...fadeInUp  }}
-          >
-            <Card className="h-full shadow-lg hover:shadow-xl transition-shadow border-2 border-primary relative overflow-hidden">
-              <div className="absolute top-4 right-4 bg-secondary text-white px-3 py-1 rounded-full text-sm font-semibold">
-                PREMIUM
-              </div>
-              
-              <CardContent className="p-8">
-                <div className="flex items-center gap-3 mb-4">
-                  <Building className="w-8 h-8 text-secondary" />
-                  <h3 className="text-2xl font-bold text-secondary">
-                    ₹6.5 Cr Showrooms
-                  </h3>
-                  <span className="bg-primary/10 text-secondary px-2 py-1 rounded-full text-sm">
-                    8 Units
-                  </span>
-                </div>
-                
-                <div className="space-y-3 mb-6">
-                  <div className="flex justify-between">
-                    <span className="font-medium">Plot Size:</span>
-                    <span>16.6 × 66 ft</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="font-medium">Floors:</span>
-                    <span>Basement + G + 1 + 2 + 3</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="font-medium">Total Area:</span>
-                    <span>~5,500 sq ft</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="font-medium">Parking:</span>
-                    <span>Double Basement + Ground</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="font-medium">Best For:</span>
-                    <span className="text-secondary font-medium">Large Retail + Offices</span>
-                  </div>
-                </div>
-                
-                <Button 
-                  onClick={scrollToForm}
-                  className="w-full bg-secondary hover:bg-secondary/90"
-                >
-                  <Download className="w-4 h-4 mr-2" />
-                  Get Brochure & Floor Plans
-                </Button>
-              </CardContent>
-            </Card>
-          </motion.div>
+
+                  <Button
+                    onClick={scrollToForm}
+                    className="w-full bg-secondary hover:bg-secondary/90"
+                  >
+                    <Download className="w-4 h-4 mr-2" />
+                    Get Brochure & Floor Plans
+                  </Button>
+                </CardContent>
+              </Card>
+            </motion.div>
+          ))}
         </div>
+
+        <Card className="shadow-lg relative before:absolute before:inset-0 before:bg-white before:-z-[1]">
+          <CardContent className="p-8">
+            <h3 className="text-2xl font-bold text-center text-secondary mb-6">
+              Construction-Linked Payment Plan
+            </h3>
+            <div className="grid md:grid-cols-5 gap-4 text-center">
+              {[
+                ["Booking", "10%"],
+                ["Within 30 Days", "15%"],
+                ["Layout / Plan Approval", "25%"],
+                ["Super Structure", "25%"],
+                ["Possession", "25%"],
+              ].map(([label, value]) => (
+                <div key={label} className="rounded-xl bg-gray-50 p-4">
+                  <p className="text-sm text-gray-500 mb-1">{label}</p>
+                  <p className="text-xl font-bold text-secondary">{value}</p>
+                </div>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
       </div>
     </section>
   );

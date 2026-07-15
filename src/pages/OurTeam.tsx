@@ -17,9 +17,9 @@ import rahul from "../assets/Rahul-Ahuja.png";
 import gaurav from "../assets/projectlogos/Gaurav.jpeg";
 import anmol from "../assets/anmol.jpeg";
 import kamal from "../assets/kamalpic.jpg";
-import aman from "../assets/ourteam/Aman_Gill.jpg";
+// import aman from "../assets/ourteam/Aman_Gill.jpg";
 import prabjot from "../assets/ourteam/Prabjot_singh.jpg";
-import inderjeet from "../assets/ourteam/Inderjeet.jpg";
+// import inderjeet from "../assets/ourteam/Inderjeet.jpg";
 // Team member interface
 interface TeamMember {
   id: string;
@@ -103,19 +103,19 @@ const teamMembers: TeamMember[] = [
       email: "info.thelegacyrealty@gmail.com"
     }
   },
-  {
-    id: "sales-manager-aman",
-    name: "Aman Gill",
-    position: "Sales Manager",
-    role: "manager",
-    image: aman,
-    description: "Seasoned sales professional with a decade of experience in driving growth and building lasting client relationships.",
-    experience: "5+ Years",
-    specialization: ["Sales Strategy", "Client Relationship", "Market Analysis"],
-    contact: {
-      email: "info.thelegacyrealty@gmail.com"
-    }
-  },
+  // {
+  //   id: "sales-manager-aman",
+  //   name: "Aman Gill",
+  //   position: "Sales Manager",
+  //   role: "manager",
+  //   image: aman,
+  //   description: "Seasoned sales professional with a decade of experience in driving growth and building lasting client relationships.",
+  //   experience: "5+ Years",
+  //   specialization: ["Sales Strategy", "Client Relationship", "Market Analysis"],
+  //   contact: {
+  //     email: "info.thelegacyrealty@gmail.com"
+  //   }
+  // },
   {
     id: "sales-manager-prabjot",
     name: "Prabjot Singh",
@@ -129,19 +129,19 @@ const teamMembers: TeamMember[] = [
       email: "info.thelegacyrealty@gmail.com"
     }
   },
-  {
-    id: "sales-manager-inderjeet",
-    name: "Inderjeet",
-    position: "Sales Manager",
-    role: "manager",
-    image: inderjeet,
-    description: "Experienced sales manager committed to guiding clients through seamless property transactions with expertise and integrity.",
-    experience: "5+ Years",
-    specialization: ["Real Estate Sales", "Customer Service", "Market Trends"],
-    contact: {
-      email: "info.thelegacyrealty@gmail.com"
-    }
-  },
+  // {
+  //   id: "sales-manager-inderjeet",
+  //   name: "Inderjeet",
+  //   position: "Sales Manager",
+  //   role: "manager",
+  //   image: inderjeet,
+  //   description: "Experienced sales manager committed to guiding clients through seamless property transactions with expertise and integrity.",
+  //   experience: "5+ Years",
+  //   specialization: ["Real Estate Sales", "Customer Service", "Market Trends"],
+  //   contact: {
+  //     email: "info.thelegacyrealty@gmail.com"
+  //   }
+  // },
 //   {
 //     id: "property-consultant-2",
 //     name: "Meera Patel",

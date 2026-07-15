@@ -11,11 +11,31 @@ Allow: /
 User-agent: Slurp
 Allow: /
 
+# Explicitly allow AI search engine bots for faster discovery
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
 # Disallow admin and private areas
 Disallow: /admin/
 Disallow: /private/
 Disallow: /.env
 Disallow: /config/
+Disallow: /node_modules/
 
 # Allow important pages for real estate SEO
 Allow: /cities/
@@ -26,7 +46,11 @@ Allow: /our-team
 Allow: /contact-us
 
 # Sitemap location
-Sitemap: https://thelegacyrealty.com/sitemap.xml
+Sitemap: https://thelegacyrealty.in/sitemap.xml
+Sitemap: https://thelegacyrealty.in/sitemap-images.xml
 
-# Crawl delay (optional - helps manage server load)
+# Crawl delay (helps manage server load)
 Crawl-delay: 1
+
+# Request rate for crawlers
+Request-rate: 30/1m
